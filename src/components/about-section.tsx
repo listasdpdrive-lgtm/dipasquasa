@@ -54,7 +54,7 @@ export function AboutSection() {
                   <h3 className="text-2xl font-bold font-work-sans text-primary">Misión</h3>
                 </div>
                 <p className="text-lg mb-8">
-                  Ofrecer servicios de reparación y venta en transporte con excelencia, cercanía y compromiso.
+                  Somos una empresa argentina fundada en 1961 dedicada a brindar soluciones integrales al transporte pesado. Ofrecemos venta de camiones y semirremolques, repuestos y servicios de reparaciones metalúrgicas, con el objetivo de asegurar a nuestros clientes calidad, confianza y continuidad en el camino.
                 </p>
                 <div className="flex items-center gap-3 mb-6">
                   <Eye className="h-8 w-8 text-primary" />
