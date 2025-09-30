@@ -39,9 +39,9 @@ export function HeroSection() {
             <span className="text-primary bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent font-black">
               Transporte
             </span>{" "}
-            y{" "}
+            {" "}
             <span className="text-primary bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent font-black">
-              Reparación
+              pesado
             </span>
           </motion.h1>
 
