@@ -44,7 +44,13 @@ export function HeroSection() {
               Pesado
             </span>
           </motion.h1>
-
+           <motion.p
+             initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, delay: 0.4 }}
+             className="text-lg md:text-xl lg:text-2xl text-gray-200 mb-4"
+>
+              Venta de camiones y semirremolques         Repuestos y accesorios            Reparaciones y fabricacion
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
