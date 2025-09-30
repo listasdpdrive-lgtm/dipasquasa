@@ -90,11 +90,11 @@ export function Footer() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span>+54 261 466-3077</span>
+                <span>+54 9 261 466-3077</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span>info@dipasqua.com</span>
+                <span>dipasquarepuestos@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" />
