@@ -93,11 +93,11 @@ export function CounterSection() {
             className="text-center p-6 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300"
           >
             <div className="mb-4 min-h-[60px] flex items-center justify-center">
-              <Counter end={2000000} prefix="+" />
+              <Counter end={500000} prefix="+" />
             </div>
-            <h3 className="text-xl md:text-2xl font-semibold mb-2 text-gray-900">Kilómetros Recorridos</h3>
+            <h3 className="text-xl md:text-2xl font-semibold mb-2 text-gray-900">Problemas solucionados</h3>
             <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-              Millones de kilómetros respaldados por nuestros servicios
+              Todos los problemas solucionados con calidad
             </p>
           </motion.div>
 
