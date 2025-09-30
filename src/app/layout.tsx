@@ -20,7 +20,7 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Di Pasqua - Soluciones Integrales en Transporte y Reparación",
+  title: "Di Pasqua - Soluciones Integrales en Transporte pesado",
   description:
     "Más de 60 años liderando en el sector del transporte. Reparaciones, venta de semis y repuestos con la confianza de la experiencia.",
   keywords:
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Di Pasqua - Soluciones Integrales en Transporte y Reparación",
+    title: "Di Pasqua - Soluciones Integrales en Transporte pesado",
     description:
       "Más de 60 años liderando en el sector del transporte. Reparaciones, venta de semis y repuestos con la confianza de la experiencia.",
     url: "https://dipasqua.com",
@@ -50,13 +50,13 @@ export const metadata: Metadata = {
         url: "/images/dipasqua-logo.png",
         width: 1200,
         height: 630,
-        alt: "Di Pasqua - Soluciones Integrales en Transporte y Reparación",
+        alt: "Di Pasqua - Soluciones Integrales en Transporte pesado",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Di Pasqua - Soluciones Integrales en Transporte y Reparación",
+    title: "Di Pasqua - Soluciones Integrales en Transporte pesado",
     description:
       "Más de 60 años liderando en el sector del transporte. Reparaciones, venta de semis y repuestos con la confianza de la experiencia.",
     images: ["/images/dipasqua-logo.png"],
