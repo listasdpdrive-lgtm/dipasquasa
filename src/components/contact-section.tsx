@@ -261,7 +261,7 @@ export function ContactSection() {
                       <div>
                         <p className="font-medium">Teléfono</p>
                         <p className="text-muted-foreground">
-                          +54 261 466-3077
+                          +54 9 261 466-3077
                         </p>
                       </div>
                     </div>
@@ -271,7 +271,7 @@ export function ContactSection() {
                       <div>
                         <p className="font-medium">Email</p>
                         <p className="text-muted-foreground">
-                          info@dipasqua.com
+                          dipasquarepuestos@gmail.com
                         </p>
                       </div>
                     </div>
