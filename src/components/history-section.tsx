@@ -8,7 +8,7 @@ export function HistorySection() {
     {
       year: "1965",
       title: "Fundación",
-      description: "Inicio de operaciones como taller de reparación familiar",
+      description: "Inicio de operaciones como taller de reparación ",
     },
     {
       year: "1980",
