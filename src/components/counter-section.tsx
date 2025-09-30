@@ -109,7 +109,7 @@ export function CounterSection() {
             className="text-center p-6 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 md:col-span-2 lg:col-span-1"
           >
             <div className="mb-4 min-h-[60px] flex items-center justify-center">
-              <Counter end={500} prefix="+" />
+              <Counter end={2000} prefix="+" />
             </div>
             <h3 className="text-xl md:text-2xl font-semibold mb-2 text-gray-900">Clientes Satisfechos</h3>
             <p className="text-gray-600 leading-relaxed text-sm md:text-base">
