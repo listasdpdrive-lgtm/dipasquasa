@@ -13,7 +13,7 @@ export function HistorySection() {
     {
       year: "1980",
       title: "Expansión",
-      description: "Incorporación de venta de repuestos y ampliación del taller",
+      description: "Ampliación del taller",
     },
     {
       year: "1995",
