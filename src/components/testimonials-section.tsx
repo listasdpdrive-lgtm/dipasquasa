@@ -42,7 +42,7 @@ export default function TestimonialsSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Lo Que Dicen Nuestros <span className="text-red-600">Clientes</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">La confianza de más de 500 empresas nos respalda</p>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">La confianza de más de 2000 empresas nos respalda</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
