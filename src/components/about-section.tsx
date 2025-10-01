@@ -34,7 +34,7 @@ export function AboutSection() {
             Di Pasqua, más de 60 años de historia respaldando a quienes mueven Argentina
           </h2>
           <p className="text-xl max-w-4xl mx-auto text-white">
-            Desde nuestros inicios en 1965, hemos crecido y evolucionado, manteniendo nuestra esencia de ofrecer
+            Desde nuestros inicios en 1961, hemos crecido y evolucionado, manteniendo nuestra esencia de ofrecer
             soluciones confiables y de calidad en la reparación y venta de vehículos para transporte.
           </p>
         </motion.div>
