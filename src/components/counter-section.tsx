@@ -97,7 +97,7 @@ export function CounterSection() {
             </div>
             <h3 className="text-xl md:text-2xl font-semibold mb-2 text-gray-900">Problemas solucionados</h3>
             <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-              Todos los problemas solucionados con calidad
+              Trabajando con calidad y eficiencia
             </p>
           </motion.div>
 
