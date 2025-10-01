@@ -26,6 +26,11 @@ export function HistorySection() {
       description: "Apertura de nueva sede y venta de vehículos comerciales",
     },
     {
+      year: "2018",
+      title: "Crecimiento",
+      description: " Se incorpora como una nueva actividad la venta de repuestos para camiones y semirremolques",
+    },
+    {
       year: "2025",
       title: "Liderazgo",
       description: "60 años siendo referentes en soluciones de transporte",
