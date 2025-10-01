@@ -6,7 +6,7 @@ import { Calendar } from "lucide-react"
 export function HistorySection() {
   const milestones = [
     {
-      year: "1965",
+      year: "1961",
       title: "Fundación",
       description: "Inicio de operaciones como taller de reparación ",
     },
