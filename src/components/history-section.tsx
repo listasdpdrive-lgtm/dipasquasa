@@ -21,9 +21,9 @@ export function HistorySection() {
       description: "Implementación de tecnología avanzada en diagnóstico",
     },
     {
-      year: "2010 - 2018",
+      year: "2010",
       title: "Crecimiento",
-      description: "Apertura de nueva sede , venta de vehículos comerciales y local exclusivo para repuestos y accesorios",
+      description: "Apertura de nueva sede y venta de vehículos comerciales",
     },
     {
       year: "2025",
