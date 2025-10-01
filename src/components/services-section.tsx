@@ -12,7 +12,7 @@ export function ServicesSection() {
       icon: Wrench,
       title: "Reparaciones",
       description:
-        "Soluciones especializadas que garantizan la seguridad y durabilidad del transporte. Nuestro equipo técnico, con experiencia comprobada, ofrece confiabilidad y rapidez, adaptándose a tus necesidades.",
+        "Soluciones especializadas que garantizan la seguridad y durabilidad. Nuestro equipo técnico, con experiencia comprobada, ofrece confiabilidad y rapidez, adaptándose a tus necesidades.",
       features: [
         "Diagnóstico especializado",
         "Reparaciones integrales",
