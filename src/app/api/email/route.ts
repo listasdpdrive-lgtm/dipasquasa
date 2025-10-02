@@ -110,7 +110,7 @@ export async function POST(req: NextRequest) {
 
     await transporter.sendMail({
       from: `"${process.env.MAIL_FROM_NAME}" <${process.env.SMTP_USER}>`,
-      to: process.env.EMAIL_RECEIVER,
+      to: "dipasquarepuestos@gmail.com",
       subject: `Nuevo mensaje de ${name}`,
       replyTo: email,
       text: `Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`,
