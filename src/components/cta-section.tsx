@@ -31,7 +31,7 @@ export default function CTASection() {
             >
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">¿Listo para Optimizar tu Flota?</h2>
               <p className="text-xl md:text-2xl mb-8 text-red-100 text-center">
-                Únete a más de 500 empresas que confían en Di Pasqua para sus necesidades de transporte
+                Únete a más de 2000 empresas que confían en Di Pasqua para sus necesidades de transporte
               </p>
             </motion.div>
 
