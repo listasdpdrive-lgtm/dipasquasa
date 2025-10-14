@@ -18,7 +18,7 @@ export function HistorySection() {
      {
       year: "1994",
       title: "Expansión",
-      description: "Nos extendimos en el rubro con una consecion de Salto",
+      description: "Nos extendimos en el rubro, incorporando la venta de semirremolques marca Salto",
     },
     {
       year: "1995",
@@ -27,13 +27,13 @@ export function HistorySection() {
     },
       {
       year: "2001",
-      title: "conseccion ATS-PRA",
-      description: " nos ampliamos a la venta de furgones termicos con una marca de primera calidad ",
+      title: "Conseccion AST-PRA",
+      description: " Nos ampliamos a la venta de furgones termicos con una marca de primera calidad ",
     },
      {
       year: "2007",
-      title: "Crecimiento",
-      description: "nos incorporamos en la venta de carriers",
+      title: "Conseción Carrier",
+      description: "Incorporamos la venta de equipos de frio numero uno a nivel mundial",
     },
     {
       year: "2010",
