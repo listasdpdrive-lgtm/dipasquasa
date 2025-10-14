@@ -25,6 +25,11 @@ export function HistorySection() {
       title: "Modernización",
       description: "Implementación de tecnología avanzada en diagnóstico",
     },
+      {
+      year: "2001",
+      title: "conseccion ATS-PRA",
+      description: " nos ampliamos a la venta de furgones termicos con una marca de primera calidad ",
+    },
     {
       year: "2010",
       title: "Crecimiento",
