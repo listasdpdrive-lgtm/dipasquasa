@@ -18,7 +18,7 @@ export function HistorySection() {
      {
       year: "1994",
       title: "Expansión",
-      description: "Nos extendimos en el rubro con una conseccion de salto",
+      description: "Nos extendimos en el rubro con una consecion de Salto",
     },
     {
       year: "1995",
