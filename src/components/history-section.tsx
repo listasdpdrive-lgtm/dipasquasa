@@ -30,6 +30,11 @@ export function HistorySection() {
       title: "conseccion ATS-PRA",
       description: " nos ampliamos a la venta de furgones termicos con una marca de primera calidad ",
     },
+     {
+      year: "2007",
+      title: "Crecimiento",
+      description: "nos incorporamos en la venta de carriers",
+    },
     {
       year: "2010",
       title: "Crecimiento",
