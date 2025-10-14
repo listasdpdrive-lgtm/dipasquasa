@@ -23,8 +23,8 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <HistorySection />
-      <CounterSection />
       <BrandsSection />
+     <CounterSection />
       <ValuePropositionSection />
       <TestimonialsSection />
       <CTASection />
