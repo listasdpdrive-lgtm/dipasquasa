@@ -1,10 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
 
-// Inicializamos Resend con la API key
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Inicializa Redis y Ratelimit (fuera del handler)
+const redis = new Redis({
+  url: process.env.UPSTASH_REDIS_URL!,
+  token: process.env.UPSTASH_REDIS_TOKEN!,
+});
+const ratelimit = new Ratelimit({
+  redis,
+  limiter: Ratelimit.fixedWindow(3, "1 m"),
+});
 
-// Simple email regex
+// Simple email regex (no perfecta, pero segura para validación básica)
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function validateInputs(
@@ -19,33 +28,42 @@ function validateInputs(
   email = email.trim();
   phone = phone.trim();
   message = message.trim();
-
   if (!name || !email || !phone || !message) {
     return "Todos los campos son requeridos.";
   }
   if (name.length < 2 || name.length > 100) {
     return "El nombre debe tener entre 2 y 100 caracteres.";
   }
-  if (company.length > 100) {
+  if (company.length > 100)
     return "La empresa no puede tener más de 100 caracteres.";
-  }
+
   if (!emailRegex.test(email) || email.length > 200) {
     return "El email no es válido o es demasiado largo.";
   }
-  if (phone.length > 100) {
-    return "El teléfono no puede tener más de 100 dígitos.";
-  }
+  if (phone.length > 100)
+    return "El teléfono no puede tener más de 100 digitos";
+
   if (message.length < 3 || message.length > 5000) {
     return "El mensaje debe tener entre 3 y 5000 caracteres.";
   }
-  return null;
+  return null; // paso todas las validaciones.
 }
 
 export async function POST(req: NextRequest) {
   try {
+    const ip =
+      req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "anonymous";
+    const { success } = await ratelimit.limit(ip);
+    if (!success) {
+      return NextResponse.json(
+        { message: "Demasiadas solicitudes, intenta más tarde." },
+        { status: 429 }
+      );
+    }
+
     const { name, company, email, phone, message, website } = await req.json();
 
-    // Honeypot anti-spam
+    // Honeypot anti-spam -> sirve para detectar bots.
     if (website && website.trim().length > 0) {
       return NextResponse.json({ ok: true }); // Ignora bots
     }
@@ -60,6 +78,16 @@ export async function POST(req: NextRequest) {
     if (validationError) {
       return NextResponse.json({ message: validationError }, { status: 400 });
     }
+
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT) || 465,
+      secure: true,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    });
 
     const htmlTemplate = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 8px; background: #f9f9f9;">
@@ -80,22 +108,17 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
-    // 📤 Envío con Resend
-    await resend.emails.send({
-      from: process.env.EMAIL_FROM!,
-      to: process.env.EMAIL_TO!,
-      subject: Nuevo mensaje de ${name},
-      reply_to: email,
-      text: Nombre: ${name}\nEmail: ${email}\nTeléfono: ${phone}\nMensaje:\n${message},
+    await transporter.sendMail({
+      from: `"${process.env.MAIL_FROM_NAME}" <${process.env.SMTP_USER}>`,
+      to: process.env.EMAIL_RECEIVER,
+      subject: `Nuevo mensaje de ${name}`,
+      replyTo: email,
+      text: `Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`,
       html: htmlTemplate,
     });
 
-    return NextResponse.json({
-      ok: true,
-      message: "Correo enviado con éxito",
-    });
+    return NextResponse.json({ ok: true, message: "Correo enviado con éxito" });
   } catch (error) {
-    console.error("Error al enviar correo:", error);
     return NextResponse.json(
       { message: "Error al enviar el correo" },
       { status: 500 }
