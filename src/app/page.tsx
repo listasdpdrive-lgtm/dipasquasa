@@ -20,10 +20,10 @@ export default function Home() {
       <Header />
       <div className="w-screen">
       <HeroSection />
-      <CounterSection />
       <AboutSection />
       <ServicesSection />
       <HistorySection />
+      <CounterSection />
       <BrandsSection />
       <ValuePropositionSection />
       <TestimonialsSection />
