@@ -15,6 +15,11 @@ export function HistorySection() {
       title: "Expansión",
       description: "Ampliación del taller",
     },
+     {
+      year: "1994",
+      title: "Expansión",
+      description: "Nos extendimos en el rubro con una conseccion de salto",
+    },
     {
       year: "1995",
       title: "Modernización",
