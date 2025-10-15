@@ -13,13 +13,17 @@ export function HeroSection() {
 
   return (
     <section id="inicio" className="relative h-max flex justify-center items-center overflow-hidden pt-24  md:pt-32 pb-20">
-      <div className="max-w-6xl px-10 lg:px-0">
+     <div className="absolute inset-0 z-0">
+  {/* Imagen de fondo */}
+  <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: "url('/fondo_web.png')" }}
+  ></div>
 
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-black"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-700/30 via-transparent to-transparent"></div>
-      </div>
+  {/* Capas de gradiente para mantener contraste y legibilidad */}
+  <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/60 to-black/80"></div>
+  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+</div>
 
       {/* Content */}
       <div className="relative z-10 flex justify-center container text-center text-white">
