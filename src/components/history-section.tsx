@@ -6,50 +6,50 @@ import { Calendar } from "lucide-react"
 export function HistorySection() {
   const milestones = [
     {
-      year: "1961",
-      title: "Fundación",
-      description: "Inicio de operaciones como taller de reparación ",
-    },
-    {
-      year: "1980",
-      title: "Expansión",
-      description: "Ampliación del taller",
-    },
-     {
-      year: "1994",
-      title: "Expansión",
-      description: "Nos extendimos en el rubro, incorporando la venta de semirremolques marca Salto",
-    },
-    {
-      year: "1995",
-      title: "Modernización",
-      description: "Implementación de tecnología avanzada en diagnóstico",
-    },
-      {
-      year: "2001",
-      title: "Consecion AST-PRA",
-      description: " Nos ampliamos a la venta de furgones termicos con una marca de primera calidad ",
-    },
-     {
-      year: "2007",
-      title: "Conseción Carrier",
-      description: "Incorporamos la venta de equipos de frio numero uno a nivel mundial",
-    },
-    {
-      year: "2010",
-      title: "Crecimiento",
-      description: "Apertura de nueva sede y venta de vehículos comerciales",
-    },
-    {
-      year: "2018",
-      title: "Crecimiento",
-      description: " Se incorpora como una nueva actividad la venta de repuestos para camiones y semirremolques",
-    },
-    {
-      year: "2025",
-      title: "Liderazgo",
-      description: "60 años siendo referentes en soluciones de transporte",
-    },
+  year: "1961",
+  title: "Fundación",
+  description: "Inicio de operaciones como taller de reparación.",
+},
+{
+  year: "1980",
+  title: "Expansión",
+  description: "Ampliación del taller.",
+},
+{
+  year: "1994",
+  title: "Expansión",
+  description: "Nos extendimos en el rubro, incorporando la venta de semirremolques marca Salto.",
+},
+{
+  year: "1995",
+  title: "Modernización",
+  description: "Implementación de tecnología avanzada en diagnóstico.",
+},
+{
+  year: "2001",
+  title: "Concesión AST-PRA",
+  description: "Nos ampliamos a la venta de furgones térmicos con una marca de primera calidad.",
+},
+{
+  year: "2007",
+  title: "Concesión Carrier",
+  description: "Incorporamos la venta de equipos de frío número uno a nivel mundial.",
+},
+{
+  year: "2010",
+  title: "Crecimiento",
+  description: "Apertura de nueva sede y venta de vehículos comerciales.",
+},
+{
+  year: "2018",
+  title: "Crecimiento",
+  description: "Se incorpora como nueva actividad la venta de repuestos para camiones y semirremolques.",
+},
+{
+  year: "2025",
+  title: "Liderazgo",
+  description: "60 años siendo referentes en soluciones de transporte.",
+},
   ]
 
   return (
