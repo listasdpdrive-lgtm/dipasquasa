@@ -27,7 +27,7 @@ export function HistorySection() {
     },
       {
       year: "2001",
-      title: "Conseccion AST-PRA",
+      title: "Consecion AST-PRA",
       description: " Nos ampliamos a la venta de furgones termicos con una marca de primera calidad ",
     },
      {
