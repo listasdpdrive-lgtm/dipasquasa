@@ -58,7 +58,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center cursor-pointer" onClick={scrollToHome}>
             <Image
-              src="/images/dipasqua-logo.png"
+              src="/images/dipasqua.png"
               alt="Di Pasqua"
               width={180}
               height={60}
