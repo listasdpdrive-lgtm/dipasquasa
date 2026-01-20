@@ -7,7 +7,7 @@ import Sidebar from "@/components/Sidebar"
 export default function Accesorios() {
   const cuadros = [
     {
-      img: "/PEng",
+      img: "/PESADOS-JPG/campanas.png",
       titulo: "Campanas",
       pdf: "/catalogos/PESADOS/mazas/CAMPANAS (2).pdf",
     },
@@ -74,4 +74,5 @@ export default function Accesorios() {
       </main>
     </div>
   )
+
 }
