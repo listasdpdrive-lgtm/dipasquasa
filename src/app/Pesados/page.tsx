@@ -54,7 +54,7 @@ export default function Accesorios() {
       titulo: "Fajas de suspencion neumatica",
       pdf: "/catalogos/PESADOS/FAJAS DE SUSPENSION NEUMATICA.pdf",
     },{
-      img: "/pe",
+      img: "/PESADOS-JPG/fuelles.png",
       titulo: "fuelles",
       link: "/Pesados/FUELLES",
     },{
@@ -195,3 +195,4 @@ export default function Accesorios() {
     </div>
   )
 }
+
