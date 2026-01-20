@@ -61,7 +61,7 @@ export function Header() {
               src="/images/dipasqua.png"
               alt="Di Pasqua"
               width={340}
-              height={120}
+              height={620}
               id="image"
               className="h-10 md:h-12 w-auto"
               priority
