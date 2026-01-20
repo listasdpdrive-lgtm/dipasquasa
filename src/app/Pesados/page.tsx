@@ -63,7 +63,7 @@ export default function Accesorios() {
       pdf: "catalogos/PESADOS/GRAMPAS ARTILLERAS.pdf",
     },
     {
-      img: "/PESADampas.png",
+      img: "/PESADOS-JPG/mazasycampana.png",
       titulo: "Mazas Y Campanas",
       link: "/Pesados/mazas",
     },
@@ -195,4 +195,5 @@ export default function Accesorios() {
     </div>
   )
 }
+
 
