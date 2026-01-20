@@ -11,7 +11,11 @@ export default function Accesorios() {
       titulo: "Correas y mangueras",
       pdf: "/catalogos/CARRIER/x/CORREAS Y MANGUERAS EQUIPO SERIE X ACTUALIZADO.pdf",
     },
-  
+    {
+      img: "/carrier/covif",
+      titulo: "Electricidad",
+      pdf: "/catalogos/CARRIER/x/ELECTRICIDAD X2100 ACTUALIZADO (1).pdf",
+    },
     {
       img: "/carrier/motor.png",
       titulo: "Motor",
