@@ -23,7 +23,7 @@ export default function CatalogosPage() {
     { img: "/buloneriaI.png", titulo: "Buloneria", link: "/Buloneria" },
     { img: "/image-cuadros/carrier-logo.png", titulo: "Carrier", link: "/carrier" },
     { img: "/electricidad.png", titulo: "Electricidad", link: "/Electricidad" },
-    { img: "/amarre.png", titulo: "Elementos de Amarre", pdf: "/catalogos/AMARRE/ELEMENTOS DE SEGURIDAD Y REFLECTIVOS.pdf" },
+    { img: "/amarre.png", titulo: "Elementos de Amarre", link: "/Elemento_amarre" },
     { img: "/seguridad.png", titulo: "Elementos de Seguridad", pdf: "/catalogos/SEGURIDAD/ELEMENTOS DE SEGURIDAD Y REFLECTIVOS.pdf" },
     { img: "/filtros/filtrosportada.png", titulo: "Filtros de aire", link: "/filtros" },
     { img: "/frenos.png", titulo: "Frenos", link: "/Frenos" },
@@ -156,3 +156,4 @@ export default function CatalogosPage() {
 
   )
 }
+
