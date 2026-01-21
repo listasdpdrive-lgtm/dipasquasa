@@ -12,7 +12,7 @@ export default function Accesorios() {
       pdf: "/catalogos/CARRIER/x/CORREAS Y MANGUERAS EQUIPO SERIE X ACTUALIZADO.pdf",
     },
     {
-      img: "/carrier/covif",
+      img: "/carrier/electricidadx.png",
       titulo: "Electricidad",
       pdf: "/catalogos/CARRIER/x/ELECTRICIDAD X2100 ACTUALIZADO (1).pdf",
     },
@@ -84,3 +84,4 @@ export default function Accesorios() {
     </div>
   )
 }
+
