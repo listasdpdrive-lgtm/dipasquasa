@@ -43,7 +43,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/arogiratorios.png",
       titulo: "Ejes y aros giratorios",
-      pdf: "catalogos/PESADOS/AROS GIRATORIOS ACTUALIZADO.pdf",
+      link: "/Pesados/ejes_aros",
     },
     {
       img: "/PESADOS-JPG/enganche_y_patas.png",
@@ -110,7 +110,7 @@ export default function Accesorios() {
     }
     ,{
       img: "/PESADOS-JPG/ryp.png",
-      titulo: "Retenes de camiones y acoplados",
+      titulo: "Retenes y portarretenes",
       link: "/Pesados/RETENES",
     },{
       img: "/PESADOS-JPG/rulemanes.png",
@@ -134,8 +134,8 @@ export default function Accesorios() {
       pdf: "/catalogos/PESADOS/TENSORES.pdf",
     },{
       img: "/PESADOS-JPG/tuercas.png",
-      titulo: "Tuercasy Arandelas punta eje",
-      pdf: "/catalogos/PESADOS/TUERCAS Y ARANDELAS PUNTA DE EJE.pdf",
+      titulo: "Tuercas y Arandelas punta eje",
+      link: "/Pesados/puntaeje",
     },
   ]
 
@@ -195,5 +195,3 @@ export default function Accesorios() {
     </div>
   )
 }
-
-
