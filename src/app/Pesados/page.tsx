@@ -42,8 +42,8 @@ export default function Accesorios() {
     },
     {
       img: "/PESADOS-JPG/arogiratorios.png",
-      titulo: "Ejes y aros giratorios",
-      link: "/Pesados/ejes_aros",
+      titulo: "Aros giratorios",
+      pdf: "/catalogos/PESADOS/aros/AROS GIRATORIOS ACTUALIZADO (1).pdf",
     },
     {
       img: "/PESADOS-JPG/enganche_y_patas.png",
