@@ -12,9 +12,9 @@ export default function Accesorios() {
       pdf: "/catalogos/PESADOS/LUBRICANTES Y OTROS.pdf",
     },
     {
-      img: "/varios/teflon.png",
+      img: "/varios/otros.png",
       titulo: "Accesorios varios",
-      pdf: "/catalogos/varios/LUBRICANTES Y OTROS.pdf",
+      pdf: "/catalogos/varios/ACCESORIOS VARIOS.pdf",
     },
    
    
@@ -34,7 +34,7 @@ export default function Accesorios() {
       <Sidebar />
 
       {/* CONTENIDO */}
-      <main className="flex-1 px-4 md:px-10 pt-24">
+      <main className="flex-1 px-4 md:px-10 pt-14">
         {/* CONTENEDOR CENTRADO */}
         <div className="max-w-6xl mx-auto">
           {/* GRID */}
