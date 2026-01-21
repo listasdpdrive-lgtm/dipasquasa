@@ -21,11 +21,7 @@ export default function Accesorios() {
       titulo: "Escaleras",
       pdf: "/catalogos/PESADOS/herrajes/ESCALERAS.pdf",
     },
-     {
-      img: "/PESADOS-JPG/varios.png",
-      titulo: "Herrajes y accesorios",
-      pdf: "/catalogos/PESADOS/herrajes/HERRAJES Y ACCESORIOS.pdf",
-    },
+    
      {
       img: "/PESADOS-JPG/herrajess.png",
       titulo: "Herrajes",
@@ -90,4 +86,5 @@ export default function Accesorios() {
       </main>
     </div>
   )
+
 }
