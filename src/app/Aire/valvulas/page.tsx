@@ -17,53 +17,53 @@ export default function Accesorios() {
     {
       img: "/AIRE-JPG/secadoresaire.png",
       titulo: "Secadores de aire",
-      pdf: "/catalogos/AIRE/SECADORES.pdf",
+      pdf: "/catalogos/AIRE/valvulas/VÁLVULA SECADORES DE AIRE,FILTROS Y VALVULA DE DRENAJE RG.pdf",
     },
     {
       img: "/AIRE-JPG/Valvuladescarga.png",
       titulo: "Válvulas de descarga",
-      pdf: "/catalogos/AIRE/VÁLVULAS DESCARGA RÁPIDA.pdf",
+      pdf: "/catalogos/AIRE/valvulas/VÁLVULAS DESCARGA RAPIDA.pdf",
     },
     {
       img: "/AIRE-JPG/valvuladistribuidora.png",
       titulo: "Válvula distribuidora",
-      pdf: "/catalogos/AIRE/VÁLVULAS DISTRIBUIDORAS.pdf",
+      pdf: "/catalogos/AIRE/valvulas/VÁLVULA DISTRIBUIDORA.pdf",
     },
     {
       img: "/AIRE-JPG/valvulaniveladora.png",
       titulo: "Válvulas niveladora",
-      pdf:" /catalogos/AIRE/VÁLVULAS NIVELADORAS Y LIMITADORAS DE SUSPENSIÓN NEUMÁTICA.pdf",
+      pdf:" /catalogos/AIRE/valvulas/VÁLVULA NIVELADORAS Y LIMITADORAS DE SUSPENSIÓN NEUMÁTICA.pdf",
     },
   
     {
       img: "/AIRE-JPG/valvulagobernadora.png",
       titulo: "Válvulas gobernadoras",
-     pdf:"/catalogos/AIRE/VÁLVULAS GOBERNADORAS.pdf",
+     pdf:"/catalogos/AIRE/valvulas/VÁLVULA GOBERNADORA.pdf",
     },
     {
       img: "/AIRE-JPG/valvulamanuales.png",
       titulo: "Válvulas manuales",
-      pdf:"/catalogos/AIRE/VÁLVULAS MANUALES, DE FRENO Y COMANDO.pdf",
+      pdf:"/catalogos/AIRE/valvulas/VÁLVULA MANUALES, FRENO Y COMANDO.pdf",
     },
     {
       img: "/AIRE-JPG/valvuladepied.png",
       titulo: "Válvulas de pie",
-     pdf:"/catalogos/AIRE/VÁLVULAS DE PIE.pdf",
+     pdf:"/catalogos/AIRE/valvulas/VÁLVULAS DE PIE RG.pdf",
     },
     {
       img: "/AIRE-JPG/valvulaprotectora.png",
       titulo: "Válvulas protectoras",
-      pdf: "/catalogos/AIRE/VÁLVULAS PROTECTORAS DE PRESIÓN, LIMITADORAS, ETC.pdf",
+      pdf: "/catalogos/AIRE/valvulas/VÁLVULAS PROTECTORAS DE PRESIÓN LIMITADORAS Y MÁS.pdf",
     },
     {
       img: "/AIRE-JPG/valvulasuspencion.png",
       titulo: "Válvulas de Suspension",
-      pdf: "/catalogos/AIRE/VÁLVULA DE SUSPENSIÓN NEUMÁTICA.pdf",
+      pdf: "/catalogos/AIRE/valvulas/VÁLVULAS DE SUPERNSIÓN NEUMATICA .pdf",
     },
       {
-      img: "/AIRE-JPG.png",
+      img: "/AIRE-JPG/valvularelay.png",
       titulo: "Válvulas de control y relay",
-      pdf: "/catalogos/AIRE/VÁLVULA DE SUSPENSIÓN NEUMÁTICA.pdf",
+      pdf: "/catalogos/AIRE/valvulas/VÁLVULAS DE CONTROL Y RELAY RG.pdf",
     },
   ]
 
