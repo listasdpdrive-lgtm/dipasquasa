@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/AIRE-JPG/reparacionestriler.png",
       titulo: "Reparaciones Triller",
-      pdf: "/catalogos/AIRE/REPARACIONES TRILER.pdf",
+      pdf: "/catalogos/AIRE/REPARACIÓN VALVULA TRILLER ACTUALIZADA.pdf",
     },
     {
       img: "/REPARACIONESRG/rg.png",
@@ -72,3 +72,4 @@ export default function Accesorios() {
     </div>
   )
 }
+
