@@ -77,7 +77,7 @@ export function LocalesSection() {
               <div className="group relative h-[320px] lg:h-[480px] rounded-xl shadow-lg overflow-hidden cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-red-500/20">
 
                 <Image
-                  src="/images/mecanico-1.avif"
+                  src="/images/mecanico.png"
                   alt="Taller"
                   fill
                   className="object-cover"
