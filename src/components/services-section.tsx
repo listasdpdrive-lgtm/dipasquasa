@@ -19,7 +19,8 @@ export function ServicesSection() {
         "Mantenimiento preventivo",
         "Servicio de emergencia",
       ],
-      image: "images/mecanico-1.avif",
+      image: "/images/mecanico-1.png",
+      whatsapp: "5491112345678",
     },
     {
       icon: Truck,
@@ -32,23 +33,25 @@ export function ServicesSection() {
         "Financiación disponible",
         "Garantía extendida",
       ],
-      image: "/images/semi-1.avif",
+      image: "/images/semi-1.png",
+      whatsapp: "54261365617",
     },
     {
       icon: Package,
       title: "Repuestos",
-      description: "Catálogo amplio y asesoramiento técnico especializado para mantener tu flota en perfecto estado.",
-      features: ["Amplio stock disponible", "Repuestos originales", "Asesoramiento técnico", "Entrega rápida"],
+      description:
+        "Catálogo amplio y asesoramiento técnico especializado para mantener tu flota en perfecto estado.",
+      features: [
+        "Amplio stock disponible",
+        "Repuestos originales",
+        "Asesoramiento técnico",
+        "Entrega rápida",
+      ],
       image: "/truck-parts-warehouse.png",
+      whatsapp: "542614663077",
     },
   ]
 
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("contacto")
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" })
-    }
-  }
   return (
     <section id="servicios" className="py-20 bg-muted flex justify-center">
       <div className="w-full max-w-6xl px-10 sm:px-10">
@@ -59,7 +62,9 @@ export function ServicesSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-work-sans mb-6">Unidades de Negocio</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-work-sans mb-6">
+            Unidades de Negocio
+          </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Soluciones integrales para todas las necesidades del transporte
           </p>
@@ -84,11 +89,17 @@ export function ServicesSection() {
                       <div className="bg-primary text-primary-foreground p-3 rounded-lg">
                         <service.icon className="h-8 w-8" />
                       </div>
-                      <CardTitle className="text-3xl font-work-sans">{service.title}</CardTitle>
+                      <CardTitle className="text-3xl font-work-sans">
+                        {service.title}
+                      </CardTitle>
                     </div>
                   </CardHeader>
+
                   <CardContent>
-                    <p className="text-lg mb-6 text-muted-foreground">{service.description}</p>
+                    <p className="text-lg mb-6 text-muted-foreground">
+                      {service.description}
+                    </p>
+
                     <ul className="space-y-3 mb-8">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center gap-3">
@@ -97,10 +108,20 @@ export function ServicesSection() {
                         </li>
                       ))}
                     </ul>
-                    <Button onClick={scrollToContact} className="bg-primary hover:bg-primary/90 text-primary-foreground group">
-                      Más información
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    </Button>
+
+                    {/* BOTÓN WHATSAPP */}
+                    <a
+                      href={`https://wa.me/${service.whatsapp}?text=${encodeURIComponent(
+                        `Hola, quiero consultar sobre ${service.title}`
+                      )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white">
+                        Consultanos por WhatsApp
+                        <ArrowRight className="h-4 w-4" />
+                      </Button>
+                    </a>
                   </CardContent>
                 </Card>
               </div>
@@ -112,7 +133,7 @@ export function ServicesSection() {
                   className="relative overflow-hidden rounded-lg shadow-2xl"
                 >
                   <Image
-                    src={service.image || "/placeholder.svg"}
+                    src={service.image}
                     alt={service.title}
                     width={600}
                     height={400}
