@@ -19,7 +19,7 @@ export function ServicesSection() {
         "Mantenimiento preventivo",
         "Servicio de emergencia",
       ],
-      image: "/images/mecanico-1.png",
+      image: "/images/mecanico-1.avif",
       whatsapp: "5491112345678",
     },
     {
