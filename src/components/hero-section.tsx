@@ -62,30 +62,7 @@ export function HeroSection() {
             más importantes de Argentina.
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="flex flex-col lg:flex-row gap-6 justify-center mb-4 md:mb-15 lg:mb-20"
-          >
-            <button
-              onClick={scrollToContact}
-              className="bg-red-600 text-white hover:bg-white hover:text-red-600 px-10 py-3 lg:py-5 rounded-lg font-bold text-xl transition-all duration-300 transform hover:scale-102 shadow-xl flex items-center justify-center gap-3 cursor-pointer border-2 border-red-600 hover:border-red-600"
-            >
-              <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
-              Solicitar Presupuesto
-            </button>
-            <a
-              href="https://wa.me/5492614663077?text=Hola, me interesa conocer más sobre sus servicios"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-white text-white hover:bg-white hover:text-red-600  px-10 py-3 lg:py-5 rounded-lg font-bold text-xl transition-all duration-300 transform hover:scale-102 flex items-center justify-center gap-3 cursor-pointer"
-            >
-              <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
-              WhatsApp Directo
-            </a>
-          </motion.div>
+          
         </motion.div>
       </div>
 
