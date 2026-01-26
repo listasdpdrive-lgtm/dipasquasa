@@ -19,7 +19,7 @@ export default function CatalogosPage() {
   const cuadros = [
     { img: "/accesorios.png", titulo: "Accesorios", pdf: "/catalogos/ACCESORIOS/Accesorios.pdf" },
     { img: "/aire.png", titulo: "Aire", link: "/Aire" },
-    { img: "/image-cuadros/ast-pra.png", titulo: "AST-PRA", pdf: "/catalogos/AST-PRA/REPUESTOS AST-PRA.pdf" },
+    { img: "/image-cuadros/ast-pra.png", titulo: "AST-PRA", link: "/AST-PRA" },
     { img: "/buloneriaI.png", titulo: "Buloneria", link: "/Buloneria" },
     { img: "/image-cuadros/carrier-logo.png", titulo: "Carrier", link: "/carrier" },
     { img: "/electricidad.png", titulo: "Electricidad", link: "/Electricidad" },
@@ -156,4 +156,5 @@ export default function CatalogosPage() {
 
   )
 }
+
 
