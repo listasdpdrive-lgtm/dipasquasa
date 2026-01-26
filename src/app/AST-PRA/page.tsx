@@ -1,68 +1,76 @@
 "use client"
 
-import { motion } from "framer-motion"
-import Link from "next/link"
 import Image from "next/image"
-import { Home, Folders, Wrench, MapPin, Mail, Menu, X, ChevronDown } from "lucide-react"
-import { useState } from "react"
 import Sidebar from "@/components/Sidebar"
 
 export default function Accesorios() {
 
-    const [sidebarOpen, setSidebarOpen] = useState(true)
-    const [mobileOpen, setMobileOpen] = useState(true)
-    const [openDropdown, setOpenDropdown] = useState(null)
+  const cuadros = [
+    {
+      img: "/AST-PRA/micas.png",
+      titulo: "FAROS-MICAS Y ESQUINEROS",
+      pdf: "/catalogos/AST-PRA/FAROS-MICAS Y ESQUINEROS.pdf",
+    },
+    {
+      img: "/AST-PRA/herrajes.png",
+      titulo: "HERRAJES Y ACCESORIOS AST-PRA",
+      pdf: "/catalogos/AST-PRA/HERRAJES Y ACCESORIOS AST-PRA.pdf",
+    },
+  ]
 
-    const toggleDropdown = (name) => {
-        setOpenDropdown(openDropdown === name ? null : name)
-    }
+  return (
+    <div className="flex min-h-screen">
 
-    return (
-        <div className="flex min-h-screen relative">
+     
 
-            {/* ---------- BOTÓN RETROCEDER FIJO ---------- */}
-            <button
-                onClick={() => window.history.back()}
-                className="fixed top-28 left-353 z-[200] px-6 py-2 
-                           bg-red-600 text-white rounded-xl shadow-xl 
-                           hover:bg-red-700 transition"
-            >
-                ← Atras
-            </button>
-        
-          <Sidebar/>
-<main className="flex-1 relative">
-                {/* FONDO */}
-                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat -z-10"
-                    style={{ backgroundImage: "url('/fondo_web.png')" }}
-                ></div>
+      <Sidebar />
 
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/60 to-black/80 -z-10"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent -z-10"></div>
+      <main className="flex-1 relative">
 
-                {/* ---------------- CUADRO ---------------- */}
-                <div className="pt-60 pb-20 flex justify-center">
-                    <div className="w-4/5 max-w-6xl flex justify-center">
+        {/* FONDO */}
+        <div
+          className="fixed inset-0 bg-cover bg-center -z-10"
+          style={{ backgroundImage: "url('/fondo_web.png')" }}
+        />
+        <div className="fixed inset-0 bg-black/70 -z-10" />
 
-                        {/* CUADRO CENTRADO Y GRANDE */}
-                        <div
-                            onClick={() => window.location.href = "/catalogos/AST-PRA/REPUESTOS AST-PRA.pdf"}
-                            className="w-200 bg-black rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:opacity-80 transition"
-                        >
-                            <video
-                                src="/videos/videotst.mp4"
-                                className="w-200 h-[300px] object-cover"
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                            />
-                        </div>
+        {/* CUADROS */}
+        <div className="min-h-screen px-4 md:px-10 py-20 flex justify-center">
+          <div className="w-full max-w-6xl">
 
-                    </div>
-                </div>
-</main>
+            {/* 2 en mobile / 4 en desktop */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+              {cuadros.map((c, i) => (
+                <a
+                  key={i}
+                  href={c.pdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div
+                    className="bg-white rounded-xl shadow-lg overflow-hidden
+                               transition cursor-pointer md:hover:scale-105"
+                  >
+                    <Image
+                      src={c.img}
+                      alt={c.titulo}
+                      width={500}
+                      height={400}
+                      className="w-full h-28 md:h-58 object-cover"
+                    />
+                    <h3 className="p-2 bg-red-600 md:p-4 text-center font-bold text-xs md:text-base">
+                      {c.titulo}
+                    </h3>
+                  </div>
+                </a>
+              ))}
             </div>
-      
-    )
+
+          </div>
+        </div>
+
+      </main>
+    </div>
+  )
 }
