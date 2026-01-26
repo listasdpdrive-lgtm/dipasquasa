@@ -17,7 +17,7 @@ export default function Sidebar() {
     { href: "/", label: "Inicio" },
     { pdf: "/catalogos/ACCESORIOS/Accesorios.pdf", label: "Accesorios" },
     { href: "/Aire", label: "Aire" },
-    { pdf: "/catalogos/AST-PRA/REPUESTOS AST-PRA.pdf", label: "AST-PRA" },
+    { href: "/AST-PRA", label: "AST-PRA" },
     { href: "/Buloneria", label: "Bulonería" },
     { href: "/carrier", label: "Carrier" },
     { href: "/Electricidad", label: "Electricidad" },
@@ -238,3 +238,4 @@ export default function Sidebar() {
     </>
   )
 }
+
