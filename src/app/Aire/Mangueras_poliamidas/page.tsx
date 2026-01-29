@@ -13,17 +13,17 @@ export default function Accesorios() {
     },
     {
       img: "/AIRE-JPG/mangueragoma.png",
-      titulo: "Mangura de goma",
+      titulo: "Manguera de goma",
       pdf: "/catalogos/AIRE/mangueras/MANGUERA DE GOMA.pdf",
     },
     {
       img: "/AIRE-JPG/piliamida.png",
-      titulo: "poliamidas",
+      titulo: "Poliamidas",
         pdf: "/catalogos/AIRE/mangueras/POLIAMIDAS.pdf",
     },
     {
       img: "/AIRE-JPG/polietileno.png",
-      titulo: "polietilino",
+      titulo: "Polietilino",
       pdf: "/catalogos/AIRE/mangueras/POLIETILENO.pdf",
     },
   ]
@@ -90,4 +90,5 @@ export default function Accesorios() {
     </div>
   )
 }
+
 
