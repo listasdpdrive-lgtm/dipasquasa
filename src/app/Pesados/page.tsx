@@ -51,15 +51,15 @@ export default function Accesorios() {
       link: "/Pesados/ENGANCHES",
     },{
       img: "/PESADOS-JPG/faja.png",
-      titulo: "Fajas de suspencion neumatica",
+      titulo: "Fajas de suspension neumatica",
       pdf: "/catalogos/PESADOS/FAJAS DE SUSPENSION NEUMATICA.pdf",
     },{
       img: "/PESADOS-JPG/fuelles.png",
-      titulo: "fuelles",
+      titulo: "Fuelles",
       link: "/Pesados/FUELLES",
     },{
       img: "/PESADOS-JPG/grampas.png",
-      titulo: "Grampas artillera",
+      titulo: "Grampas artilleras",
       pdf: "catalogos/PESADOS/GRAMPAS ARTILLERAS.pdf",
     },
     {
@@ -73,7 +73,7 @@ export default function Accesorios() {
       link: "/Pesados/herrajes",
     },{
       img: "/PESADOS-JPG/hojas.png",
-      titulo: "Hojas elastico y paquetes de suspencion",
+      titulo: "Hojas elastico y paquetes de suspension",
       link: "/Pesados/hojas",
     },{
       img: "/PESADOS-JPG/llantas.png",
@@ -105,7 +105,7 @@ export default function Accesorios() {
     },
     {
       img: "/PESADOS-JPG/portaauxilio.png",
-      titulo: "porta auxilio malacate y soporte",
+      titulo: "Porta auxilio malacate y soporte",
       pdf: "/catalogos/PESADOS/PORTA AUXILIO MALACATE Y SOPORTE.pdf",
     }
     ,{
@@ -118,7 +118,7 @@ export default function Accesorios() {
       pdf: "/catalogos/PESADOS/RULEMANES.pdf",
     },{
       img: "/PESADOS-JPG/separadores.png",
-      titulo: "separadores artilleros",
+      titulo: "Separadores artilleros",
       pdf: "catalogos/PESADOS/SEPARADORES DE LLANTAS.pdf",
     },{
       img: "/PESADOS-JPG/taco_paragolpe.png",
@@ -195,3 +195,4 @@ export default function Accesorios() {
     </div>
   )
 }
+
