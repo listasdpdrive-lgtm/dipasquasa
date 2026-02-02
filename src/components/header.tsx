@@ -80,12 +80,7 @@ export function Header() {
                 {item.label}
               </motion.button>
             ))}
-            <Button
-              onClick={() => scrollToSection("#contacto")}
-              className="bg-primary hover:bg-primary/90 text-white font-semibold px-6 py-2 sm:py-6 text-lg cursor-pointer transform hover:scale-105 transition-all duration-300"
-            >
-              Solicitar Presupuesto
-            </Button>
+            
           </nav>
 
           {/* Mobile Menu Button */}
