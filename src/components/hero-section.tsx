@@ -41,7 +41,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-black font-work-sans leading-tight tracking-tight mb-6 lg:mb-10"
           >
-            Soluciones Integrales en{" "}
+            Soluciones Integrales para{" "}
             <span className="text-primary bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent font-black">
               Transporte
             </span>{" "}
@@ -51,16 +51,17 @@ export function HeroSection() {
             </span>
           </motion.h1>
         
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg sm:text-xl md:text-xl lg:text-3xl mb-5 text-gray-200 max-w-4xl mx-auto leading-relaxed font-medium md:mb-10 "
-          >
-            Más de <span className="text-primary">60 años </span>
-             siendo el <span className="text-white font-semibold">socio estratégico</span> de las empresas de transporte
-            más importantes de Argentina.
-          </motion.p>
+          <motion.div
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.4 }}
+  className="text-lg sm:text-xl md:text-xl lg:text-3xl text-gray-200 max-w-4xl mx-auto font-medium mb-10 space-y-4"
+>
+  <p>Venta de camiones y semirremolques</p>
+  <p>Repuestos y accesorios</p>
+  <p>Reparaciones y fabricación</p>
+</motion.div>
+
 
           
         </motion.div>
