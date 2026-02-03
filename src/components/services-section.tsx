@@ -44,7 +44,7 @@ export function ServicesSection() {
       ],
       image: "/images/semi-1.png",
       whatsapp: "54261365617",
-      email: "ventas@tudominio.com",
+      email: "dipasqua.ventas@gmail.com",
       location: "https://maps.google.com/?q=Dipasqua+Venta+Semis",
     },
     {
