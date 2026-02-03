@@ -3,7 +3,14 @@
 import { motion } from "framer-motion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Wrench, Truck, Package, ArrowRight } from "lucide-react"
+import {
+  Wrench,
+  Truck,
+  Package,
+  ArrowRight,
+  Mail,
+  MapPin,
+} from "lucide-react"
 import Image from "next/image"
 
 export function ServicesSection() {
@@ -19,8 +26,10 @@ export function ServicesSection() {
         "Mantenimiento preventivo",
         "Servicio de emergencia",
       ],
-      image: "/images/mecanico.png",
+      image: "/images/mecanico-1.png",
       whatsapp: "5491112345678",
+      email: "dipasquarepuestos@gmail.com",
+      location: "https://www.google.com/maps/place/Carrocer%C3%ADas+Di+Pasqua/@-32.9273735,-68.7366669,18.75z/data=!4m6!3m5!1s0x967e0d94d5390cc5:0x62cee180fcfc5166!8m2!3d-32.9273496!4d-68.7362663!16s%2Fg%2F11gg747rtq?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D",
     },
     {
       icon: Truck,
@@ -35,6 +44,8 @@ export function ServicesSection() {
       ],
       image: "/images/semi-1.png",
       whatsapp: "54261365617",
+      email: "ventas@tudominio.com",
+      location: "https://maps.google.com/?q=Dipasqua+Venta+Semis",
     },
     {
       icon: Package,
@@ -49,12 +60,14 @@ export function ServicesSection() {
       ],
       image: "/truck-parts-warehouse.png",
       whatsapp: "542614663077",
+      email: "repuestos@tudominio.com",
+      location: "https://www.google.com/maps/place/Di+Pasqua+Repuestos/@-32.9278523,-68.7363742,18.25z/data=!4m6!3m5!1s0x967e0d94d64fa437:0x33d79dcaae872172!8m2!3d-32.9279133!4d-68.736165!16s%2Fg%2F11gg7490c7?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D",
     },
   ]
 
   return (
     <section id="servicios" className="py-20 bg-muted flex justify-center">
-      <div className="w-full max-w-6xl px-10 sm:px-10">
+      <div className="w-full max-w-6xl px-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +75,7 @@ export function ServicesSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-work-sans mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Unidades de Negocio
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -89,7 +102,7 @@ export function ServicesSection() {
                       <div className="bg-primary text-primary-foreground p-3 rounded-lg">
                         <service.icon className="h-8 w-8" />
                       </div>
-                      <CardTitle className="text-3xl font-work-sans">
+                      <CardTitle className="text-3xl">
                         {service.title}
                       </CardTitle>
                     </div>
@@ -101,27 +114,77 @@ export function ServicesSection() {
                     </p>
 
                     <ul className="space-y-3 mb-8">
-                      {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center gap-3">
+                      {service.features.map((feature, i) => (
+                        <li key={i} className="flex items-center gap-3">
                           <div className="w-2 h-2 bg-primary rounded-full" />
                           <span>{feature}</span>
                         </li>
                       ))}
                     </ul>
 
-                    {/* BOTÓN WHATSAPP */}
-                    <a
-                      href={`https://wa.me/${service.whatsapp}?text=${encodeURIComponent(
-                        `Hola, quiero consultar sobre ${service.title}`
-                      )}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+        
+                  {/* CONTACTO */}
+        
+                      <div className="flex flex-col gap-3">
+        
+                  {/* BOTONES */}
+               
+                     <div className="flex flex-col sm:flex-row gap-4">
+                     
+                   {/* WHATSAPP */}
+      
+                     <Button
+                     asChild
+                       className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white"
+                      >
+                      <a
+                        href={`https://wa.me/${service.whatsapp}?text=${encodeURIComponent(
+          
+                          `Hola, quiero consultar sobre ${service.title}`
+                     )}`}
+                     target="_blank"
+                     rel="noopener noreferrer"
                     >
-                      <Button className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white">
-                        Consultanos por WhatsApp
-                        <ArrowRight className="h-4 w-4" />
-                      </Button>
+                     WhatsApp
+                     <ArrowRight className="h-4 w-4" />
+                     </a>
+                     </Button>
+
+                     {/* UBICACIÓN */}
+                         <Button
+                                asChild
+                                variant="outline"
+                                className="flex items-center gap-2"
+                                >
+                             <a
+                                   href={service.location}
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                 >
+                               Ubicación
+                       <MapPin className="h-4 w-4" />
                     </a>
+                  </Button>
+                </div>
+
+                      
+                        {/* MAIL TEXTO */}
+
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+
+                  <Mail className="h-4 w-4" />
+                    <a
+                    href={`mailto:${service.email}?subject=${encodeURIComponent(
+                     `Consulta sobre ${service.title}`
+               
+                    )}`}
+                  className="underline hover:text-primary transition"
+          >
+                    {service.email}
+                  </a>
+               </div>
+              </div>
+
                   </CardContent>
                 </Card>
               </div>
