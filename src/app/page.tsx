@@ -30,7 +30,7 @@ export default function Home() {
       <ValuePropositionSection />
       <TestimonialsSection />
       <CTASection />
-      <Footer />
+     
       <WhatsAppButton />
       </div>
       
