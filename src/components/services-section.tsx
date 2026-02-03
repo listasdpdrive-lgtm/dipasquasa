@@ -26,7 +26,7 @@ export function ServicesSection() {
         "Mantenimiento preventivo",
         "Servicio de emergencia",
       ],
-      image: "/images/mecanico-1.png",
+      image: "/images/mecanico.png",
       whatsapp: "5491112345678",
       email: "dipasqua.salto@hotmail.com",
       location: "https://www.google.com/maps/place/Carrocer%C3%ADas+Di+Pasqua/@-32.9273735,-68.7366669,18.75z/data=!4m6!3m5!1s0x967e0d94d5390cc5:0x62cee180fcfc5166!8m2!3d-32.9273496!4d-68.7362663!16s%2Fg%2F11gg747rtq?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D",
