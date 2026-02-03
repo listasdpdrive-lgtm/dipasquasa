@@ -31,7 +31,7 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <motion.a
-                href="https://web.whatsapp.com/"
+                href="https://www.facebook.com/profile.php?id=100087217878036"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
