@@ -28,7 +28,7 @@ export function ServicesSection() {
       ],
       image: "/images/mecanico-1.png",
       whatsapp: "5491112345678",
-      email: "dipasquarepuestos@gmail.com",
+      email: "dipasqua.salto@hotmail.com",
       location: "https://www.google.com/maps/place/Carrocer%C3%ADas+Di+Pasqua/@-32.9273735,-68.7366669,18.75z/data=!4m6!3m5!1s0x967e0d94d5390cc5:0x62cee180fcfc5166!8m2!3d-32.9273496!4d-68.7362663!16s%2Fg%2F11gg747rtq?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D",
     },
     {
@@ -60,7 +60,7 @@ export function ServicesSection() {
       ],
       image: "/truck-parts-warehouse.png",
       whatsapp: "542614663077",
-      email: "repuestos@tudominio.com",
+      email: "dipasquarepuestos@gmail.com",
       location: "https://www.google.com/maps/place/Di+Pasqua+Repuestos/@-32.9278523,-68.7363742,18.25z/data=!4m6!3m5!1s0x967e0d94d64fa437:0x33d79dcaae872172!8m2!3d-32.9279133!4d-68.736165!16s%2Fg%2F11gg7490c7?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D",
     },
   ]
