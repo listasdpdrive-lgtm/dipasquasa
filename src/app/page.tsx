@@ -13,6 +13,7 @@ import CTASection from "@/components/cta-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
+import { LocalesSection } from "@/components/Locales-section"
 
 export default function Home() {
   return (
@@ -20,16 +21,16 @@ export default function Home() {
       <Header />
       <div className="w-screen">
       <HeroSection />
+      <LocalesSection />
       <AboutSection />
       <ServicesSection />
       <HistorySection />
-      <BrandsSection />
+      
      <CounterSection />
       <ValuePropositionSection />
       <TestimonialsSection />
       <CTASection />
-      <ContactSection />
-      <Footer />
+     
       <WhatsAppButton />
       </div>
       

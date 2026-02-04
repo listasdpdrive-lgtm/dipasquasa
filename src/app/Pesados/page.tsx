@@ -42,8 +42,8 @@ export default function Accesorios() {
     },
     {
       img: "/PESADOS-JPG/arogiratorios.png",
-      titulo: "Ejes y aros giratorios",
-      pdf: "catalogos/PESADOS/AROS GIRATORIOS ACTUALIZADO.pdf",
+      titulo: "Aros giratorios",
+      pdf: "/catalogos/PESADOS/aros/AROS GIRATORIOS ACTUALIZADO (1).pdf",
     },
     {
       img: "/PESADOS-JPG/enganche_y_patas.png",
@@ -51,19 +51,19 @@ export default function Accesorios() {
       link: "/Pesados/ENGANCHES",
     },{
       img: "/PESADOS-JPG/faja.png",
-      titulo: "Fajas de suspencion neumatica",
+      titulo: "Fajas de suspension neumatica",
       pdf: "/catalogos/PESADOS/FAJAS DE SUSPENSION NEUMATICA.pdf",
     },{
-      img: "/pe",
-      titulo: "fuelles",
+      img: "/PESADOS-JPG/fuelles.png",
+      titulo: "Fuelles",
       link: "/Pesados/FUELLES",
     },{
       img: "/PESADOS-JPG/grampas.png",
-      titulo: "Grampas artillera",
+      titulo: "Grampas artilleras",
       pdf: "catalogos/PESADOS/GRAMPAS ARTILLERAS.pdf",
     },
     {
-      img: "/PESADampas.png",
+      img: "/PESADOS-JPG/mazasycampana.png",
       titulo: "Mazas Y Campanas",
       link: "/Pesados/mazas",
     },
@@ -73,7 +73,7 @@ export default function Accesorios() {
       link: "/Pesados/herrajes",
     },{
       img: "/PESADOS-JPG/hojas.png",
-      titulo: "Hojas elastico y paquetes de suspencion",
+      titulo: "Hojas elastico y paquetes de suspension",
       link: "/Pesados/hojas",
     },{
       img: "/PESADOS-JPG/llantas.png",
@@ -105,12 +105,12 @@ export default function Accesorios() {
     },
     {
       img: "/PESADOS-JPG/portaauxilio.png",
-      titulo: "porta auxilio malacate y soporte",
+      titulo: "Porta auxilio malacate y soporte",
       pdf: "/catalogos/PESADOS/PORTA AUXILIO MALACATE Y SOPORTE.pdf",
     }
     ,{
       img: "/PESADOS-JPG/ryp.png",
-      titulo: "Retenes de camiones y acoplados",
+      titulo: "Retenes y portarretenes",
       link: "/Pesados/RETENES",
     },{
       img: "/PESADOS-JPG/rulemanes.png",
@@ -118,7 +118,7 @@ export default function Accesorios() {
       pdf: "/catalogos/PESADOS/RULEMANES.pdf",
     },{
       img: "/PESADOS-JPG/separadores.png",
-      titulo: "separadores artilleros",
+      titulo: "Separadores artilleros",
       pdf: "catalogos/PESADOS/SEPARADORES DE LLANTAS.pdf",
     },{
       img: "/PESADOS-JPG/taco_paragolpe.png",
@@ -134,8 +134,8 @@ export default function Accesorios() {
       pdf: "/catalogos/PESADOS/TENSORES.pdf",
     },{
       img: "/PESADOS-JPG/tuercas.png",
-      titulo: "Tuercasy Arandelas punta eje",
-      pdf: "/catalogos/PESADOS/TUERCAS Y ARANDELAS PUNTA DE EJE.pdf",
+      titulo: "Tuercas y Arandelas punta eje",
+      link: "/Pesados/puntaeje",
     },
   ]
 
@@ -195,3 +195,4 @@ export default function Accesorios() {
     </div>
   )
 }
+

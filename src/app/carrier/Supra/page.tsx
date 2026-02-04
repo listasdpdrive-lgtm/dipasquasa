@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/carrier/filtro.png",
       titulo: "Filtro y portafiltros",
-      pdf: "/catalogos/CARRIER/FILTROS Y PORTA FILTROS SUPRA.pdf",
+      pdf: "/catalogos/CARRIER/s/CORREAS SUPRA ACTUALIZADO.pdf",
     },
     {
       img: "/carrier/correa.png",
@@ -84,3 +84,4 @@ export default function Accesorios() {
     </div>
   )
 }
+

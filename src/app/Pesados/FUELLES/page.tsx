@@ -8,15 +8,26 @@ import { link } from "fs"
 export default function Accesorios() {
   const cuadros = [
     {
-      img: "/images/foto1.jpg",
-      titulo: "Fuelles tubulares",
-      link: "/Pesados/FUELLES/Tuburales",
+      img: "/PESADOS-JPG/conico.png",
+      titulo: "Fuelles conicos",
+      pdf: "/catalogos/PESADOS/fuelles/FUELLES CONICOS 31.pdf",
     },
-    {
-      img: "/images/foto2.jpg",
+      {
+      img: "/PESADOS-JPG/loburales.png",
       titulo: "Fuelles lobulares",
-      link: "/Pesados/FUELLES/Lobulares",
+      pdf: "/catalogos/PESADOS/fuelles/FUELLES LOBULARES.pdf",
     },
+      {
+      img: "/PESADOS-JPG/tubulares.png",
+      titulo: "Fuelles tubulares",
+      pdf: "/catalogos/PESADOS/fuelles/FUELLES VARIOS TUBULARES.pdf",
+    },
+      {
+      img: "/PESADOS-JPG/rectos.png",
+      titulo: "Fuelles rectos",
+      pdf: "/catalogos/PESADOS/fuelles/FUELLES RECTOS 32.pdf",
+    },
+   
 
   ]
 
@@ -49,7 +60,7 @@ export default function Accesorios() {
                     height={600}
                     className="w-full h-36 md:h-48 object-cover"
                   />
-                  <h3 className="p-4 text-center font-bold text-sm md:text-base">
+                  <h3 className="p-4 bg-red-600 text-center font-bold text-sm md:text-base">
                     {c.titulo}
                   </h3>
                 </div>
@@ -76,3 +87,5 @@ export default function Accesorios() {
     </div>
   )
 }
+
+

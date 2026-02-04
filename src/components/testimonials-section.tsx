@@ -7,25 +7,25 @@ import Image from "next/image"
 export default function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Carlos Mendoza",
-      company: "Transportes del Norte",
-      text: "Di Pasqua nos ha brindado un servicio excepcional durante más de 15 años. Su equipo técnico es altamente capacitado y siempre resuelven nuestros problemas de manera eficiente.",
+      name: "Raul Omar Panelo",
+      company: "",
+      text: "Excelente atención y eficacia. Muy buena predisposición al momento de solucionar problemas de repuesto\nToda la gama en repuestos para unidades Salto y una gran variedad para las demás unidades amplio haber en electricidad",
       rating: 5,
-      image: "/professional-man.png",
+      image: "/opiniones/unnamed.png",
     },
     {
-      name: "María González",
-      company: "Logística Express",
-      text: "La calidad de sus repuestos y la rapidez en la entrega nos permite mantener nuestra flota operativa. Son nuestro socio estratégico en el negocio del transporte.",
+      name: "Pesca Argentina Truck",
+      company: "",
+      text: "Exelente atencion, los mejores Repuestos del mercado y buenos precios",
       rating: 5,
-      image: "/professional-woman-diverse.png",
+      image: "/opiniones/unnamed (1).png",
     },
     {
-      name: "Roberto Silva",
-      company: "Carga Pesada SA",
-      text: "Compramos 5 semirremolques el año pasado y el servicio post-venta ha sido impecable. Recomiendo Di Pasqua sin dudarlo.",
+      name: "Juan Ciminari",
+      company: "",
+      text: "Excelente atención y precios recomendado!",
       rating: 5,
-      image: "/professional-bearded-man.png",
+      image: "/opiniones/unnamed (3).png",
     },
   ]
 

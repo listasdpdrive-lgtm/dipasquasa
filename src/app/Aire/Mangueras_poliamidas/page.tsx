@@ -7,23 +7,23 @@ import Sidebar from "@/components/Sidebar"
 export default function Accesorios() {
   const cuadros = [
     {
-      img: "/AIRE-JPG/",
+      img: "/AIRE-JPG/abrazadera_manguera.png",
       titulo: "Abrazaderas de manguera",
       pdf: "/catalogos/AIRE/mangueras/ABRAZADERAS DE MANGUERA.pdf",
     },
     {
-      img: "/AIRE-JPG/",
-      titulo: "Mangura de goma",
+      img: "/AIRE-JPG/mangueragoma.png",
+      titulo: "Manguera de goma",
       pdf: "/catalogos/AIRE/mangueras/MANGUERA DE GOMA.pdf",
     },
     {
-      img: "/AIRE-JPG/",
-      titulo: "poliamidas",
-      pdf: "/catalogos/AIRE/mangueras/POLIAMIDAS.pdf",
+      img: "/AIRE-JPG/piliamida.png",
+      titulo: "Poliamidas",
+        pdf: "/catalogos/AIRE/mangueras/POLIAMIDAS.pdf",
     },
     {
-      img: "/AIRE-JPG/",
-      titulo: "polietilino",
+      img: "/AIRE-JPG/polietileno.png",
+      titulo: "Polietilino",
       pdf: "/catalogos/AIRE/mangueras/POLIETILENO.pdf",
     },
   ]
@@ -46,7 +46,7 @@ export default function Accesorios() {
           <div
             className="
               grid grid-cols-1
-              sm:grid-cols-2
+              sm:grid-cols-4
               gap-5
               mt-8 sm:mt-16
               mb-16
@@ -90,4 +90,5 @@ export default function Accesorios() {
     </div>
   )
 }
+
 

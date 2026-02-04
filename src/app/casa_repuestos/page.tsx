@@ -19,13 +19,15 @@ export default function CatalogosPage() {
   const cuadros = [
     { img: "/accesorios.png", titulo: "Accesorios", pdf: "/catalogos/ACCESORIOS/Accesorios.pdf" },
     { img: "/aire.png", titulo: "Aire", link: "/Aire" },
-    { img: "/image-cuadros/ast-pra.png", titulo: "AST-PRA", pdf: "/catalogos/AST-PRA/REPUESTOS AST-PRA.pdf" },
+    { img: "/image-cuadros/ast-pra.png", titulo: "AST-PRA", link: "/AST-PRA" },
     { img: "/buloneriaI.png", titulo: "Buloneria", link: "/Buloneria" },
     { img: "/image-cuadros/carrier-logo.png", titulo: "Carrier", link: "/carrier" },
     { img: "/electricidad.png", titulo: "Electricidad", link: "/Electricidad" },
-    { img: "/amarre.png", titulo: "Elementos de Amarre", pdf: "/catalogos/AMARRE/ELEMENTOS DE SEGURIDAD Y REFLECTIVOS.pdf" },
+    { img: "/amarre.png", titulo: "Elementos de Amarre", link: "/Elemento_amarre" },
     { img: "/seguridad.png", titulo: "Elementos de Seguridad", pdf: "/catalogos/SEGURIDAD/ELEMENTOS DE SEGURIDAD Y REFLECTIVOS.pdf" },
+    { img: "/filtros/filtrosportada.png", titulo: "Filtros de aire", link: "/filtros" },
     { img: "/frenos.png", titulo: "Frenos", link: "/Frenos" },
+    { img: "/herramientas/herramientas.png", titulo: "Herramientas", pdf: "/catalogos/herramientas/HERRAMIENTAS (2).pdf" },
     { img: "/PESADOS-JPG/pesados.png", titulo: "Pesados", link: "/Pesados" },
     { img: "/varios.png", titulo: "Accesorios varios", link: "/Varios" },
     { img: "/image-cuadros/eevigis.png", titulo: "Vigia", pdf: "/catalogos/VIGIA (6).pdf" },
@@ -154,3 +156,5 @@ export default function CatalogosPage() {
 
   )
 }
+
+

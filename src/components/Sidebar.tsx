@@ -17,7 +17,7 @@ export default function Sidebar() {
     { href: "/", label: "Inicio" },
     { pdf: "/catalogos/ACCESORIOS/Accesorios.pdf", label: "Accesorios" },
     { href: "/Aire", label: "Aire" },
-    { pdf: "/catalogos/AST-PRA/REPUESTOS AST-PRA.pdf", label: "AST-PRA" },
+    { href: "/AST-PRA", label: "AST-PRA" },
     { href: "/Buloneria", label: "Bulonería" },
     { href: "/carrier", label: "Carrier" },
     { href: "/Electricidad", label: "Electricidad" },
@@ -26,7 +26,9 @@ export default function Sidebar() {
       pdf: "/catalogos/SEGURIDAD/ELEMENTOS DE SEGURIDAD Y REFLECTIVOS.pdf",
       label: "Elemento de Seguridad",
     },
+    { href: "/filtros", label: "Filtros" },
     { href: "/Frenos", label: "Frenos" },
+    { pdf: "/catalogos/herramientas/HERRAMIENTAS (2).pdf", label: "Herramientas" },
     { href: "/Pesados", label: "Pesados" },
     { href: "/Varios", label: "Accesorios varios" },
     { pdf: "/catalogos/VIGIA (6).pdf", label: "Vigia" },
@@ -236,3 +238,4 @@ export default function Sidebar() {
     </>
   )
 }
+
