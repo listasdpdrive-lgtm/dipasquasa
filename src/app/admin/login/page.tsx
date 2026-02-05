@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { getSupabaseClient } from "@/lib/supabase"
+import { supabase } from "@/lib/supabase"
 import { useRouter } from "next/navigation"
 
 export const dynamic = "force-dynamic"
@@ -14,13 +14,6 @@ export default function LoginPage() {
 
   const login = async () => {
     setError("")
-
-    const supabase = getSupabaseClient()
-
-    if (!supabase) {
-      setError("Supabase no está configurado")
-      return
-    }
 
     const { error } = await supabase.auth.signInWithPassword({
       email,
