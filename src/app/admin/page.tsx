@@ -45,17 +45,25 @@ export default function AdminPage() {
   })
 
   /* 🔐 AUTH */
-  useEffect(() => {
-    const checkAuth = async () => {
-      const { data } = await supabase.auth.getUser()
-      if (!data.user) {
-        router.push("/admin/login")
+ useEffect(() => {
+  const checkAuth = async () => {
+    try {
+      const { data, error } = await supabase.auth.getUser()
+
+      if (error || !data?.user) {
+        router.replace("/admin/login")
         return
       }
+
       setLoadingAuth(false)
+    } catch (e) {
+      router.replace("/admin/login")
     }
-    checkAuth()
-  }, [router])
+  }
+
+  checkAuth()
+}, [router])
+
 
   const logout = async () => {
     await supabase.auth.signOut()
