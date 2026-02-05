@@ -1,10 +1,15 @@
 "use client"
 
+
+
+
 import { useEffect, useState } from "react"
 import { useParams } from "next/navigation"
 import { supabase } from "@/lib/supabase"
 import { TopBarID } from "@/components/TopBarID"
 import { FooderConcecionaria } from "@/components/FooderConcecionaria"
+
+export const dynamic = "force-dynamic"
 
 type Producto = {
   id: string
