@@ -60,7 +60,7 @@ export function Header() {
             <Image
               src="/images/dipasqua.png"
               alt="Di Pasqua"
-              width={340}
+              width={360}
               height={620}
               id="image"
               className="h-10 md:h-12 w-auto"
