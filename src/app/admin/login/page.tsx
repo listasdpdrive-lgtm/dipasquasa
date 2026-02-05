@@ -1,10 +1,11 @@
 "use client"
 
-export const dynamic = "force-dynamic"
-
 import { useState } from "react"
-import { supabase } from "@/lib/supabase"
+import { getSupabaseClient } from "@/lib/supabase"
 import { useRouter } from "next/navigation"
+
+export const dynamic = "force-dynamic"
+export const revalidate = 0
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
@@ -14,6 +15,8 @@ export default function LoginPage() {
 
   const login = async () => {
     setError("")
+
+    const supabase = getSupabaseClient()
 
     if (!supabase) {
       setError("Supabase no está configurado")
@@ -27,15 +30,6 @@ export default function LoginPage() {
 
     if (error) {
       setError(error.message)
-      return
-    }
-
-    const {
-      data: { session },
-    } = await supabase.auth.getSession()
-
-    if (!session) {
-      setError("No se pudo crear la sesión")
       return
     }
 
