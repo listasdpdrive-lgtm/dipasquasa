@@ -22,6 +22,7 @@ const TIPOS_CAMION = [
   "0km",
   "Usados",
 ]
+export const dynamic = "force-dynamic"
 
 export default function AdminPage() {
   const router = useRouter()
