@@ -1,13 +1,10 @@
+export const dynamic = "force-dynamic"
+
 "use client"
-
-
-
 
 import { useState } from "react"
 import { supabase } from "@/lib/supabase"
 import { useRouter } from "next/navigation"
-
-export const dynamic = "force-dynamic"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
@@ -18,7 +15,12 @@ export default function LoginPage() {
   const login = async () => {
     setError("")
 
-    const { data, error } = await supabase.auth.signInWithPassword({
+    if (!supabase) {
+      setError("Supabase no está configurado")
+      return
+    }
+
+    const { error } = await supabase.auth.signInWithPassword({
       email,
       password,
     })
@@ -28,7 +30,6 @@ export default function LoginPage() {
       return
     }
 
-    // 🔐 Esperar sesión real
     const {
       data: { session },
     } = await supabase.auth.getSession()
@@ -38,7 +39,6 @@ export default function LoginPage() {
       return
     }
 
-    // usar replace evita volver atrás al login
     router.replace("/admin")
   }
 
