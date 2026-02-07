@@ -468,8 +468,8 @@ const eliminarImagen = async (url: string) => {
                 <h1 className="text-3xl font-bold">{producto.name}</h1>
                 <p className="text-2xl text-green-600">${producto.price}</p>
                 <p className="whitespace-pre-line">
-  {producto.description}
-</p>
+                 {producto.description}
+                </p>
 
 
                 {/* TABLAS PÚBLICAS */}
