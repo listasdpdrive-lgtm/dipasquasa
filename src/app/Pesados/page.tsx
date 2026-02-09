@@ -64,7 +64,7 @@ export default function Accesorios() {
     },
     {
       img: "/PESADOS-JPG/mazasycampana.png",
-      titulo: "Mazas Y Campanas",
+      titulo: "Mazas, Campanas y Guarda polvos",
       link: "/Pesados/mazas",
     },
     {

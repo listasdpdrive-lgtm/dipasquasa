@@ -16,7 +16,11 @@ export default function Accesorios() {
       titulo: "Mazas",
       pdf: "/catalogos/PESADOS/mazas/MAZAS VERIFICAR MEDIDAS.pdf",
     },
-   
+    {
+      img: "/PESADOS-JPG/guardapolvo.png",
+      titulo: "Guarda polvos",
+      pdf: "/catalogos/PESADOS/mazas/GUARDAPOLVOS.pdf",
+    },
   ]
 
   return (
