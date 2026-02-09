@@ -102,7 +102,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              {/* Glow */}
+              {/* Glow */}s
               <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-[0_0_40px_rgba(255,255,255,0.1)]" />
             </Link>
           ))}
