@@ -19,7 +19,7 @@ export function WhatsAppButton() {
   }
    const instagramLinks = [
   { label: "Repuestos", url: "https://www.instagram.com/repuestos_dipasqua" },
-  { label: "Taller", url: "https://www.instagram.com/taller_dipasqua" },
+  { label: "Concesionaria", url: "https://www.instagram.com/acoplados_dipasqua?igsh=aXZxaXFzeDJnZzBz&utm_source=qr" },
 ]
 
 const facebookLinks = [
