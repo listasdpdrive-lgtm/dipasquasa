@@ -183,7 +183,7 @@ export default function ProductoPage() {
 
   if (loading) return <p className="p-10 text-center">Cargando...</p>
   if (!producto) return <p className="p-10 text-red-500">No encontrado</p>
-const whatsappNumber = "5491123456789" // 👉 poné tu número con código país
+const whatsappNumber = "5492613635617" 
 
 const mensajeWhatsapp = encodeURIComponent(
   `Hola, quiero más información sobre: ${producto?.name}`
