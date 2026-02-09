@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation"
 import { supabase } from "@/lib/supabase"
 import Link from "next/link"
 import { TopBar } from "@/components/TopBar"
-import { Heart, X, Phone, MessageCircle } from "lucide-react"
+import { Heart, X, Phone, MessageCircle } from "lucide-react" 
 import { FooderConcecionaria } from "@/components/FooderConcecionaria"
 
 type Producto = {
@@ -170,7 +170,7 @@ export default function ProductosClient() {
                 </button>
 
                 <Link href={`/productos/${p.id}`}>
-                  <div className="aspect-[4/3] bg-gray-100">
+                  <div className="aspect-[4/3] bg-white">
                     {p.image ? (
                       <img
                         src={p.image}
