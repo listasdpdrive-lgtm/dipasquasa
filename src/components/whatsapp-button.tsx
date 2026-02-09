@@ -4,46 +4,84 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 
-export function WhatsAppButton() {
-  const [isHovered, setIsHovered] = useState(false)
+const whatsappNumbers = [
+  { label: "Taller", phone: "5492614910438" },
+  { label: "Concecionaria", phone: "5492613635617" },
+  { label: "Casa de Repuestos", phone: "5492614663077" },
+]
 
-  const handleWhatsAppClick = () => {
+export function WhatsAppButton() {
+  const [open, setOpen] = useState(false)
+
+  const sendWhatsApp = (phone: string) => {
     const message = encodeURIComponent("Hola, me gustaría consultar sobre ...")
-    const phoneNumber = "5492614663077"
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank")
+    window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
   }
 
   return (
-    <motion.div
-      className="fixed bottom-5 right-5 z-50 w-max"
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
-      transition={{ delay: 2, type: "spring", stiffness: 260, damping: 20 }}
-    >
-      <motion.button
-        onClick={handleWhatsAppClick}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
+
+      {/* Instagram */}
+      <motion.a
+        href="https://www.instagram.com/repuestos_dipasqua?igsh=MWIwcjRhOHJwdWJrbA=="
+        target="_blank"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors duration-300 flex items-center gap-3 cursor-pointer"
+        className="bg-pink-500 hover:bg-pink-600 p-3 rounded-full shadow-lg"
       >
-        <Image src={"/images/wp-icon.png"} id="image" width={10} height={10} alt="whatsapp-icon" className="h-6 w-6" />
+        <Image src="/images/ig.png" width={32} height={32} alt="instagram" />
+      </motion.a>
 
-        <AnimatePresence>
-          {isHovered && (
-            <motion.span
-              initial={{ width: 0, opacity: 0 }}
-              animate={{ width: "auto", opacity: 1 }}
-              exit={{ width: 0, opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              className="whitespace-nowrap overflow-hidden font-medium"
-            >
-              ¡Hablemos!
-            </motion.span>
-          )}
-        </AnimatePresence>
+      {/* Facebook */}
+      <motion.a
+        href="https://www.facebook.com/profile.php?id=100087217878036"
+        target="_blank"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full shadow-lg"
+      >
+        <Image src="/images/fb-icon.png" width={32} height={32} alt="facebook" />
+      </motion.a>
+
+      {/* Lista WhatsApp */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.25 }}
+            className="flex flex-col gap-2 mb-2"
+          >
+            {whatsappNumbers.map((item) => (
+              <motion.button
+                key={item.phone}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => sendWhatsApp(item.phone)}
+                className="bg-white text-green-600 px-4 py-2 rounded-lg shadow-md font-medium text-sm hover:bg-green-50"
+              >
+                {item.label}
+              </motion.button>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Botón WhatsApp */}
+      <motion.button
+        onClick={() => setOpen(!open)}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg"
+      >
+        <Image
+          src="/images/wp-icon.png"
+          width={24}
+          height={24}
+          alt="whatsapp"
+        />
       </motion.button>
-    </motion.div>
+    </div>
   )
 }
