@@ -21,7 +21,7 @@ export default function Home() {
       <Header />
       <div className="w-screen">
       <HeroSection />
-      <LocalesSection />
+      
       <AboutSection />
       <ServicesSection />
       <HistorySection />

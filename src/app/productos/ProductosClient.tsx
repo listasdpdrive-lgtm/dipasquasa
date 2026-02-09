@@ -11,7 +11,7 @@ import { FooderConcecionaria } from "@/components/FooderConcecionaria"
 type Producto = {
   id: string
   name: string
-  price: number
+  
   image?: string | null
   tipo_camion?: string[] | null
 }
@@ -186,7 +186,7 @@ export default function ProductosClient() {
 
                   <div className="p-4">
                     <h2 className="font-semibold">{p.name}</h2>
-                    <p className="font-bold">${p.price}</p>
+                    
                   </div>
                 </Link>
               </div>

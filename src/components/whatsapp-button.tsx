@@ -17,31 +17,94 @@ export function WhatsAppButton() {
     const message = encodeURIComponent("Hola, me gustaría consultar sobre ...")
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
   }
+   const instagramLinks = [
+  { label: "Repuestos", url: "https://www.instagram.com/repuestos_dipasqua" },
+  { label: "Taller", url: "https://www.instagram.com/taller_dipasqua" },
+]
+
+const facebookLinks = [
+  { label: "Repuestos", url: "https://www.facebook.com/profile.php?id=100087217878036" },
+  { label: "Concesionaria", url: "https://www.facebook.com/concesionaria_dipasqua" },
+]
+const [openWp, setOpenWp] = useState(false)
+const [openIg, setOpenIg] = useState(false)
+const [openFb, setOpenFb] = useState(false)
 
   return (
     <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
 
-      {/* Instagram */}
-      <motion.a
-        href="https://www.instagram.com/repuestos_dipasqua?igsh=MWIwcjRhOHJwdWJrbA=="
-        target="_blank"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className="bg-pink-500 hover:bg-pink-600 p-3 rounded-full shadow-lg"
-      >
-        <Image src="/images/ig.png" width={32} height={32} alt="instagram" />
-      </motion.a>
+      
+       {/* Lista Instagram */}
+<AnimatePresence>
+  {openIg && (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      className="flex flex-col gap-2 mb-2"
+    >
+      {instagramLinks.map((item) => (
+        <motion.a
+          key={item.url}
+          href={item.url}
+          target="_blank"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-white text-pink-600 px-4 py-2 rounded-lg shadow-md text-sm font-medium hover:bg-pink-50"
+        >
+          {item.label}
+        </motion.a>
+      ))}
+    </motion.div>
+  )}
+</AnimatePresence>
 
-      {/* Facebook */}
-      <motion.a
-        href="https://www.facebook.com/profile.php?id=100087217878036"
-        target="_blank"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full shadow-lg"
-      >
-        <Image src="/images/fb-icon.png" width={32} height={32} alt="facebook" />
-      </motion.a>
+{/* Botón Instagram */}
+<motion.button
+  onClick={() => setOpenIg(!openIg)}
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+  className="bg-pink-500 hover:bg-pink-600 p-3 rounded-full shadow-lg"
+>
+  <Image src="/images/ig.png" width={32} height={32} alt="instagram" />
+</motion.button>
+
+
+      {/* Lista Facebook */}
+<AnimatePresence>
+  {openFb && (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      className="flex flex-col gap-2 mb-2"
+    >
+      {facebookLinks.map((item) => (
+        <motion.a
+          key={item.url}
+          href={item.url}
+          target="_blank"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-white text-blue-600 px-4 py-2 rounded-lg shadow-md text-sm font-medium hover:bg-blue-50"
+        >
+          {item.label}
+        </motion.a>
+      ))}
+    </motion.div>
+  )}
+</AnimatePresence>
+
+{/* Botón Facebook */}
+<motion.button
+  onClick={() => setOpenFb(!openFb)}
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+  className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full shadow-lg"
+>
+  <Image src="/images/fb-icon.png" width={32} height={32} alt="facebook" />
+</motion.button>
+
 
       {/* Lista WhatsApp */}
       <AnimatePresence>

@@ -1,93 +1,129 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Phone, MessageCircle } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 20 },
+  show: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.12 * i,
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  }),
+}
 
 export function HeroSection() {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("contacto")
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
-    <section id="inicio" className="relative h-max flex justify-center items-center overflow-hidden pt-24  md:pt-32 pb-20">
-      <div className="max-w-6xl px-10 lg:px-0">
+    <section id="inicio" className="relative overflow-hidden pt-20 pb-20">
+      {/* FONDO SIMPLE */}
+      <div className="absolute inset-0 -z-10">
+      {/* FONDO CON DETALLE */}
+<div className="absolute inset-0 -z-10 bg-slate-800">
+  {/* Degradado suave */}
+  <div className="absolute inset-0 bg-gradient-to-br from-slate-700/40 via-transparent to-black/40" />
 
-      <div className="absolute inset-0 z-0">
-  {/* Imagen de fondo */}
-  <div
-    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-    style={{ backgroundImage: "url('/fondo_web.png')" }}
-  ></div>
-
-  {/* Capas de gradiente para mantener contraste y legibilidad */}
-  <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/60 to-black/80"></div>
-  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+  {/* Brillo decorativo */}
+  <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-red-500/10 rounded-full blur-3xl" />
+  <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl" />
 </div>
 
-      {/* Content */}
-      <div className="relative z-10 flex justify-center container text-center text-white">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-6xl"
-        >
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-black font-work-sans leading-tight tracking-tight mb-6 lg:mb-10"
-          >
-            Soluciones Integrales para{" "}
-            <span className="text-primary bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent font-black">
-              Transporte
-            </span>{" "}
-            {" "}
-            <span className="text-primary bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent font-black">
-              Pesado
-            </span>
-          </motion.h1>
-        
-          <motion.div
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.4 }}
-  className="text-lg sm:text-xl md:text-xl lg:text-3xl text-gray-200 max-w-4xl mx-auto font-medium mb-10 space-y-4"
->
-  <p>Venta de camiones y semirremolques</p>
-  <p>Repuestos y accesorios</p>
-  <p>Reparaciones y fabricación</p>
-</motion.div>
 
-
-          
-        </motion.div>
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.5 }}
-        className="absolute bottom-8 md:bottom-12 left-1/2 transform -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-          className="w-6 h-10 border-2 border-white rounded-full flex justify-center"
-        >
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-            className="w-1 h-3 bg-white rounded-full mt-2"
-          />
-        </motion.div>
-      </motion.div>
+      <div className="max-w-7xl mx-auto px-6">
+        {/* HERO */}
+        <div className="text-center text-white mb-20">
+          <motion.h1
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            className="text-4xl lg:text-6xl font-extrabold mb-6"
+          >
+            Soluciones Integrales para{" "}
+            <span className="text-red-500">Transporte Pesado</span>
+          </motion.h1>
+
+         
+        </div>
+
+        {/* LOCALES */}
+        <div id="locales">
+          <motion.h2
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="text-3xl font-bold text-white text-center mb-4"
+          >
+            Nuestros Locales
+          </motion.h2>
+
+      
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {[
+              {
+                href: "/casa_repuestos",
+                img: "/CASA REPUESTOS.jpg",
+                title: "Casa de Repuestos",
+                text: "Amplia variedad de repuestos",
+              },
+              {
+                href: "/Taller",
+                img: "/images/mecanico.png",
+                title: "Taller",
+                text: "Servicio mecánico especializado",
+              },
+              {
+                href: "/concesionaria",
+                img: "/locales/concesionaria.jpeg",
+                title: "Concesionaria",
+                text: "Venta de vehículos",
+              },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                variants={fadeUp}
+                custom={i}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+              >
+                <Link href={item.href}>
+                  <div className="relative h-[360px] rounded-xl overflow-hidden border border-white/5 group">
+                    <Image
+                      src={item.img}
+                      alt={item.title}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+
+                    <div className="absolute inset-0 bg-black/15" />
+
+                    <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                      <h3 className="text-white text-xl font-semibold">
+                        {item.title}
+                      </h3>
+                      <p className="text-white/70 text-sm mb-4">
+                        {item.text}
+                      </p>
+                      <span className="inline-flex items-center gap-2 text-red-500 font-medium">
+                        Ver más <ArrowRight size={16} />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )
 }
-

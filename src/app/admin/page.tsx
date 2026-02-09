@@ -8,6 +8,8 @@ type Producto = {
   id: string
   name: string
   price: number
+  orden?: number
+
   description?: string
   image?: string | null
   tipo_camion?: string[] | null
@@ -75,7 +77,7 @@ export default function AdminPage() {
     const { data } = await supabase
       .from("productos")
       .select("*")
-      .order("created_at", { ascending: false })
+      .order("orden", { ascending: true })
 
     setProductos(data || [])
   }
@@ -193,6 +195,8 @@ export default function AdminPage() {
         price: editando.price,
         description: editando.description,
         image: imageUrl,
+        orden: editando.orden,
+
         tipo_camion:
           editando.tipo_camion && editando.tipo_camion.length
             ? editando.tipo_camion
@@ -244,6 +248,7 @@ export default function AdminPage() {
             setNuevo({ ...nuevo, description: e.target.value })
           }
         />
+
 
         <div className="border p-3 rounded space-y-2">
           {TIPOS_CAMION.map((tipo) => (
@@ -375,6 +380,24 @@ export default function AdminPage() {
                 setEditando({ ...editando, description: e.target.value })
               }
             />
+<input
+  type="number"
+  className="border p-2 w-full"
+  placeholder="Orden"
+  value={editando.orden ?? 0}
+  onChange={(e) =>
+    setEditando({ ...editando, orden: Number(e.target.value) })
+  }
+/>
+<input
+  type="number"
+  className="border p-2 w-full"
+  placeholder="Orden"
+  value={editando.orden ?? 0}
+  onChange={(e) =>
+    setEditando({ ...editando, orden: Number(e.target.value) })
+  }
+/>
 
             <div className="border p-3 rounded space-y-2">
               {TIPOS_CAMION.map((tipo) => (
