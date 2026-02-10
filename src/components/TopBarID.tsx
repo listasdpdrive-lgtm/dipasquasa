@@ -22,7 +22,11 @@ export function TopBarID() {
     { img: "/concecionaria/SALTO.png", title: "SALTO", tipo: "SALTO" },
     { img: "/concecionaria/AST-PRA.png", title: "AST-PRA", tipo: "AST PRA" },
     { img: "/concecionaria/CARRIER.png", title: "CARRIER", tipo: "CARRIER" },
-    { img: "/concecionaria/CAMIONES.png", title: "CAMIONES USADOS", tipo: "CAMIONES" },
+    {
+      img: "/concecionaria/CAMIONES.png",
+      title: "CAMIONES USADOS",
+      tipo: "CAMIONES",
+    },
     {
       img: "/concecionaria/camion5.jpg",
       title: "SEMIRREMOLQUE Y ACOPLADOS USADOS",
@@ -32,28 +36,22 @@ export function TopBarID() {
 
   return (
     <>
-      {/* 🔝 BARRA SUPERIOR */}
-      <div className="relative w-full h-28 sm:h-36">
-        <Image
-          src="/TALLER/fondo_web.png"
-          alt="Fondo barra superior"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/10" />
-
+      {/* 🔝 BARRA SUPERIOR (ROJA, SIN IMAGEN) */}
+      <div className="relative w-full h-20 sm:h-28 md:h-32 bg-red-600">
         <div className="relative z-10 h-full max-w-7xl mx-auto px-4 grid grid-cols-3 items-center text-white text-xs sm:text-sm">
+          
           {/* ⬅️ BOTÓN VOLVER */}
-          <button
-            onClick={() => router.back()}
-            className="flex items-center gap-1 px-3 py-1.5 rounded-full
-                       bg-white/90 text-gray-800 hover:bg-white transition
-                       justify-self-start"
-          >
-            <ArrowLeft size={16} />
-            <span className="hidden sm:inline">VOLVER</span>
-          </button>
+          <div className="flex items-center">
+            <button
+              onClick={() => router.push("/concesionaria")}
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full
+                         bg-white/90 text-gray-800 hover:bg-white transition"
+            >
+              <ArrowLeft size={16} />
+              <span className="hidden sm:inline">VOLVER</span>
+            </button>
+          </div>
+
         </div>
       </div>
 
@@ -85,7 +83,6 @@ export function TopBarID() {
                   }
                 `}
               >
-                {/* imagen compacta en móvil */}
                 <div className="relative h-16 sm:h-28 md:h-32">
                   <Image
                     src={c.img}
@@ -95,7 +92,6 @@ export function TopBarID() {
                   />
                 </div>
 
-                {/* texto compacto */}
                 <div className="p-1 sm:p-3 text-center font-semibold text-gray-800 text-[10px] sm:text-sm leading-tight line-clamp-2">
                   {c.title}
                 </div>
