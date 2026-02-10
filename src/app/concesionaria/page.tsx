@@ -9,13 +9,22 @@ const cards = [
     title: "0 KM",
     href: "/concesionaria/KM0",
     description: "Unidades nuevas con garantía oficial",
-    bg: "from-blue-600 via-blue-700 to-blue-900",
+    bg: "from-white via-blue-989 to-white",
+    titleClass:
+      "text-gray-900 font-extrabold tracking-wide text-3xl md:text-4xl drop-shadow-md",
+    descClass:
+      "text-gray-800 font-medium text-sm md:text-base drop-shadow-sm",
   },
   {
     title: "USADOS",
     href: "/concesionaria/usados",
     description: "Vehículos seleccionados y listos para trabajar",
-    bg:"from-blue-600 via-blue-700 to-blue-900",}
+    bg: "from-white via-blue-989 to-white",
+    titleClass:
+      "text-gray-900 font-extrabold tracking-wide text-3xl md:text-4xl drop-shadow-md",
+    descClass:
+      "text-gray-800 font-medium text-sm md:text-base drop-shadow-sm",
+  },
 ]
 
 export default function HomePage() {
@@ -50,7 +59,7 @@ export default function HomePage() {
       <div className="absolute inset-0 bg-black/40" />
 
       <div className="relative z-10 max-w-5xl w-full text-center">
-        <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
+        <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
           Concesionaria
         </h1>
 
@@ -78,11 +87,9 @@ export default function HomePage() {
 
               {/* Contenido */}
               <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
-                <h2 className="text-white text-2xl md:text-3xl font-bold mb-2 drop-shadow-lg">
-                  {card.title}
-                </h2>
+                <h2 className={card.titleClass}>{card.title}</h2>
 
-                <p className="text-white/90 text-sm md:text-base drop-shadow">
+                <p className={`mt-2 ${card.descClass}`}>
                   {card.description}
                 </p>
               </div>
@@ -96,4 +103,3 @@ export default function HomePage() {
     </div>
   )
 }
-
