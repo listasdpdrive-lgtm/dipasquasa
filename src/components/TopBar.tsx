@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Phone, Mail, MapPin, MessageCircle, ArrowLeft } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
 import { useSearchParams, useRouter } from "next/navigation"
 
 const normalizar = (v: string) =>
@@ -19,65 +19,39 @@ export function TopBar() {
       .map(normalizar) || []
 
   const cuadros = [
-        { img: "/concecionaria/SALTO.png", title: "SALTO", tipo: "SALTO" },
+    { img: "/concecionaria/SALTO.png", title: "SALTO", tipo: "SALTO" },
     { img: "/concecionaria/AST-PRA.png", title: "AST-PRA", tipo: "AST PRA" },
     { img: "/concecionaria/CARRIER.png", title: "CARRIER", tipo: "CARRIER" },
-
-    { img: "/concecionaria/CAMIONES.png", title: "CAMIONES USADOS", tipo: "CAMIONES" },
+    {
+      img: "/concecionaria/CAMIONES.png",
+      title: "CAMIONES USADOS",
+      tipo: "CAMIONES",
+    },
     {
       img: "/concecionaria/camion5.jpg",
-      title: "SEMIRREMOLQUE Y ACOPLADOS USADOS  ",
+      title: "SEMIRREMOLQUE Y ACOPLADOS USADOS",
       tipo: "SEMIRREMOLQUE Y ACOPLADOS",
     },
   ]
 
-  const whatsappUrl =
-    "https://wa.me/5491112345678?text=Hola%20quiero%20más%20información"
-
-  const mapsUrl =
-    "https://www.google.com/maps/place/Di+Pasqua+semirremolques+y+camiones"
-
   return (
     <>
-      {/* 🔝 BARRA SUPERIOR */}
-      <div className="relative w-full h-28 sm:h-36">
-        <Image
-          src="/TALLER/fondo_web.png"
-          alt="Fondo barra superior"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/10" />
-
+      {/* 🔝 BARRA SUPERIOR (ROJA, SIN IMAGEN) */}
+      <div className="relative w-full h-20 sm:h-28 md:h-32 bg-red-600">
         <div className="relative z-10 h-full max-w-7xl mx-auto px-4 grid grid-cols-3 items-center text-white text-xs sm:text-sm">
           
-         {/* ⬅️ BOTÓN VOLVER AL INICIO */}
-<div className="flex items-center">
-  <button
-    onClick={() => router.push("/concesionaria")}
-    className="flex items-center gap-2 px-3 py-1.5 rounded-full
-               bg-white/90 text-gray-800 hover:bg-white transition"
-  >
-    <ArrowLeft size={16} />
-    <span className="hidden sm:inline">VOLVER</span>
-  </button>
-</div>
-
-
-          {/* 🖼 LOGO CENTRADO 
-          <div className="flex justify-center h-40">
-            <Image
-              src="/logo-1.png"   // 👈 cambia por tu logo real
-              alt="Logo"
-              width={620}
-              height={400}
-              className="object-contain"
-            />
+          {/* ⬅️ BOTÓN VOLVER */}
+          <div className="flex items-center">
+            <button
+              onClick={() => router.push("/concesionaria")}
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full
+                         bg-white/90 text-gray-800 hover:bg-white transition"
+            >
+              <ArrowLeft size={16} />
+              <span className="hidden sm:inline">VOLVER</span>
+            </button>
           </div>
-*/}
-       
-          
+
         </div>
       </div>
 
@@ -109,7 +83,6 @@ export function TopBar() {
                   }
                 `}
               >
-                {/* imagen compacta en móvil */}
                 <div className="relative h-16 sm:h-28 md:h-32">
                   <Image
                     src={c.img}
@@ -119,7 +92,6 @@ export function TopBar() {
                   />
                 </div>
 
-                {/* texto compacto */}
                 <div className="p-1 sm:p-3 text-center font-semibold text-gray-800 text-[10px] sm:text-sm leading-tight line-clamp-2">
                   {c.title}
                 </div>
@@ -128,8 +100,6 @@ export function TopBar() {
           })}
         </div>
       </div>
-
-      
     </>
   )
 }
