@@ -64,7 +64,7 @@ export function ServicesSection() {
         "Entrega rápida",
       ],
       phoneText: "+54 9 261 466-3077",
-      addressText: "Concordia 84 Rodeo de la cruz, 5525, Mendoza",
+      addressText: "Concordia 84 Rodeo de la cruz, 5525,  Mendoza",
       image: "/truck-parts-warehouse.png",
       whatsapp: "542614663077",
       email: "dipasquarepuestos@gmail.com",
