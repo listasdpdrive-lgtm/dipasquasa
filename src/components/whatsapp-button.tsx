@@ -171,7 +171,7 @@ export function WhatsAppButton() {
         whileTap={{ scale: 0.9 }}
         className="bg-green-500 hover:bg-green-600 p-4 rounded-full shadow-lg"
       >
-        <Image src="/images/wp-icon.png" width={24} height={24} alt="whatsapp" />
+        <Image src="/images/wp-icon.png" width={44} height={44} alt="whatsapp" />
       </motion.button>
     </div>
   )
