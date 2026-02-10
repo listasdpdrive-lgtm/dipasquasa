@@ -47,7 +47,7 @@ export function HeroSection() {
             className="text-4xl lg:text-6xl font-extrabold mb-6"
           >
             Soluciones Integrales para{" "}
-            <span className="text-red-500">Transporte Pesado</span>
+            <span className="text-white-500">Transporte Pesado</span>
           </motion.h1>
 
          

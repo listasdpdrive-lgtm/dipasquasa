@@ -26,7 +26,7 @@ export function FooderConcecionaria() {
             className="lg:col-span-2"
           >
             <Image
-              src="/logoC.png"
+              src="/logoconcecionaria.jpg"
               alt="Di Pasqua"
               width={2000}
               height={800}
