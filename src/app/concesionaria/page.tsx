@@ -1,50 +1,50 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
+
 const cards = [
   {
-    title: "0 KILÓMETROS",
+    title: "0 KM",
     href: "/concesionaria/KM0",
-    image: "/concecionaria/acoplado.png",
     description: "Unidades nuevas con garantía oficial",
+    bg: "from-blue-600 via-blue-700 to-blue-900",
   },
   {
     title: "USADOS",
     href: "/concesionaria/usados",
-    image: "/concecionaria/0km.png",
     description: "Vehículos seleccionados y listos para trabajar",
-  },
+    bg:"from-blue-600 via-blue-700 to-blue-900",}
 ]
 
 export default function HomePage() {
   const router = useRouter()
+
   return (
     <div
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center px-4 sm:px-6"
       style={{ backgroundImage: "url('/fondo_web.png')" }}
     >
-
-         <button
-      onClick={() => router.back()}
-      className="
-        fixed top-6 left-6 z-50
-        flex items-center gap-2
-        rounded-full
-        bg-black/60 backdrop-blur
-        px-4 py-2
-        text-white text-sm font-medium
-        border border-white/20
-        shadow-lg
-        transition-all
-        hover:bg-black/80 hover:scale-105
-      "
-    >
-      <ArrowLeft size={18} />
-      Volver
-    </button>
+      {/* BOTÓN VOLVER */}
+      <button
+        onClick={() => router.back()}
+        className="
+          fixed top-6 left-6 z-50
+          flex items-center gap-2
+          rounded-full
+          bg-black/60 backdrop-blur
+          px-4 py-2
+          text-white text-sm font-medium
+          border border-white/20
+          shadow-lg
+          transition-all
+          hover:bg-black/80 hover:scale-105
+        "
+      >
+        <ArrowLeft size={18} />
+        Volver
+      </button>
 
       {/* Overlay fondo */}
       <div className="absolute inset-0 bg-black/40" />
@@ -65,45 +65,30 @@ export default function HomePage() {
             <Link
               key={card.title}
               href={card.href}
-              className="
+              className={`
                 group relative w-full max-w-sm md:max-w-md h-56 md:h-64
                 rounded-2xl overflow-hidden
-                shadow-2xl transition-transform duration-300 hover:scale-105
-                border border-white/0
-              "
+                shadow-2xl transition-all duration-300
+                hover:scale-105
+                bg-gradient-to-br ${card.bg}
+              `}
             >
-              {/* IMAGEN */}
-              <Image
-                src={card.image}
-                alt={card.title}
-                fill
-                className="
-                  object-cover
-                  scale-110
-                  blur-[2.5px]
-                  transition-all duration-500
-                  group-hover:blur-[2px]
-                  group-hover:scale-105
-                "
-                priority
-              />
-
-              {/* Overlay oscuro */}
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+              {/* Overlay hover */}
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition-colors" />
 
               {/* Contenido */}
               <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
-                <h2 className="text-white text-2xl md:text-3xl font-semibold mb-2 drop-shadow-lg">
+                <h2 className="text-white text-2xl md:text-3xl font-bold mb-2 drop-shadow-lg">
                   {card.title}
                 </h2>
 
-                <p className="text-gray-200 text-sm md:text-base opacity-90 drop-shadow">
+                <p className="text-white/90 text-sm md:text-base drop-shadow">
                   {card.description}
                 </p>
               </div>
 
-              {/* Glow */}s
-              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-[0_0_40px_rgba(255,255,255,0.1)]" />
+              {/* Glow */}
+              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-[0_0_50px_rgba(255,255,255,0.15)]" />
             </Link>
           ))}
         </div>
@@ -111,3 +96,4 @@ export default function HomePage() {
     </div>
   )
 }
+
