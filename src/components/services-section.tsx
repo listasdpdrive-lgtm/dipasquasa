@@ -10,7 +10,9 @@ import {
   ArrowRight,
   Mail,
   MapPin,
+  Phone,
 } from "lucide-react"
+
 import Image from "next/image"
 
 export function ServicesSection() {
@@ -120,16 +122,39 @@ export function ServicesSection() {
                       {service.description}
                     </p>
 
+
                     <ul className="space-y-3 mb-8">
                       {service.features.map((feature, i) => (
                         <li key={i} className="flex items-center gap-3">
                           <div className="w-2 h-2 bg-primary rounded-full" />
                           <span>{feature}</span>
                         </li>
-                      ))}
+                      )
+                      
+                      
+                      
+                      
+                      
+                      
+                      )}
                     </ul>
 
-        
+                          {/* TELÉFONO */}
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                           <Phone className="h-4 w-4" />
+                                  <a
+                                    href={`tel:${service.phoneText.replace(/\s|-/g, "")}`}
+                                    className="underline hover:text-primary transition"
+                                      >
+                           {service.phoneText}
+                              </a>
+                         </div>
+
+                          {/* DIRECCIÓN */}
+                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                <MapPin className="h-4 w-4" />
+                                 <span>{service.addressText}</span>
+                            </div>
                   {/* CONTACTO */}
         
                       <div className="flex flex-col gap-3">
