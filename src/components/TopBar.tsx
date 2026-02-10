@@ -23,10 +23,10 @@ export function TopBar() {
     { img: "/concecionaria/AST-PRA.png", title: "AST-PRA", tipo: "AST PRA" },
     { img: "/concecionaria/CARRIER.png", title: "CARRIER", tipo: "CARRIER" },
 
-    { img: "/concecionaria/CAMIONES.png", title: "CAMIONES", tipo: "CAMIONES" },
+    { img: "/concecionaria/CAMIONES.png", title: "CAMIONES USADOS", tipo: "CAMIONES" },
     {
       img: "/concecionaria/camion5.jpg",
-      title: "SEMIRREMOLQUE Y ACOPLADOS",
+      title: "SEMIRREMOLQUE Y ACOPLADOS USADOS  ",
       tipo: "SEMIRREMOLQUE Y ACOPLADOS",
     },
   ]
