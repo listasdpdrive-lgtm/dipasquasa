@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 
 const whatsappNumbers = [
-  { label: "Taller", phone: "5492614910438" },
+  { label: "Taller", phone: "5492615580350" },
   { label: "Concecionaria", phone: "5492613635617" },
   { label: "Casa de Repuestos", phone: "5492614663077" },
 ]
