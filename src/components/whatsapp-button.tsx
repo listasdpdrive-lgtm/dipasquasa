@@ -22,7 +22,7 @@ const facebookLinks = [
 
 const tiktokLinks = [
   { label: "Repuestos", url: "https://www.tiktok.com/@repuestos.di.pasq" },
-  { label: "Concesionaria", url: "https://www.tiktok.com/@repuestos.di.pasq" },
+  { label: "Concesionaria", url: "https://www.tiktok.com/@di.pasqua?_r=1&_t=ZS-93mdoQcS6JY" },
 ]
 
 export function WhatsAppButton() {
