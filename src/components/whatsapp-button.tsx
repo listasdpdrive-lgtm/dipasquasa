@@ -21,7 +21,7 @@ const facebookLinks = [
 ]
 
 const tiktokLinks = [
-  { label: "Repuestos", url: "https://www.tiktok.com/@repuestos_dipasqua" },
+  { label: "Repuestos", url: "https://www.tiktok.com/@repuestos.di.pasq" },
   { label: "Concesionaria", url: "https://www.tiktok.com/@repuestos.di.pasq" },
 ]
 
