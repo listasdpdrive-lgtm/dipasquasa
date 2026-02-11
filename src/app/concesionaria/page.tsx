@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
 
@@ -35,25 +36,44 @@ export default function HomePage() {
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center px-4 sm:px-6"
       style={{ backgroundImage: "url('/fondo_web.png')" }}
     >
-      {/* BOTÓN VOLVER */}
-      <button
-        onClick={() => router.back()}
-        className="
-          fixed top-6 left-6 z-50
-          flex items-center gap-2
-          rounded-full
-          bg-black/60 backdrop-blur
-          px-4 py-2
-          text-white text-sm font-medium
-          border border-white/20
-          shadow-lg
-          transition-all
-          hover:bg-black/80 hover:scale-105
-        "
-      >
-        <ArrowLeft size={18} />
-        Volver
-      </button>
+      {/* CONTENEDOR BOTÓN + LOGO */}
+      <div className="fixed top-6 left-6 z-50 flex items-center gap-4">
+        
+        {/* BOTÓN VOLVER */}
+        <button
+          onClick={() => router.back()}
+          className="
+            flex items-center gap-2
+            rounded-full
+            bg-black/60 backdrop-blur
+            px-4 py-2
+            text-white text-sm font-medium
+            border border-white/20
+            shadow-lg
+            transition-all
+            hover:bg-black/80 hover:scale-105
+          "
+        >
+          <ArrowLeft size={18} />
+          Volver
+        </button>
+
+        {/* LOGO */}
+        <Link
+          href="/"
+          className="
+           
+          "
+        >
+          <Image
+            src="/images/fondog.jpg" 
+            alt="Logo"
+            width={140}
+            height={140}
+            className="object-contain"
+          />
+        </Link>
+      </div>
 
       {/* Overlay fondo */}
       <div className="absolute inset-0 bg-black/40" />
@@ -68,7 +88,6 @@ export default function HomePage() {
           en el rubro.
         </p>
 
-        {/* CARDS */}
         <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
           {cards.map((card) => (
             <Link
@@ -82,19 +101,15 @@ export default function HomePage() {
                 bg-gradient-to-br ${card.bg}
               `}
             >
-              {/* Overlay hover */}
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/25 transition-colors" />
 
-              {/* Contenido */}
               <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
                 <h2 className={card.titleClass}>{card.title}</h2>
-
                 <p className={`mt-2 ${card.descClass}`}>
                   {card.description}
                 </p>
               </div>
 
-              {/* Glow */}
               <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-[0_0_50px_rgba(255,255,255,0.15)]" />
             </Link>
           ))}

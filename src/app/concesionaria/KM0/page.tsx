@@ -33,26 +33,43 @@ const router = useRouter()
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center px-4 sm:px-6"
       style={{ backgroundImage: "url('/fondo_web.png')" }}
     >
+   <div className="fixed top-6 left-6 z-50 flex items-center gap-4">
+        
+        {/* BOTÓN VOLVER */}
+        <button
+          onClick={() => router.back()}
+          className="
+            flex items-center gap-2
+            rounded-full
+            bg-black/60 backdrop-blur
+            px-4 py-2
+            text-white text-sm font-medium
+            border border-white/20
+            shadow-lg
+            transition-all
+            hover:bg-black/80 hover:scale-105
+          "
+        >
+          <ArrowLeft size={18} />
+          Volver
+        </button>
 
-           <button
-      onClick={() => router.back()}
-      className="
-        fixed top-6 left-6 z-50
-        flex items-center gap-2
-        rounded-full
-        bg-black/60 backdrop-blur
-        px-4 py-2
-        text-white text-sm font-medium
-        border border-white/20
-        shadow-lg
-        transition-all
-        hover:bg-black/80 hover:scale-105
-      "
-    >
-      <ArrowLeft size={18} />
-      Volver
-    </button>
-
+        {/* LOGO */}
+        <Link
+          href="/"
+          className="
+           
+          "
+        >
+          <Image
+            src="/images/fondog.jpg" 
+            alt="Logo"
+            width={140}
+            height={140}
+            className="object-contain"
+          />
+        </Link>
+      </div>
       {/* Overlay fondo */}
       <div className="absolute inset-0 bg-black/40" />
 
