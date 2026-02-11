@@ -29,6 +29,7 @@ export default function Sidebar() {
     { href: "/filtros", label: "Filtros" },
     { href: "/Frenos", label: "Frenos" },
     { pdf: "/catalogos/herramientas/HERRAMIENTAS (2).pdf", label: "Herramientas" },
+    { href: "/punta_eje", label: "Punta Eje" },
     { href: "/Pesados", label: "Pesados" },
     { href: "/Varios", label: "Accesorios varios" },
     { pdf: "/catalogos/VIGIA (6).pdf", label: "Vigia" },

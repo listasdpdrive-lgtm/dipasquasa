@@ -28,13 +28,13 @@ export default function CatalogosPage() {
     { img: "/filtros/filtrosportada.png", titulo: "Filtros de aire", link: "/filtros" },
     { img: "/frenos.png", titulo: "Frenos", link: "/Frenos" },
     { img: "/herramientas/herramientas.png", titulo: "Herramientas", pdf: "/catalogos/herramientas/HERRAMIENTAS (2).pdf" },
-    { img: "/homocinetica/homocinetas.png", titulo: "Homocinetica", pdf: "/catalogos/homocinetica/HOMOCINETICAS.pdf" },
+    { img: "/puntaeje/punta_eje.png", titulo: "Punta Eje", link: "/punta_eje" },
     { img: "/PESADOS-JPG/pesados.png", titulo: "Pesados", link: "/Pesados" },
     { img: "/varios.png", titulo: "Accesorios varios", link: "/Varios" },
     { img: "/image-cuadros/eevigis.png", titulo: "Vigia", pdf: "/catalogos/VIGIA (6).pdf" },
   ]
 
-  useEffect(() => {
+  useEffect(() => {7
     const interval = setInterval(() => {
       setCurrentIndex((i) => (i === slides.length - 1 ? 0 : i + 1))
     }, 5000)
