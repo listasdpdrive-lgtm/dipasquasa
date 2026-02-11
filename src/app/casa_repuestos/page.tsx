@@ -28,7 +28,7 @@ export default function CatalogosPage() {
     { img: "/filtros/filtrosportada.png", titulo: "Filtros de aire", link: "/filtros" },
     { img: "/frenos.png", titulo: "Frenos", link: "/Frenos" },
     { img: "/herramientas/herramientas.png", titulo: "Herramientas", pdf: "/catalogos/herramientas/HERRAMIENTAS (2).pdf" },
-    { img: "/puntaeje/punta_eje.png", titulo: "Punta Eje", link: "/punta_eje" },
+    { img: "/puntaeje/punta_eje.png", titulo: "Tren Delantero y Punta Eje", link: "/punta_eje" },
     { img: "/PESADOS-JPG/pesados.png", titulo: "Pesados", link: "/Pesados" },
     { img: "/varios.png", titulo: "Accesorios varios", link: "/Varios" },
     { img: "/image-cuadros/eevigis.png", titulo: "Vigia", pdf: "/catalogos/VIGIA (6).pdf" },
