@@ -26,6 +26,11 @@ export default function Accesorios() {
       titulo: "Pernos de tensor",
       pdf: "/catalogos/PESADOS/pernos/PERNOS DE TENSOR.pdf",
     },
+    {
+      img: "/PESADOS-JPG/pernos_elastico.png",
+      titulo: "Pernos de Elastico",
+      pdf: "/catalogos/PESADOS/pernos/PERNOS DE ELASTICO.pdf",
+    },
   ]
 
   return (
