@@ -38,32 +38,36 @@ export function TopBar() {
     <>
       {/* 🔝 BARRA SUPERIOR */}
       <div className="relative w-full h-20 sm:h-28 md:h-32 bg-red-600">
-        <div className="relative z-10 h-full max-w-7xl mx-auto px-4 flex items-center justify-between">
+<div className="relative w-full h-20 sm:h-28 md:h-32 bg-red-600">
+  <div className="relative z-10 h-full max-w-7xl mx-auto px-4 flex items-center justify-between">
 
-          {/* ⬅️ VOLVER */}
-          <button
-            onClick={() => router.push("/concesionaria")}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-full
-                       bg-white/90 text-gray-800 hover:bg-white transition"
-          >
-            <ArrowLeft size={16} />
-            <span className="hidden sm:inline">VOLVER</span>
-          </button>
+    {/* 🖼️ LOGO IZQUIERDA */}
+    <Link href="/" className="flex items-center">
+      <Image
+        src="/images/fondog.jpg"
+        alt="Logo"
+        width={130}
+        height={42}
+        className="object-contain"
+        priority
+      />
+    </Link>
 
-          {/* 🖼️ LOGO DERECHA */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/images/fondog.jpg"
-              alt="Logo"
-              width={130}
-              height={42}
-              className="object-contain"
-              priority
-            />
-          </Link>
+    {/* ⬅️ VOLVER DERECHA */}
+    <button
+      onClick={() => router.push("/concesionaria")}
+      className="flex items-center gap-2 px-3 py-1.5 rounded-full
+                 bg-white/90 text-gray-800 hover:bg-white transition"
+    >
+      <ArrowLeft size={16} />
+      <span className="hidden sm:inline">VOLVER</span>
+    </button>
 
-        </div>
-      </div>
+  </div>
+</div>
+
+</div>
+
 
       {/* 🟥 CUADROS FILTRO */}
       <div className="max-w-7xl mx-auto px-2 -mt-8 sm:-mt-10 relative z-20">
