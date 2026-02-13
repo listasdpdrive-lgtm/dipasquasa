@@ -6,11 +6,7 @@ import Sidebar from "@/components/Sidebar"
 
 export default function Accesorios() {
   const cuadros = [
-    {
-      img: "/PESADOS-JPG/bajada.png",
-      titulo: "Bajada de paragolpe y resorte",
-      pdf: "/catalogos/PESADOS/bbbgs/BAJADA DE PARAGOLPE Y RESORTE.pdf",
-    },
+   
     {
       img: "/PESADOS-JPG/bajopara.png",
       titulo: "Bajo paragolpes",

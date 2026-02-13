@@ -28,6 +28,11 @@ export default function Accesorios() {
       link: "/Pesados/BALANCINES-Y-MANOTAS",
     },
      {
+      img: "/PESADOS-JPG/bajada.png",
+      titulo: "Bajada de paragolpe y resorte",
+      pdf: "/catalogos/PESADOS/bbbgs/BAJADA DE PARAGOLPE Y RESORTE.pdf",
+    },
+     {
       img: "/PESADOS-JPG/guardabarro_y_barrero.png",
       titulo: "Barreros, Bajo paragolpes, guardabarros y bajadas ",
       link: "/Pesados/bbbgs",
