@@ -14,7 +14,7 @@ export default function Homocinetica() {
       pdf: "/catalogos/puntaeje/HOMOCINETICAS.pdf" ,
     },
     {
-      img: "/puntaeje/pernos punta eje.png",
+      img: "/puntaeje/pernopuntaeje.png",
       titulo: "Perno punta de eje",
       pdf: "/catalogos/puntaeje/PERNO PUNTA DE EJE (2).pdf" ,
     },
