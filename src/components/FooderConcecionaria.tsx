@@ -38,7 +38,7 @@ export function FooderConcecionaria() {
             </p>
             <div className="flex gap-4">
               <motion.a
-                href="https://facebook.com/RepuestosDiPasqua"
+                href="https://www.facebook.com/concesionaria_dipasqua"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -47,7 +47,7 @@ export function FooderConcecionaria() {
                 <Facebook className="h-5 w-5" />
               </motion.a>
               <motion.a
-                href="https://instagram.com/repuestos_dipasqua"
+                href="https://www.instagram.com/acoplados_dipasqua?igsh=aXZxaXFzeDJnZzBz&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -70,20 +70,20 @@ export function FooderConcecionaria() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span>+54 9 261 466-3077</span>
+                <span>+54 9 261 363 5617</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary" />
-                <span>dipasquarepuestos@gmail.com</span>
+                <span>dipasqua.ventas@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span>Concordia 84, Guaymallén, Mendoza</span>
+                <span>Carril Rodríguez Peña Km 10.5, Maipú, Mendoza</span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-primary" />
                 <div>
-                  <p className="text-sm">Lunes a Viernes: 9:00 - 18:00</p>
+                  <p className="text-sm">Lunes a Viernes: 9:00 - 19:30</p>
                   <p className="text-sm">Sábados: 9:00 - 13:00</p>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export function FooderConcecionaria() {
           className="rounded-2xl overflow-hidden shadow-xl"
         >
           <iframe
-            src="https://www.google.com/maps?q=Concordia+84+Guaymallén+Mendoza&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1183.7406715874906!2d-68.72929742388955!3d-32.94772952328883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0d1c79c5ae47%3A0x3e26ff0b81ad877!2sDi%20Pasqua%20semirremolques%20y%20camiones!5e0!3m2!1ses-419!2sar!4v1770985378632!5m2!1ses-419!2sar"
             width="100%"
             height="350"
             loading="lazy"
