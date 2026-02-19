@@ -26,8 +26,13 @@ export default function Accesorios() {
       titulo: "Bujes de tensor",
       pdf: "/catalogos/PESADOS/bujes/BUJES DE TENSOR.pdf",
     },
+   {
+      img: "/PESADOS-JPG/",
+      titulo: "Bujes Perno de Elatico",
+      pdf: "/catalogos/PESADOS/bujes/BUJES PERNOS DE ELASTICO (1).pdf",
+    },
      {
-      img: "/PESADOS-JPG/buje_moño.png",
+      img: "/PESADOS-JPG/bujes elastico.png",
       titulo: "Bujes moño",
       pdf: "/catalogos/PESADOS/bujes/BUJES MOÑO.pdf",
     },
