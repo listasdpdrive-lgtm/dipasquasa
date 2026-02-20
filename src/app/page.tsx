@@ -14,6 +14,7 @@ import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { LocalesSection } from "@/components/Locales-section"
+import VideosSection from "@/components/Videos"
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <HeroSection />
       
       <AboutSection />
+      <VideosSection video1="/videos/ASTPRA.mp4" video2="/videos/SALTO.mp4" />
       <ServicesSection />
       <HistorySection />
       
