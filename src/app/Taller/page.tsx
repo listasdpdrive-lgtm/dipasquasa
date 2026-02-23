@@ -116,11 +116,7 @@ export default function TallerMecanicoClient() {
                 title: "Metalúrgica General",
                 desc: "Diagnóstico y reparación completa del vehículo.",
               },
-              {
-                icon: Clock,
-                title: "Service Rápido",
-                desc: "Cambio de aceite, filtros y mantenimiento.",
-              },
+              
               {
                 icon: Phone,
                 title: "Atención Personalizada",
@@ -196,4 +192,5 @@ export default function TallerMecanicoClient() {
 
     </main>
   )
+
 }
