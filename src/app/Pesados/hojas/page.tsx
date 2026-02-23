@@ -6,6 +6,12 @@ import Sidebar from "@/components/Sidebar"
 
 export default function Accesorios() {
   const cuadros = [
+
+    {
+      img: "/PESADOS-JPG/hojas-elastico.png",
+      titulo: "PAQUETES ELASTICO.pdf",
+      pdf: "/catalogos/PESADOS/hojas/PAQUETES ELASTICO.pdf",
+    },
     {
       img: "/PESADOS-JPG/hojasela.png",
       titulo: "Hoja de elastico",
@@ -16,6 +22,7 @@ export default function Accesorios() {
       titulo: "Paquetes de suspencion",
       pdf: "/catalogos/PESADOS/hojas/PAQUETAS DE SUSPENSIÓN.pdf",
     },
+     
      
    
     
