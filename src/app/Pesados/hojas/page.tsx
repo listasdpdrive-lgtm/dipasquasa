@@ -19,7 +19,7 @@ export default function Accesorios() {
     },
      {
       img: "/PESADOS-JPG/paquetes.png",
-      titulo: "Paquetes de suspencion",
+      titulo: "Paquetes de suspension",
       pdf: "/catalogos/PESADOS/hojas/PAQUETAS DE SUSPENSIÓN.pdf",
     },
      
