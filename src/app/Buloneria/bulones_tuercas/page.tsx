@@ -18,7 +18,7 @@ export default function Accesorios() {
       pdf: "/catalogos/BULONERIA/TUERCAS DE RUEDA.pdf",
     },
     { img: "/buloneria/bulones.jpg", 
-      titulo: "Buloneria General",
+      titulo: "Bulones, Tuercas y Arandelas",
        link: "/Buloneria/buloneria_general" },
   ]
 
@@ -77,4 +77,5 @@ export default function Accesorios() {
       </main>
     </div>
   )
+
 }
