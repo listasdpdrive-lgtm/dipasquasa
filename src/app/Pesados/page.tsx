@@ -99,12 +99,12 @@ export default function Accesorios() {
       titulo: "Plaquetas y chapínetes",
       pdf: "/catalogos/PESADOS/PLAQUETAS Y CHAPINETES ACTUALIZADO.pdf",
     },{
-      img: "/PESADOS-JPG/repuestos_batea.png",
+      img: "/PESADOS-JPG/repuestos batea.png",
       titulo: "Repuestos para batea",
       pdf: "/catalogos/PESADOS/REPUESTOS PARA BATEA.pdf",
     },
     {
-      img: "/PESADOS-JPG/repuestos_batea.png",
+      img: "/PESADOS-JPG/repuestos_carreton.png",
       titulo: "Repuestos para carreton",
       pdf: "/catalogos/PESADOS/REPUESTOS PARA CARRETON.pdf",
     },
