@@ -117,10 +117,10 @@ export default function TallerMecanicoClient() {
                 desc: "Diagnóstico y reparación completa del vehículo.",
               },
               {
-                icon: Clock,
-                title: "Service Rápido",
-                desc: "Cambio de aceite, filtros y mantenimiento.",
-              },
+              icon: Clock,
+              title: "Service Rápido",
+              desc: "Servicios en el transcurso del dia.",
+            },
               {
                 icon: Phone,
                 title: "Atención Personalizada",
@@ -196,4 +196,6 @@ export default function TallerMecanicoClient() {
 
     </main>
   )
+
 }
+
