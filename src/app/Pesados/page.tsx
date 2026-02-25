@@ -119,7 +119,7 @@ export default function Accesorios() {
       link: "/Pesados/RETENES",
     },{
       img: "/PESADOS-JPG/rulemanes.png",
-      titulo: "Rulemanes y arandelas espaciadoras",
+      titulo: "Rulemanes",
       pdf: "/catalogos/PESADOS/RULEMANES.pdf",
     },{
       img: "/PESADOS-JPG/separadores.png",
