@@ -16,12 +16,12 @@ export default function Accesorios() {
     },
     {
       img: "/ELECTRICIDAD-JPG/varios.png",
-      titulo: "Electricidad variado",
+      titulo: "Electricidad Variado",
       pdf: "/catalogos/ELECTRICIDAD/ELECTRICIDAD Y ACCESORIOS.pdf",
     },
      {
       img: "/ELECTRICIDAD-JPG/enchufe.png",
-      titulo: "enchufe de luz",
+      titulo: "Enchufe de Luz",
       pdf: "/catalogos/ELECTRICIDAD/ENCHUFES DE LUZ.pdf",
     },
     {
