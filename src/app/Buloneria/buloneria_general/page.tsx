@@ -7,7 +7,8 @@ import Sidebar from "@/components/Sidebar"
 export default function Accesorios() {
 
   const cuadros = [
-    { img: "/buloneria/conica.png", titulo: "Arandelas conicas y centradores", pdf: "/catalogos/BULONERIA/ARANDELAS CONICAS Y CENTRADORES.pdf" },
+
+    
     { img: "/buloneria/arandela.png", titulo: "Arandelas", pdf: "/catalogos/BULONERIA/ARANDELAS.pdf" },
     { img: "/buloneria/bulone.png", titulo: "Bulones", pdf: "/catalogos/BULONERIA/BULONES.pdf" },
     { img: "/buloneria/tuercasg.png", titulo: "Tuercas", pdf: "/catalogos/BULONERIA/TUERCAS.pdf" },

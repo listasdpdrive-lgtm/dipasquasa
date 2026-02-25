@@ -17,9 +17,11 @@ export default function Accesorios() {
       titulo: "Tuercas de rueda",
       pdf: "/catalogos/BULONERIA/TUERCAS DE RUEDA.pdf",
     },
-    { img: "/buloneria/bulones.jpg", 
-      titulo: "Bulones, Tuercas y Arandelas",
-       link: "/Buloneria/buloneria_general" },
+    { 
+      img: "/buloneria/conica.png", 
+      titulo: "Arandelas conicas y centradores", 
+      pdf: "/catalogos/BULONERIA/ARANDELAS CONICAS Y CENTRADORES.pdf" 
+    },
   ]
 
   return (
