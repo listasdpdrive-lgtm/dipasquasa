@@ -14,7 +14,7 @@ export default function Accesorios() {
      {
       img: "/PESADOS-JPG/cajon.png",
       titulo: "Cajones de herramientas",
-      pdf: "/catalogos/PESADOS/herrajes/CAJONES DE HERRAMIENTAS.pdf",
+      pdf: "/catalogos/PESADOS/herrajes/CAJONES DE HERRAMIENTAS (1).pdf",
     },
      {
       img: "/PESADOS-JPG/escaleras.png",
