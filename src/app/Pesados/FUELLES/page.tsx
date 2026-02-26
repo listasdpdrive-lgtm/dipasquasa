@@ -18,7 +18,7 @@ export default function Accesorios() {
       pdf: "/catalogos/PESADOS/fuelles/FUELLES LOBULARES.pdf",
     },
       {
-      img: "/PESADOS-JPG/tubulares.png",
+      img: "/PESADOS-JPG/fuelles tubulares.png",
       titulo: "Fuelles tubulares",
       pdf: "/catalogos/PESADOS/fuelles/FUELLES VARIOS TUBULARES.pdf",
     },
