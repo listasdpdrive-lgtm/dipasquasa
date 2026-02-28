@@ -4,6 +4,7 @@ import { Inter, Work_Sans } from "next/font/google"
 import "./globals.css"
 
 import GoogleAnalytics from "@/components/google-analytics"
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -112,6 +113,7 @@ export default function RootLayout({
         )}
 
         {children}
+        <Analytics />
       </body>
     </html>
   )
