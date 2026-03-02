@@ -1,9 +1,13 @@
+"use client"
+
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Inter, Work_Sans } from "next/font/google"
 import "./globals.css"
 
 import GoogleAnalytics from "@/components/google-analytics"
+
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -98,6 +102,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+
+  
   return (
     <html
       lang="es"
@@ -112,7 +119,10 @@ export default function RootLayout({
         )}
 
         {children}
+
+
+        <Analytics />
       </body>
     </html>
-  )
+      )
 }
