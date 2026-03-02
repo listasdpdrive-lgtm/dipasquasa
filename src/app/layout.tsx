@@ -4,6 +4,7 @@ import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Inter, Work_Sans } from "next/font/google"
 import "./globals.css"
+import VercelAnalytics from "@/components/VercelAnalytics"
 
 import GoogleAnalytics from "@/components/google-analytics"
 
@@ -121,7 +122,7 @@ export default function RootLayout({
         {children}
 
 
-        <Analytics />
+        <VercelAnalytics />
       </body>
     </html>
       )
