@@ -25,7 +25,7 @@ export default function Accesorios() {
     {
       img: "/ELECTRICIDAD-JPG/MICAS.png",
       titulo: "Micas",
-      pdf: "/catalogos/ELECTRICIDAD/LENTES - MICAS.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/LENTES - MICAS (1).pdf",
     },
   ]
 
