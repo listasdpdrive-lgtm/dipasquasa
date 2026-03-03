@@ -21,7 +21,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/guardabarros.png",
       titulo: "Guardabarros",
-      pdf: "/catalogos/PESADOS/bbbgs/GUARDABARROS.pdf",
+      pdf: "/catalogos/PESADOS/bbbgs/GUARDABARROS (2).pdf",
     },
     {
       img: "/PESADOS-JPG/soporte.png",
