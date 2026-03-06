@@ -76,7 +76,7 @@ export function HeroSection() {
               },
               {
                 href: "/Taller",
-                img: "/images/mecanico.png",
+                img: "/images/mecanico samir.jpeg",
                 title: "Taller",
                 text: "Servicio mecánico especializado",
               },
