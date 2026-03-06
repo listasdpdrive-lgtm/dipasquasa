@@ -28,7 +28,7 @@ export default function Home() {
       <ServicesSection />
       <HistorySection />
       
-     <CounterSection />
+      <CounterSection />
       <ValuePropositionSection />
       <TestimonialsSection />
       <CTASection />

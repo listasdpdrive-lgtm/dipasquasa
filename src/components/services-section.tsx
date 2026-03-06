@@ -31,7 +31,7 @@ export function ServicesSection() {
       phoneWhatsapp: "+54 9 2615 58-0350",
       whatsapp: "5492615580350",
       addressText: "Concordia 51, Rodeo de la Cruz, Mendoza",
-      image: "/images/mecanico.png",
+      image: "/images/mecanico samir.jpeg",
       email: "dipasqua.salto@hotmail.com",
       location:
         "https://www.google.com/maps/place/Carrocer%C3%ADas+Di+Pasqua",
