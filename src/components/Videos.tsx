@@ -37,7 +37,7 @@ export default function VideosSection({ video1, video2 }: VideosSectionProps) {
       {/* FONDO CON MOVIMIENTO */}
       <motion.div style={{ y }} className="absolute inset-0 -z-10">
         <Image
-          src="/Fondo_Inicios/Fondo videos.png"
+          src="/Fondo_Inicios/fondo videos.png"
           alt="Fondo Sección Videos"
           fill
           className="object-cover"
