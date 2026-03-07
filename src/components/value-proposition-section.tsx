@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Users, Cpu, Award, Heart, Shield, Clock } from "lucide-react"
+import { useMemo } from "react"
 
 export function ValuePropositionSection() {
   const values = [
@@ -10,42 +11,76 @@ export function ValuePropositionSection() {
       icon: Users,
       title: "Atención Personalizada",
       description:
-        "Cada cliente recibe un servicio adaptado a sus necesidades específicas, con un equipo dedicado que comprende su negocio.",
+        "Cada cliente recibe un servicio adaptado a sus necesidades específicas.",
     },
     {
       icon: Cpu,
       title: "Tecnología de Vanguardia",
       description:
-        "Utilizamos las últimas tecnologías en diagnóstico y reparación para garantizar resultados precisos y eficientes.",
+        "Utilizamos las últimas tecnologías para garantizar resultados eficientes.",
     },
     {
       icon: Award,
       title: "Calidad y Compromiso",
       description:
-        "Nuestro compromiso con la excelencia se refleja en cada servicio, manteniendo los más altos estándares de calidad.",
+        "Mantenemos los más altos estándares en cada servicio.",
     },
     {
       icon: Heart,
       title: "Cercanía y Confianza",
-      description: "Te acompañamos en cada paso, construyendo relaciones duraderas basadas en la confianza mutua.",
+      description:
+        "Construimos relaciones duraderas basadas en confianza.",
     },
     {
       icon: Shield,
       title: "Garantía Total",
       description:
-        "Respaldamos todos nuestros servicios con garantías sólidas que te brindan tranquilidad y seguridad.",
+        "Respaldamos nuestros servicios con garantías sólidas.",
     },
     {
       icon: Clock,
       title: "Respuesta Rápida",
       description:
-        "Entendemos la urgencia de tu negocio. Ofrecemos tiempos de respuesta ágiles para minimizar el tiempo de inactividad.",
+        "Ofrecemos tiempos ágiles para minimizar el tiempo de inactividad.",
     },
   ]
 
+  // Genera MUCHAS estrellas
+  const stars = useMemo(() => {
+    return Array.from({ length: 180 }).map((_, i) => ({
+      id: i,
+      top: Math.random() * 100,
+      left: Math.random() * 100,
+      size: Math.random() * 3 + 1,
+      delay: Math.random() * 5,
+      duration: Math.random() * 3 + 2,
+    }))
+  }, [])
+
   return (
-    <section className="py-20 text-white bg-slate-900 flex justify-center">
-      <div className="w-full max-w-6xl px-10 sm:px-10">
+    <section className="relative py-20 text-white flex justify-center overflow-hidden bg-slate-950">
+
+      {/* Fondo estrellas */}
+      <div className="absolute inset-0 z-0">
+        {stars.map((star) => (
+
+          
+          <span
+            key={star.id}
+            className="star"
+            style={{
+              top: `${star.top}%`,
+              left: `${star.left}%`,
+              width: `${star.size}px`,
+              height: `${star.size}px`,
+              animationDelay: `${star.delay}s`,
+              animationDuration: `${star.duration}s`,
+            }}
+          />
+        ))}
+      </div>
+
+      <div className="relative z-10 w-full max-w-6xl px-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,10 +88,11 @@ export function ValuePropositionSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-work-sans mb-6">Soluciones Integradas</h2>
-          <p className="text-xl max-w-4xl mx-auto opacity-90">
-            En Di Pasqua, no solo vendemos y reparamos vehículos: creamos soluciones a medida, cercanas y orientadas a
-            potenciar tu negocio y tu ciudad.
+          <h2 className="text-4xl font-bold mb-6">
+            Soluciones Integradas
+          </h2>
+          <p className="text-xl opacity-90">
+            Creamos soluciones a medida, cercanas y orientadas a potenciar tu negocio.
           </p>
         </motion.div>
 
@@ -72,7 +108,9 @@ export function ValuePropositionSection() {
               <Card className="h-full bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300 cursor-pointer">
                 <CardContent className="p-8 text-center">
                   <value.icon className="h-16 w-16 mx-auto mb-6 text-white" />
-                  <h3 className="text-xl font-semibold mb-4 text-white">{value.title}</h3>
+                  <h3 className="text-xl font-semibold mb-4">
+                    {value.title}
+                  </h3>
                   <p className="text-white/80">{value.description}</p>
                 </CardContent>
               </Card>
@@ -80,6 +118,31 @@ export function ValuePropositionSection() {
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        .star {
+          position: absolute;
+          background: white;
+          border-radius: 50%;
+          opacity: 0;
+          animation: twinkle infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+          0% {
+            opacity: 0;
+            transform: scale(0.5);
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1.4);
+          }
+          100% {
+            opacity: 0;
+            transform: scale(0.5);
+          }
+        }
+      `}</style>
     </section>
   )
 }
