@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Star, Quote } from "lucide-react"
+import { Star, Quote, Heart, ThumbsUp } from "lucide-react"
 import Image from "next/image"
 
 export default function TestimonialsSection() {
@@ -29,9 +29,42 @@ export default function TestimonialsSection() {
     },
   ]
 
+  const reactions = Array.from({ length: 20 })
+
   return (
-    <section id="testimonios" className="py-20 bg-gray-50 flex justify-center">
-      <div className="w-full max-w-6xl px-10 sm:px-10">
+    <section id="testimonios" className="relative py-20 bg-gray-50 flex justify-center overflow-hidden">
+
+      {/* Reacciones flotando */}
+      {reactions.map((_, i) => {
+        const Icon = Math.random() > 0.5 ? Heart : ThumbsUp
+        const size = Math.random() * 20 + 20
+        const left = Math.random() * 100
+        const duration = Math.random() * 8 + 8
+        const delay = Math.random() * 10
+
+        return (
+          <motion.div
+            key={i}
+            initial={{ y: 200, opacity: 0 }}
+            animate={{ y: -800, opacity: [0, 1, 1, 0] }}
+            transition={{
+              duration: duration,
+              repeat: Infinity,
+              delay: delay,
+              ease: "linear",
+            }}
+            style={{
+              position: "absolute",
+              left: `${left}%`,
+            }}
+            className="text-red-500 opacity-40"
+          >
+            <Icon size={size} />
+          </motion.div>
+        )
+      })}
+
+      <div className="w-full max-w-6xl px-10 sm:px-10 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +75,9 @@ export default function TestimonialsSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Lo Que Dicen Nuestros <span className="text-red-600">Clientes</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">La confianza de más de 2000 empresas nos respalda</p>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            La confianza de más de 2000 empresas nos respalda
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -63,7 +98,9 @@ export default function TestimonialsSection() {
                 ))}
               </div>
 
-              <p className="text-gray-700 mb-6 italic leading-relaxed flex-grow">"{testimonial.text}"</p>
+              <p className="text-gray-700 mb-6 italic leading-relaxed flex-grow">
+                "{testimonial.text}"
+              </p>
 
               <div className="flex items-center mt-auto">
                 <Image
@@ -71,12 +108,13 @@ export default function TestimonialsSection() {
                   alt={testimonial.name}
                   width={48}
                   height={48}
-                  id="image"
                   className="w-12 h-12 rounded-full mr-4"
                   priority={index === 0}
                 />
                 <div>
-                  <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
+                  <h4 className="font-semibold text-gray-900">
+                    {testimonial.name}
+                  </h4>
                   <p className="text-red-600 text-sm">{testimonial.company}</p>
                 </div>
               </div>
@@ -87,3 +125,4 @@ export default function TestimonialsSection() {
     </section>
   )
 }
+
