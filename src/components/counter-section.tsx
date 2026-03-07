@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react"
 import { motion, useInView } from "framer-motion"
+import Image from "next/image"
 
 interface CounterProps {
   end: number
@@ -40,7 +41,7 @@ function Counter({ end, duration = 2, suffix = "", prefix = "" }: CounterProps) 
   return (
     <span
       ref={ref}
-      className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-primary font-work-sans drop-shadow-sm break-words"
+      className="font-bold text-3xl md:text-4xl lg:text-5xl text-white drop-shadow-lg"
     >
       {prefix}
       {count.toLocaleString()}
@@ -51,8 +52,22 @@ function Counter({ end, duration = 2, suffix = "", prefix = "" }: CounterProps) 
 
 export function CounterSection() {
   return (
-    <section className="py-20 bg-gray-50 flex justify-center">
-      <div className="max-w-6xl px-10 lg:px-0">
+    <section className="relative py-20 flex justify-center overflow-hidden text-white">
+
+      {/* Imagen de fondo */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/Fondo_Inicios/fondo counter.png"
+          alt="fondo"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      {/* Oscurecer fondo */}
+      <div className="absolute inset-0 bg-black/40 -z-10" />
+
+      <div className="max-w-6xl px-10 lg:px-0 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -60,27 +75,28 @@ export function CounterSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-work-sans mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Nuestra Trayectoria en Números
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-200 max-w-2xl mx-auto">
             Décadas de experiencia respaldando a la industria del transporte argentino
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true }}
-            className="text-center p-6 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300"
+            className="text-center p-8 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 hover:bg-white/20 transition"
           >
-            <div className="mb-4 min-h-[60px] flex items-center justify-center">
+            <div className="mb-4">
               <Counter end={60} prefix="+" />
             </div>
-            <h3 className="text-xl md:text-2xl font-semibold mb-2 text-gray-900">Años en el Sector</h3>
-            <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+            <h3 className="text-2xl font-semibold mb-2">Años en el Sector</h3>
+            <p className="text-gray-300">
               Seis décadas liderando la industria del transporte
             </p>
           </motion.div>
@@ -90,13 +106,13 @@ export function CounterSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-center p-6 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300"
+            className="text-center p-8 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 hover:bg-white/20 transition"
           >
-            <div className="mb-4 min-h-[60px] flex items-center justify-center">
+            <div className="mb-4">
               <Counter end={500000} prefix="+" />
             </div>
-            <h3 className="text-xl md:text-2xl font-semibold mb-2 text-gray-900">Problemas solucionados</h3>
-            <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+            <h3 className="text-2xl font-semibold mb-2">Problemas solucionados</h3>
+            <p className="text-gray-300">
               Trabajando con calidad y eficiencia
             </p>
           </motion.div>
@@ -106,18 +122,20 @@ export function CounterSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-center p-6 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-300 md:col-span-2 lg:col-span-1"
+            className="text-center p-8 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 hover:bg-white/20 transition"
           >
-            <div className="mb-4 min-h-[60px] flex items-center justify-center">
+            <div className="mb-4">
               <Counter end={2000} prefix="+" />
             </div>
-            <h3 className="text-xl md:text-2xl font-semibold mb-2 text-gray-900">Clientes Satisfechos</h3>
-            <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+            <h3 className="text-2xl font-semibold mb-2">Clientes Satisfechos</h3>
+            <p className="text-gray-300">
               Empresas que confían en nuestra experiencia y calidad
             </p>
           </motion.div>
+
         </div>
       </div>
     </section>
   )
 }
+
