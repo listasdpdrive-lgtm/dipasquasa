@@ -1,6 +1,7 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
+import { useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
@@ -19,41 +20,57 @@ const fadeUp = {
 }
 
 export function HeroSection() {
+  const ref = useRef(null)
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  })
+
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"])
+
   return (
-    <section id="inicio" className="relative overflow-hidden pt-20 pb-20">
-      {/* FONDO SIMPLE */}
-      <div className="absolute inset-0 -z-10">
-      {/* FONDO CON DETALLE */}
-<div className="absolute inset-0 -z-10 bg-slate-800">
-  {/* Degradado suave */}
-  <div className="absolute inset-0 bg-gradient-to-br from-slate-700/40 via-transparent to-black/40" />
+    <section
+      ref={ref}
+      id="inicio"
+      className="relative overflow-hidden pt-20 pb-20"
+    >
+     
+      <motion.div
+        style={{ y }}
+        className="absolute inset-0 -z-10"
+      >
+        <Image
+          src="/Fondo_Inicios/Fondo hero.png"
+          alt="Fondo Transporte"
+          fill
+          priority
+          className="object-cover"
+        />
 
-  {/* Brillo decorativo */}
-  <div className="absolute -top-32 -right-32 w-[500px] h-[500px] bg-red-500/10 rounded-full blur-3xl" />
-  <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl" />
-</div>
-
-
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+      
+        <div className="absolute inset-0 bg-black/5" />
+      </motion.div>
 
       <div className="max-w-7xl mx-auto px-6">
-        {/* HERO */}
+       
         <div className="text-center text-white mb-20">
-          <motion.h1
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            className="text-4xl lg:text-6xl font-extrabold mb-6"
-          >
-            Soluciones Integrales para{" "}
-            <span className="text-white-500">Transporte Pesado</span>
-          </motion.h1>
+        <motion.h1
+          variants={fadeUp}
+          initial="hidden"
+          animate="show"
+         className="text-4xl lg:text-6xl font-extrabold mb-6 
+         drop-shadow-[0_0_15px_rgba(0,0,0,0.9)] 
+         leading-tight"
+  >
+    Soluciones Integrales para{" "}
+    <span className="text-red-600 drop-shadow-[0_0_2px_rgba(122,28,28,0.8)]">
+      Transporte Pesado
+    </span>
+  </motion.h1>
+</div>
 
-         
-        </div>
-
-        {/* LOCALES */}
+        
         <div id="locales">
           <motion.h2
             variants={fadeUp}
@@ -65,7 +82,6 @@ export function HeroSection() {
             Nuestros Locales
           </motion.h2>
 
-      
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               {
@@ -96,7 +112,7 @@ export function HeroSection() {
                 viewport={{ once: true }}
               >
                 <Link href={item.href}>
-                  <div className="relative h-[360px] rounded-xl overflow-hidden border border-white/5 group">
+                  <div className="relative h-[360px] rounded-xl overflow-hidden border border-white/10 group">
                     <Image
                       src={item.img}
                       alt={item.title}
@@ -104,13 +120,13 @@ export function HeroSection() {
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                     />
 
-                    <div className="absolute inset-0 bg-black/15" />
+                    <div className="absolute inset-0 bg-black/30" />
 
                     <div className="absolute inset-0 p-6 flex flex-col justify-end">
                       <h3 className="text-white text-xl font-semibold">
                         {item.title}
                       </h3>
-                      <p className="text-white/70 text-sm mb-4">
+                      <p className="text-white/80 text-sm mb-4">
                         {item.text}
                       </p>
                       <span className="inline-flex items-center gap-2 text-red-500 font-medium">
@@ -122,6 +138,20 @@ export function HeroSection() {
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="flex justify-center mt-10"
+          >
+            <Link href="/sucursales">
+              <button className="px-6 py-2 text-sm font-medium rounded-lg border border-white/30 text-white hover:bg-white hover:text-black transition-all duration-300">
+                Otras sucursales
+              </button>
+            </Link>
+          </motion.div>
         </div>
       </div>
     </section>
