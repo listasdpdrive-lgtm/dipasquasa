@@ -146,11 +146,7 @@ export function HeroSection() {
             viewport={{ once: true }}
             className="flex justify-center mt-10"
           >
-            <Link href="/sucursales">
-              <button className="px-6 py-2 text-sm font-medium rounded-lg border border-white/30 text-white hover:bg-white hover:text-black transition-all duration-300">
-                Otras sucursales
-              </button>
-            </Link>
+            
           </motion.div>
         </div>
       </div>
