@@ -109,7 +109,7 @@ export function CounterSection() {
             className="text-center p-8 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 hover:bg-white/20 transition"
           >
             <div className="mb-4">
-              <Counter end={500000} prefix="+" />
+              <Counter end={600000} prefix="+" />
             </div>
             <h3 className="text-2xl font-semibold mb-2">Problemas solucionados</h3>
             <p className="text-gray-300">
@@ -125,7 +125,7 @@ export function CounterSection() {
             className="text-center p-8 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 hover:bg-white/20 transition"
           >
             <div className="mb-4">
-              <Counter end={2000} prefix="+" />
+              <Counter end={5000} prefix="+" />
             </div>
             <h3 className="text-2xl font-semibold mb-2">Clientes Satisfechos</h3>
             <p className="text-gray-300">
