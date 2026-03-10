@@ -15,6 +15,7 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { LocalesSection } from "@/components/Locales-section"
 import VideosSection from "@/components/Videos"
+import MediosPago from "@/components/MediosPago"
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <CounterSection />
       <ValuePropositionSection />
       <TestimonialsSection />
+      <MediosPago />|
       <CTASection />
      
       <WhatsAppButton />
