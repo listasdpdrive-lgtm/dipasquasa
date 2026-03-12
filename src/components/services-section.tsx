@@ -30,7 +30,7 @@ export function ServicesSection() {
       whatsapp: "5491112345678",
       email: "dipasquarepuestos@gmail.com",
       location:
-        "https://www.google.com/maps/place/Carrocer%C3%ADas+Di+Pasqua/",
+         "https://maps.app.goo.gl/i19T2ZJYjrGBqsNs7",
     },
     {
       icon: Truck,
