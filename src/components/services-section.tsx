@@ -63,7 +63,7 @@ export function ServicesSection() {
       whatsapp: "542614663077",
       email: "repuestos@tudominio.com",
       location:
-        "https://www.google.com/maps/place/Di+Pasqua+Repuestos/",
+        "https://maps.app.goo.gl/PWMJzdhJhMcTqEWu7",
     },
   ]
 
