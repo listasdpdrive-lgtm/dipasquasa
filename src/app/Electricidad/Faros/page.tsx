@@ -14,7 +14,7 @@ export default function Accesorios() {
     {
       img: "/ELECTRICIDAD-JPG/farosL.png",
       titulo: "Faros Laterales, Posición, Patente y Portalampara",
-      pdf: "/catalogos/ELECTRICIDAD/FAROS LATERALES - POSICION -PATENTE Y PORTALAMPARA.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/FAROS LATERALES.pdf",
     },
      {
       img: "/ELECTRICIDAD-JPG/esquineros.png",
