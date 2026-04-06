@@ -68,14 +68,13 @@ useEffect(() => {
     <div className="fixed bottom-4 right-4 z-[9999] flex flex-col items-end gap-3">
 
       
-      {/* 🔥 BOTÓN INSTALAR SOLO SI ESTÁ DISPONIBLE */}
-{deferredPrompt && (
+  {deferredPrompt && (
   <motion.button
     onClick={instalar}
     whileTap={{ scale: 0.9 }}
-    className="bg-black p-4 rounded-full shadow-lg cursor-pointer"
+    className="bg-white p-4 rounded-full shadow-lg cursor-pointer"
   >
-    <Image src="/logoH.png" width={32} height={32} alt="instalar" />
+    <Image src="/logoH.png" width={38} height={38} alt="instalar" />
   </motion.button>
 )}
 
