@@ -46,25 +46,23 @@ export default function AdminPage() {
     preview: null as string | null,
   })
 
-  /* 🔐 AUTH */
+  
  useEffect(() => {
-  const checkAuth = async () => {
-    try {
-      const { data, error } = await supabase.auth.getUser()
+  const proteger = async () => {
+    const { data } = await supabase.auth.getUser()
 
-      if (error || !data?.user) {
-        router.replace("/admin/login")
-        return
-      }
-
-      setLoadingAuth(false)
-    } catch (e) {
+    if (!data?.user) {
       router.replace("/admin/login")
+    } else {
+      setLoadingAuth(false)
     }
   }
 
-  checkAuth()
-}, [router])
+  proteger()
+  
+}, [router]
+
+)
 
 
   const logout = async () => {
@@ -389,15 +387,7 @@ export default function AdminPage() {
     setEditando({ ...editando, orden: Number(e.target.value) })
   }
 />
-<input
-  type="number"
-  className="border p-2 w-full"
-  placeholder="Orden"
-  value={editando.orden ?? 0}
-  onChange={(e) =>
-    setEditando({ ...editando, orden: Number(e.target.value) })
-  }
-/>
+
 
             <div className="border p-3 rounded space-y-2">
               {TIPOS_CAMION.map((tipo) => (

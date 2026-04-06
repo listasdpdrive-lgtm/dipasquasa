@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 
@@ -12,7 +12,7 @@ const whatsappNumbers = [
 
 const instagramLinks = [
   { label: "Repuestos", url: "https://www.instagram.com/repuestos_dipasqua" },
-  { label: "Concesionaria", url: "https://www.instagram.com/acoplados_dipasqua?igsh=aXZxaXFzeDJnZzBz&utm_source=qr" },
+  { label: "Concesionaria", url: "https://www.instagram.com/acoplados_dipasqua" },
 ]
 
 const facebookLinks = [
@@ -22,8 +22,9 @@ const facebookLinks = [
 
 const tiktokLinks = [
   { label: "Repuestos", url: "https://www.tiktok.com/@repuestos.di.pasq" },
-  { label: "Concesionaria", url: "https://www.tiktok.com/@di.pasqua?_r=1&_t=ZS-93mdoQcS6JY" },
+  { label: "Concesionaria", url: "https://www.tiktok.com/@di.pasqua" },
 ]
+
 
 export function WhatsAppButton() {
   const [openWp, setOpenWp] = useState(false)
@@ -31,148 +32,121 @@ export function WhatsAppButton() {
   const [openFb, setOpenFb] = useState(false)
   const [openTt, setOpenTt] = useState(false)
 
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null)
+
+  useEffect(() => {
+    const handler = (e: any) => {
+      e.preventDefault()
+      setDeferredPrompt(e)
+    }
+
+    window.addEventListener("beforeinstallprompt", handler)
+    return () => window.removeEventListener("beforeinstallprompt", handler)
+  }, [])
+useEffect(() => {
+  const isStandalone = window.matchMedia("(display-mode: standalone)").matches
+  if (isStandalone) {
+    setDeferredPrompt(null)
+  }
+}, [])
+  const instalar = async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt()
+      await deferredPrompt.userChoice
+      setDeferredPrompt(null)
+    } else {
+      alert("Para instalar la app: menú del navegador → 'Agregar a pantalla de inicio'")
+    }
+  }
+
   const sendWhatsApp = (phone: string) => {
     const message = encodeURIComponent("Hola, me gustaría consultar sobre ...")
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
   }
 
   return (
-    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-4 right-4 z-[9999] flex flex-col items-end gap-3">
 
-      {/* Instagram */}
+      
+      {/* 🔥 BOTÓN INSTALAR SOLO SI ESTÁ DISPONIBLE */}
+{deferredPrompt && (
+  <motion.button
+    onClick={instalar}
+    whileTap={{ scale: 0.9 }}
+    className="bg-black p-4 rounded-full shadow-lg cursor-pointer"
+  >
+    <Image src="/logoH.png" width={32} height={32} alt="instalar" />
+  </motion.button>
+)}
+
+      {/* INSTAGRAM */}
       <AnimatePresence>
         {openIg && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            className="flex flex-col gap-2 mb-2"
-          >
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="flex flex-col gap-2">
             {instagramLinks.map((item) => (
-              <motion.a
-                key={item.url}
-                href={item.url}
-                target="_blank"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-pink-600 px-4 py-2 rounded-lg shadow-md text-sm font-medium hover:bg-pink-50"
-              >
+              <a key={item.url} href={item.url} target="_blank" className="bg-white text-pink-600 px-4 py-2 rounded-lg shadow-md text-sm">
                 {item.label}
-              </motion.a>
+              </a>
             ))}
           </motion.div>
         )}
       </AnimatePresence>
 
-      <motion.button
-        onClick={() => setOpenIg(!openIg)}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className="bg-pink-500 hover:bg-pink-600 p-3 rounded-full shadow-lg"
-      >
-        <Image src="/images/ig.png" width={32} height={32} alt="instagram" />
-      </motion.button>
+      <button onClick={() => setOpenIg(!openIg)} className="bg-pink-500 p-3 rounded-full shadow-lg cursor-pointer">
+        <Image src="/images/ig.png" width={28} height={28} alt="instagram" />
+      </button>
 
-      {/* Facebook */}
+      {/* FACEBOOK */}
       <AnimatePresence>
         {openFb && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            className="flex flex-col gap-2 mb-2"
-          >
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="flex flex-col gap-2">
             {facebookLinks.map((item) => (
-              <motion.a
-                key={item.url}
-                href={item.url}
-                target="_blank"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-blue-600 px-4 py-2 rounded-lg shadow-md text-sm font-medium hover:bg-blue-50"
-              >
+              <a key={item.url} href={item.url} target="_blank" className="bg-white text-blue-600 px-4 py-2 rounded-lg shadow-md text-sm">
                 {item.label}
-              </motion.a>
+              </a>
             ))}
           </motion.div>
         )}
       </AnimatePresence>
 
-      <motion.button
-        onClick={() => setOpenFb(!openFb)}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full shadow-lg"
-      >
-        <Image src="/images/fb-icon.png" width={32} height={32} alt="facebook" />
-      </motion.button>
+      <button onClick={() => setOpenFb(!openFb)} className="bg-blue-600 p-3 rounded-full shadow-lg cursor-pointer">
+        <Image src="/images/fb-icon.png" width={28} height={28} alt="facebook" />
+      </button>
 
-      {/* TikTok */}
+      {/* TIKTOK */}
       <AnimatePresence>
         {openTt && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            className="flex flex-col gap-2 mb-2"
-          >
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="flex flex-col gap-2">
             {tiktokLinks.map((item) => (
-              <motion.a
-                key={item.url}
-                href={item.url}
-                target="_blank"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-black px-4 py-2 rounded-lg shadow-md text-sm font-medium hover:bg-gray-100"
-              >
+              <a key={item.url} href={item.url} target="_blank" className="bg-white text-black px-4 py-2 rounded-lg shadow-md text-sm">
                 {item.label}
-              </motion.a>
+              </a>
             ))}
           </motion.div>
         )}
       </AnimatePresence>
 
-      <motion.button
-        onClick={() => setOpenTt(!openTt)}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className="bg-black hover:bg-neutral-800 p-3 rounded-full shadow-lg"
-      >
-        <Image src="/images/tik.png" width={32} height={32} alt="tiktok" />
-      </motion.button>
+      <button onClick={() => setOpenTt(!openTt)} className="bg-black p-3 rounded-full shadow-lg cursor-pointer">
+        <Image src="/images/tik.png" width={28} height={28} alt="tiktok" />
+      </button>
 
-      {/* WhatsApp */}
+      {/* WHATSAPP */}
       <AnimatePresence>
         {openWp && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 20 }}
-            className="flex flex-col gap-2 mb-2"
-          >
+          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="flex flex-col gap-2">
             {whatsappNumbers.map((item) => (
-              <motion.button
-                key={item.phone}
-                onClick={() => sendWhatsApp(item.phone)}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-green-600 px-4 py-2 rounded-lg shadow-md text-sm font-medium hover:bg-green-50"
-              >
+              <button key={item.phone} onClick={() => sendWhatsApp(item.phone)} className="bg-white text-green-600 px-4 py-2 rounded-lg shadow-md text-sm">
                 {item.label}
-              </motion.button>
+              </button>
             ))}
           </motion.div>
         )}
       </AnimatePresence>
 
-      <motion.button
-        onClick={() => setOpenWp(!openWp)}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className="bg-green-500 hover:bg-green-600 p-4 rounded-full shadow-lg"
-      >
-        <Image src="/images/wp-icon.png" width={44} height={44} alt="whatsapp" />
-      </motion.button>
+      <button onClick={() => setOpenWp(!openWp)} className="bg-green-500 p-4 rounded-full shadow-lg cursor-pointer">
+        <Image src="/images/wp-icon.png" width={36} height={36} alt="whatsapp" />
+      </button>
+
     </div>
   )
 }

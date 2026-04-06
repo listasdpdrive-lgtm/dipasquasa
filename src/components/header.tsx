@@ -10,6 +10,11 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
+
+
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null)
+  const [showInstall, setShowInstall] = useState(false)
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
@@ -17,6 +22,33 @@ export function Header() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  
+  useEffect(() => {
+    const handler = (e: any) => {
+      e.preventDefault()
+      setDeferredPrompt(e)
+      setShowInstall(true)
+    }
+
+    window.addEventListener("beforeinstallprompt", handler)
+
+    return () => window.removeEventListener("beforeinstallprompt", handler)
+  }, [])
+
+  
+  const instalarApp = async () => {
+    if (!deferredPrompt) return
+
+    deferredPrompt.prompt()
+    const choice = await deferredPrompt.userChoice
+
+    if (choice.outcome === "accepted") {
+      setShowInstall(false)
+    }
+
+    setDeferredPrompt(null)
+  }
 
   const menuItems = [
     { href: "#inicio", label: "Inicio" },
@@ -51,7 +83,6 @@ export function Header() {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      
       className="fixed top-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-md shadow-lg border-b border-gray-100"
     >
       <div className="mx-auto max-w-6xl px-5 py-3">
@@ -62,7 +93,6 @@ export function Header() {
               alt="Di Pasqua"
               width={360}
               height={620}
-              id="image"
               className="h-10 md:h-12 w-auto"
               priority
             />
@@ -80,7 +110,16 @@ export function Header() {
                 {item.label}
               </motion.button>
             ))}
-            
+
+            {/* 🔥 BOTÓN INSTALAR */}
+            {showInstall && (
+              <Button
+                onClick={instalarApp}
+                className="bg-black text-white hover:opacity-80"
+              >
+                Instalar App
+              </Button>
+            )}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -112,14 +151,8 @@ export function Header() {
                     {item.label}
                   </button>
                 ))}
-                <div className="px-4 pt-2">
-                  <Button
-                    onClick={() => scrollToSection("#contacto")}
-                    className="w-full bg-primary hover:bg-primary/90 text-white font-semibold cursor-pointer"
-                  >
-                    Solicitar Presupuesto
-                  </Button>
-                </div>
+
+               
               </div>
             </motion.nav>
           )}

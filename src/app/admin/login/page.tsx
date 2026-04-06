@@ -10,10 +10,13 @@ export default function LoginPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
+  const [loading, setLoading] = useState(false)
+
   const router = useRouter()
 
   const login = async () => {
     setError("")
+    setLoading(true)
 
     const { error } = await supabase.auth.signInWithPassword({
       email,
@@ -22,20 +25,24 @@ export default function LoginPage() {
 
     if (error) {
       setError(error.message)
+      setLoading(false)
       return
     }
 
+    // 🔥 refresca sesión y evita bugs de cache
+    router.refresh()
     router.replace("/admin")
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="border p-6 space-y-3 w-80 rounded">
-        <h1 className="text-xl font-bold">Admin Login</h1>
+    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="border p-6 space-y-4 w-80 rounded-xl shadow bg-white">
+        <h1 className="text-xl font-bold text-center">Admin Login</h1>
 
         <input
           placeholder="Email"
-          className="border p-2 w-full"
+          type="email"
+          className="border p-2 w-full rounded"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -43,18 +50,21 @@ export default function LoginPage() {
         <input
           type="password"
           placeholder="Password"
-          className="border p-2 w-full"
+          className="border p-2 w-full rounded"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        {error && <p className="text-red-600 text-sm">{error}</p>}
+        {error && (
+          <p className="text-red-600 text-sm text-center">{error}</p>
+        )}
 
         <button
           onClick={login}
-          className="bg-black text-white w-full py-2 rounded"
+          disabled={loading}
+          className="bg-black text-white w-full py-2 rounded hover:opacity-80 disabled:opacity-50"
         >
-          Entrar
+          {loading ? "Entrando..." : "Entrar"}
         </button>
       </div>
     </div>

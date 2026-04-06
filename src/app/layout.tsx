@@ -1,14 +1,11 @@
-
-
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Inter, Work_Sans } from "next/font/google"
 import "./globals.css"
 import VercelAnalytics from "@/components/VercelAnalytics"
-
 import GoogleAnalytics from "@/components/google-analytics"
-
 import { Analytics } from "@vercel/analytics/react"
+import RegisterSW from "@/components/RegisterSW"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,12 +21,13 @@ const workSans = Work_Sans({
   weight: ["400", "500", "600", "700", "800"],
 })
 
-/* ================= VIEWPORT (CORRECTO) ================= */
+/* ================= VIEWPORT ================= */
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
+  themeColor: "#000000", // 🔥 IMPORTANTE PARA PWA
 }
 
 /* ================= METADATA ================= */
@@ -42,6 +40,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Di Pasqua" }],
   creator: "Di Pasqua",
   publisher: "Di Pasqua",
+
+  manifest: "/manifest.json", // 🔥 PWA
+
+  icons: {
+    icon: "/icon-192.png",
+    apple: "/icon-192.png",
+  },
 
   formatDetection: {
     email: false,
@@ -98,21 +103,26 @@ export const metadata: Metadata = {
 }
 
 /* ================= LAYOUT ================= */
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-
-
-  
   return (
     <html
       lang="es"
       className={`${inter.variable} ${workSans.variable} antialiased`}
       style={{ touchAction: "manipulation" }}
     >
-      <body className="font-sans">
+      <head>
+        {/* 🔥 FORZAR MANIFEST (SOLUCIÓN CLAVE) */}
+        <link rel="manifest" href="/manifest.json" />
+      </head>
+
+      <body className="font-sans bg-white">
+        <RegisterSW />
+
         {process.env.NODE_ENV === "production" && (
           <GoogleAnalytics
             measurementId={process.env.GA_MEASUREMENT_ID || ""}
@@ -121,9 +131,9 @@ export default function RootLayout({
 
         {children}
 
-
         <VercelAnalytics />
+        <Analytics />
       </body>
     </html>
-      )
+  )
 }

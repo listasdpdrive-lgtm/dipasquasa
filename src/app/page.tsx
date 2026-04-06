@@ -21,6 +21,7 @@ export default function Home() {
   return (
     <main className="min-h-screen min-w-screen relative flex justify-center">
       <Header />
+      
       <div className="w-screen">
       <HeroSection />
       
@@ -37,7 +38,7 @@ export default function Home() {
      
       <WhatsAppButton />
       </div>
-      
+       
     </main>
   )
 }
