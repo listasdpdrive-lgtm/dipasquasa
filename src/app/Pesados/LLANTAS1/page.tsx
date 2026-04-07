@@ -14,7 +14,7 @@ export default function Accesorios() {
      {
       img: "/PESADOS-JPG/componentesllantas.png",
       titulo: "componentes de llantas",
-      pdf: "/catalogos/PESADOS/llantas/COMPONENTES DE LLANTA.pdf",
+      pdf: "/catalogos/PESADOS/llantas/COMPONENTES DE LLANTA (1).pdf",
     },
     
     
