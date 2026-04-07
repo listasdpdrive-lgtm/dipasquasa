@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/ELECTRICIDAD-JPG/faroslt.png",
       titulo: "Faros traseros y faroleras",
-      pdf: "/catalogos/ELECTRICIDAD/FAROS TRASEROS Y FAROLERAS.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/FAROS TRASEROS Y FAROLERAS1.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/farosL.png",
