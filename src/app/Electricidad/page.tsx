@@ -17,7 +17,7 @@ export default function Accesorios() {
     {
       img: "/ELECTRICIDAD-JPG/varios.png",
       titulo: "Electricidad Variado",
-      pdf: "/catalogos/ELECTRICIDAD/ELECTRICIDAD Y ACCESORIOS.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/ELECTRICIDAD Y ACCESORIOS (1).pdf",
     },
      {
       img: "/ELECTRICIDAD-JPG/enchufe.png",
