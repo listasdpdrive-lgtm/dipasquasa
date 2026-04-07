@@ -24,7 +24,7 @@ export default function Accesorios() {
      {
       img: "/PESADOS-JPG/bujetr.png",
       titulo: "Bujes de tensor",
-      pdf: "/catalogos/PESADOS/bujes/BUJES DE TENSOR.pdf",
+      pdf: "/catalogos/PESADOS/bujes/BUJES DE TENSOR (1).pdf",
     },
    {
       img: "/PESADOS-JPG/bujes elastico.png",
