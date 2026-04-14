@@ -74,53 +74,57 @@ export default function Sidebar() {
       </motion.div>
 
       {/* HEADER */}
-      <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row md:h-26 md:items-center md:justify-between">
-          <div className="flex items-center justify-between h-16">
-            <button className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
-              {mobileOpen ? <X size={30} /> : <Menu size={30} />}
-            </button>
+            <header className="fixed top-0 left-0 w-full bg-white shadow z-50">
+  <div className="max-w-7xl mx-auto px-4">
+    {/* Contenedor principal: h-16 para móvil, h-26 para desktop */}
+    <div className="flex flex-col md:flex-row md:h-26 md:items-center md:justify-between">
+      
+      {/* SECCIÓN IZQUIERDA: Botón Volver + Logo */}
+      <div className="flex items-center justify-between md:justify-start h-16 gap-4">
+        
+        {/* BOTÓN VOLVER: Solo visible en PC (md:flex), empuja al logo (no se superpone) */}
+        {pathname !== "/" && (
+          <motion.button
+            onClick={() => router.back()}
+            whileHover={{ x: -4 }}
+            whileTap={{ scale: 0.95 }}
+            className="hidden md:flex items-center gap-2 px-4 py-2 text-sm font-semibold text-gray-700 bg-white border border-gray-200 rounded-xl shadow-sm hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition-all shrink-0"
+          >
+            <ArrowLeft size={18} />
+            Volver
+          </motion.button>
+        )}
 
-            <Link href="/" className="flex items-center">
-              <Image src="/logoC.png" alt="Di Pasqua" width={140} height={45} priority />
-            </Link>
-          </div>
+        {/* Botón Menú (Solo móvil) */}
+        <button className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
+          {mobileOpen ? <X size={30} /> : <Menu size={30} />}
+        </button>
 
-          <div className="flex items-center gap-3 pb-2 md:pb-0">
-            <span className="hidden md:block text-sm">
-              🕒 Lun a Vie 9:00 – 18:00 · Sab 9:00–13:00
-            </span>
+        {/* LOGO: Siempre a la derecha del botón Volver en PC */}
+        <Link href="/" className="flex items-center">
+          <Image src="/logoC.png" alt="Di Pasqua" width={140} height={45} priority className="object-contain" />
+        </Link>
+      </div>
 
-            <span className="md:hidden text-xs">
-              🕒 Lun a Vie 9–18 · Sab 9–13
-            </span>
+      {/* SECCIÓN DERECHA: Horarios y Ubicación */}
+      <div className="flex items-center gap-3 pb-2 md:pb-0">
+        <span className="hidden md:block text-sm">
+          🕒 Lun a Vie 9:00 – 18:00 · Sab 9:00–13:00
+        </span>
+        <span className="md:hidden text-xs">
+          🕒 Lun a Vie 9–18 · Sab 9–13
+        </span>
+        <button
+          onClick={() => window.open("https://maps.app.goo.gl/jTb2ruaWZ9ahHzsU9", "_blank")}
+          className="px-3 py-1.5 rounded-xl border border-red-600 text-red-600 text-sm font-semibold hover:bg-red-600 hover:text-white transition"
+        >
+          Ubicación
+        </button>
+      </div>
 
-            <button
-              onClick={() =>
-                window.open(
-                  "https://www.google.com/maps/place/Di+Pasqua+Repuestos/",
-                  "_blank"
-                )
-              }
-              className="px-3 py-1.5 rounded-xl border border-red-600 text-red-600 text-sm font-semibold hover:bg-red-600 hover:text-white transition"
-            >
-              Ubicación
-            </button>
-
-            {pathname !== "/" && (
-              <motion.button
-                onClick={() => router.back()}
-                whileHover={{ x: -4 }}
-                whileTap={{ scale: 0.95 }}
-                className="hidden md:flex items-center gap-2 px-4 py-2 text-sm font-semibold text-gray-700 bg-white border border-gray-200 rounded-xl shadow-sm hover:bg-red-50 hover:text-red-600 hover:border-red-200 transition-all"
-              >
-                <ArrowLeft size={18} />
-                Volver
-              </motion.button>
-            )}
-          </div>
-        </div>
-      </header>
+    </div>
+  </div>
+</header>
 
       {/* SIDEBAR MOBILE */}
       <AnimatePresence>
