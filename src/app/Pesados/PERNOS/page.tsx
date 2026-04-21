@@ -29,7 +29,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/pernos_elastico.png",
       titulo: "Pernos de Elastico",
-      pdf: "/catalogos/PESADOS/pernos/PERNOS DE ELASTICO.pdf",
+      pdf: "/catalogos/PESADOS/pernos/PERNOS DE ELASTICO (1).pdf",
     },
   ]
 
