@@ -14,7 +14,7 @@ export default function Accesorios() {
        {
       img: "/PESADOS-JPG/mazas.png",
       titulo: "Mazas",
-      pdf: "/catalogos/PESADOS/mazas/MAZAS VERIFICAR MEDIDAS.pdf",
+      pdf: "/catalogos/PESADOS/mazas/MAZAS VERIFICAR MEDIDAS (1).pdf",
     },
     {
       img: "/PESADOS-JPG/guardapolvo.png",
