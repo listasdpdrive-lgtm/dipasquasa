@@ -71,8 +71,7 @@ export default function Accesorios() {
       img: "/PESADOS-JPG/mazasycampana.png",
       titulo: "Mazas, Campanas y Guarda polvos",
       link: "/Pesados/mazas",
-    },
-    {
+    },{
       img: "/PESADOS-JPG/herrajes.png",
       titulo: "Herrajes, barandas, cajones y escaleras",
       link: "/Pesados/herrajes",
@@ -97,7 +96,7 @@ export default function Accesorios() {
     },{
       img: "/PESADOS-JPG/chapinete.png",
       titulo: "Plaquetas y chapínetes",
-      pdf: "/catalogos/PESADOS/PLAQUETAS Y CHAPINETES ACTUALIZADO.pdf",
+      pdf: "/catalogos/PESADOS/PLAQUETAS Y CHAPINETES ACTUALIZADO (1).pdf",
     },{
       img: "/PESADOS-JPG/repuestos batea.png",
       titulo: "Repuestos para batea",
