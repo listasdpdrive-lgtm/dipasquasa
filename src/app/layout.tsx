@@ -44,8 +44,14 @@ export const metadata: Metadata = {
   manifest: "/manifest.json", // 🔥 PWA
 
   icons: {
-    icon: "/icon-192.png",
-    apple: "/icon-192.png",
+    // Prioriza el SVG para el navegador y mantiene los PNG para compatibilidad
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/logoL.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: "/logoL.png", sizes: "192x192", type: "image/png" },
+    ],
   },
 
   formatDetection: {
