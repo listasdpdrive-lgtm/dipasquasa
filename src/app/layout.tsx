@@ -21,55 +21,44 @@ const workSans = Work_Sans({
   weight: ["400", "500", "600", "700", "800"],
 })
 
-/* ================= VIEWPORT ================= */
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
-  themeColor: "#000000", // 🔥 IMPORTANTE PARA PWA
+  maximumScale: 5, // Cambiado a 5 por accesibilidad, 1 bloquea el zoom del usuario
+  themeColor: "#e31f26", // Usando el rojo de tu logo para la barra del navegador
 }
 
-/* ================= METADATA ================= */
 export const metadata: Metadata = {
+  // IMPORTANTE: Cambia esto por tu dominio real exacto
+  metadataBase: new URL("https://www.dipasquasa.com"), 
+  
   title: "Di Pasqua - Soluciones Integrales en Transporte pesado",
-  description:
-    "Más de 60 años liderando en el sector del transporte. Reparaciones, venta de semis y repuestos con la confianza de la experiencia.",
-  keywords:
-    "transporte, reparación, semis, repuestos, Di Pasqua, Mendoza, Argentina, camiones, mantenimiento, servicio técnico",
+  description: "Más de 60 años liderando en el sector del transporte. Reparaciones, venta de semis y repuestos con la confianza de la experiencia.",
+  keywords: "transporte, reparación, semis, repuestos, Di Pasqua, Mendoza, Argentina, camiones, mantenimiento, servicio técnico",
+  
   authors: [{ name: "Di Pasqua" }],
   creator: "Di Pasqua",
   publisher: "Di Pasqua",
 
-  manifest: "/manifest.json", // 🔥 PWA
+  manifest: "/manifest.json",
 
   icons: {
-    // Prioriza el SVG para el navegador y mantiene los PNG para compatibilidad
+    // El navegador usará el SVG por defecto. 
+    // Google Search usará el primero que encuentre que sea cuadrado y de calidad.
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
       { url: "/logoL.png", sizes: "192x192", type: "image/png" },
     ],
+    // El Apple Touch Icon es fundamental para Google Search en móviles
     apple: [
       { url: "/logoL.png", sizes: "192x192", type: "image/png" },
     ],
   },
 
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-
-  metadataBase: new URL("https://dipasqua.com"),
-  alternates: {
-    canonical: "/",
-  },
-
   openGraph: {
     title: "Di Pasqua - Soluciones Integrales en Transporte pesado",
-    description:
-      "Más de 60 años liderando en el sector del transporte. Reparaciones, venta de semis y repuestos con la confianza de la experiencia.",
-    url: "https://dipasqua.com",
+    description: "Más de 60 años liderando en el sector del transporte.",
+    url: "https://www.dipasquasa.com",
     siteName: "Di Pasqua",
     locale: "es_AR",
     type: "website",
@@ -78,37 +67,16 @@ export const metadata: Metadata = {
         url: "/images/dipasqua-logo.png",
         width: 1200,
         height: 630,
-        alt: "Di Pasqua - Soluciones Integrales en Transporte pesado",
+        alt: "Di Pasqua",
       },
     ],
   },
 
-  twitter: {
-    card: "summary_large_image",
-    title: "Di Pasqua - Soluciones Integrales en Transporte pesado",
-    description:
-      "Más de 60 años liderando en el sector del transporte. Reparaciones, venta de semis y repuestos con la confianza de la experiencia.",
-    images: ["/images/dipasqua-logo.png"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-
+  // Esto ayuda a que Google verifique la propiedad más rápido
   verification: {
-    google: "tu-google-verification-code",
+    google: "tu-codigo-de-verificacion", 
   },
 }
-
-/* ================= LAYOUT ================= */
 
 export default function RootLayout({
   children,
@@ -119,13 +87,7 @@ export default function RootLayout({
     <html
       lang="es"
       className={`${inter.variable} ${workSans.variable} antialiased`}
-      style={{ touchAction: "manipulation" }}
     >
-      <head>
-        {/* 🔥 FORZAR MANIFEST (SOLUCIÓN CLAVE) */}
-        <link rel="manifest" href="/manifest.json" />
-      </head>
-
       <body className="font-sans bg-white">
         <RegisterSW />
 
