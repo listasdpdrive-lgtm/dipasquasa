@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/AIRE-JPG/reparacionestriler.png",
       titulo: "Reparaciones Triller",
-      pdf: "/catalogos/AIRE/REPARACIÓN VALVULA TRILLER ACTUALIZADA.pdf",
+      pdf: "/catalogos/AIRE/Reparación valvulas triller 18-05-26.pdf",
     },
     {
       img: "/REPARACIONESRG/rg.png",

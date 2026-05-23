@@ -7,43 +7,46 @@ export default function Accesorios() {
 
   const cuadros = [
     { img: "/REPARACIONESRG/aire.jpg", titulo: "REPARACIONES ACOPLES DE AIRE",
-       pdf: "/catalogos/AIRE/RG/REPARACIÓN DE ACOPLES AIRE RG.pdf" },
+       pdf: "/catalogos/AIRE/RG/Reparación acoples de aire 18-05-26.pdf" },
 
     { img: "/REPARACIONESRG/compresor.png", titulo: "REPARACIONES DE COMPRESOR",
-       pdf: "/catalogos/AIRE/RG/REPARACIÓN COMPRESOR RG.pdf" },
+       pdf: "/catalogos/AIRE/RG/Reparación compresor 18-05-26.pdf" },
 
     { img: "/REPARACIONESRG/servoembrague.png", titulo: "REPARACIONES SERVOS DE EMBRAGUE", 
-      pdf: "/catalogos/AIRE/RG/REPARACIÓN SERVO DE EMBRAGUE.pdf" },
+      pdf: "/catalogos/AIRE/RG/Reparación servos de embrague 18-05-26.pdf" },
 
     { img: "/REPARACIONESRG/servofreno.png", titulo: "REPARACIONES SERVOS DE FRENO",
-       pdf: "/catalogos/AIRE/RG/REPARACIÓN DE SERVOS DE FRENO.pdf" },
+       pdf: "/catalogos/AIRE/RG/Reparación servo de freno 18-05-26.pdf" },
 
     { img: "/REPARACIONESRG/comando.png", titulo: "REPARACIONES VÁLVULAS COMANDO MANUALES Y DE FRENO", 
-      pdf: "/catalogos/AIRE/RG/REPARACIÓN VALVULA COMANDO,MANUALES Y DE FRENO RG.pdf" },
+      pdf: "/catalogos/AIRE/RG/Reparación valvulas de comando 18-05-26.pdf" },
 
     { img: "/REPARACIONESRG/distribuidoras.png", titulo: "REPARACIONES VÁLVULAS DISTRIBUIDORAS", 
-      pdf: "/catalogos/AIRE/RG/REPARACIÓN VALVULA DISTRIBUIDORA RG.pdf" },
+      pdf: "/catalogos/AIRE/RG/Reparación valvulas distribuidora 18-05-26.pdf" },
 
-    { img: "/REPARACIONESRG/gobernadoras.png", titulo: "REPARACIONES VÁLVULAS GOBERNADORAS",
-       pdf: "/catalogos/AIRE/RG/REPARACIÓN VALVULAS GOBERNADORAS RG.pdf" },
+    { img: "/REPARACIONESRG/gobernadoras.png", titulo: "REPARACIONES VÁLVULAS GOBERNADORAS Y SECADORAS",
+       pdf: "/catalogos/AIRE/RG/Reparación valvulas gobernadoras y secadoras 18-05-26.pdf" },
 
     { img: "/REPARACIONESRG/niveladoras.png", titulo: "REPARACIONES VÁLVULAS NIVELADORAS", 
-      pdf: "/catalogos/AIRE/RG/REPARACIÓN VALVULA NIVELADORA RG.pdf" },
+      pdf: "/catalogos/AIRE/RG/Reparación valvulas niveladoras 18-05-26.pdf" },
 
     { img: "/REPARACIONESRG/pedaleras.png", titulo: "REPARACIONES VÁLVULAS PEDALERAS",
-       pdf: "/catalogos/AIRE/RG/REPARACIÓN VALVULA PEDALERA RG.pdf" },
+       pdf: "/catalogos/AIRE/RG/Reparación valvula pedalera 18-05-26.pdf" },
 
     { img: "/REPARACIONESRG/protectoras.png", titulo: "REPARACIONES VÁLVULAS PROTECTORAS Y DE RETENCIÓN", 
-      pdf: "/catalogos/AIRE/RG/REPARACIÓN VALVULA PROTECTORA DE PRESIÓN Y RETENCIÓN RG.pdf" },
+      pdf: "/catalogos/AIRE/RG/Reparación valvulas protectora 18-05-26.pdf" },
 
     { img: "/REPARACIONESRG/relay.png", titulo: "REPARACIONES VÁLVULAS RELAY", 
-      pdf: "/catalogos/AIRE/RG/REPARACIÓN VALVULA RELAY RG.pdf" },
+      pdf: "/catalogos/AIRE/RG/Reparación valvulas relay 18-05-26.pdf" },
 
     { img: "/REPARACIONESRG/rcontrol.png", titulo: "REPARACIONES VÁLVULAS RELAY Y DE CONTROL", 
-      pdf: "/catalogos/AIRE/RG/REPARACIÓN VALVULA RELAY Y CONTROL SPRING BREAK RG.pdf" },
+      pdf: "/catalogos/AIRE/RG/Reparación valvulas relay y control 15-05-26.pdf" },
 
     { img: "/REPARACIONESRG/sensibles.png", titulo: "REPARACIONES VÁLVULAS SENSIBLES A LA CARGA", 
-      pdf: "/catalogos/AIRE/RG/REPARACIÓN VALVULA A LA CARGA RG.pdf" },
+      pdf: "/catalogos/AIRE/RG/Reparación valvula sensible a la carga 18-05-26.pdf" },
+
+       { img: "/REPARACIONESRG/Descarga rapida2.png", titulo: "REPARACIONES VÁLVULAS DESCARGA RAPIDAS", 
+      pdf: "/catalogos/AIRE/RG/Reparación descarga rapida 18-05-26.pdf" },
   ]
 
   return (

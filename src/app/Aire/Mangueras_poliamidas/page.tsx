@@ -9,22 +9,22 @@ export default function Accesorios() {
     {
       img: "/AIRE-JPG/abrazadera_manguera.png",
       titulo: "Abrazaderas de manguera",
-      pdf: "/catalogos/AIRE/mangueras/ABRAZADERAS DE MANGUERA.pdf",
+      pdf: "/catalogos/AIRE/mangueras/Abrazaderas para manguera 18-05-26.pdf",
     },
     {
       img: "/AIRE-JPG/mangueragoma.png",
       titulo: "Manguera de goma",
-      pdf: "/catalogos/AIRE/mangueras/MANGUERA DE GOMA.pdf",
+      pdf: "/catalogos/AIRE/mangueras/Manguera de goma 14-05-26.pdf",
     },
     {
       img: "/AIRE-JPG/piliamida.png",
       titulo: "Poliamidas",
-        pdf: "/catalogos/AIRE/mangueras/POLIAMIDAS.pdf",
+        pdf: "/catalogos/AIRE/mangueras/Poliamida 18-05-26.pdf",
     },
     {
       img: "/AIRE-JPG/polietileno.png",
       titulo: "Polietilino",
-      pdf: "/catalogos/AIRE/mangueras/POLIETILENO.pdf",
+      pdf: "/catalogos/AIRE/mangueras/Polietileno 18-05-26.pdf",
     },
   ]
 

@@ -15,7 +15,7 @@ export default function Accesorios() {
     {
       img: "/AIRE-JPG/rulos_a.png",
       titulo: "Acoples espirales",
-      pdf:"catalogos/AIRE/acoples_espirales/ACOPLES Y ESPIRALES CONECTORES DE AIRE.pdf",
+      pdf:"catalogos/AIRE/acoples_espirales/Acoples espirales 18-05-26.pdf",
     },
     {
       img: "/AIRE-JPG/conexiones.png",
