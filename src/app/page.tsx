@@ -33,7 +33,7 @@ export default function Home() {
       <CounterSection />
       <ValuePropositionSection />
       <TestimonialsSection />
-      <MediosPago />|
+      <MediosPago />
       <CTASection />
      
       <WhatsAppButton />

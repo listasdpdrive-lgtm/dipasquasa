@@ -1,26 +1,38 @@
 {
-  "name": "Dipasqua Repuesto",
-  "short_name": "DP",
+  "name": "Dipasqua Repuestos",
+  "short_name": "Di Pasqua",
   "id": "/",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
-  "description": "Catálogo de repuestos Dipasqua",
+  "theme_color": "#e31f26",
+  "description": "Más de 60 años liderando el sector del transporte. Reparaciones, venta de semis y repuestos.",
   "icons": [
     {
       "src": "/logoL.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/logoL.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "/logoH.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/logoH.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "screenshots": [
@@ -28,12 +40,15 @@
       "src": "/logoD.png",
       "sizes": "1280x720",
       "type": "image/png",
-      "form_factor": "wide"
+      "form_factor": "wide",
+      "label": "Escritorio - Di Pasqua"
     },
     {
       "src": "/logoM.png",
       "sizes": "390x844",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Móvil - Di Pasqua"
     }
   ]
 }

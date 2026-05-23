@@ -3,7 +3,6 @@
 import Link from "next/link"
 import Image from "next/image"
 import Sidebar from "@/components/Sidebar"
-import { link } from "fs"
 
 export default function Accesorios() {
   const cuadros = [
@@ -15,7 +14,7 @@ export default function Accesorios() {
     {
       img: "/AIRE-JPG/rulos_a.png",
       titulo: "Acoples espirales",
-      pdf:"catalogos/AIRE/acoples_espirales/Acoples espirales 18-05-26.pdf",
+      pdf: "catalogos/AIRE/acoples_espirales/Acoples espirales 18-05-26.pdf",
     },
     {
       img: "/AIRE-JPG/conexiones.png",
@@ -36,8 +35,6 @@ export default function Accesorios() {
 
   return (
     <div className="flex min-h-screen relative">
-    
-
       {/* FONDO */}
       <div
         className="fixed inset-0 bg-cover bg-center -z-10"
@@ -63,7 +60,7 @@ export default function Accesorios() {
                     height={600}
                     className="w-full h-36 md:h-48 object-cover"
                   />
-                  <h3 className="p-4  bg-red-600 text-center font-bold text-sm md:text-base">
+                  <h3 className="p-4 bg-red-600 text-center font-bold text-sm md:text-base">
                     {c.titulo}
                   </h3>
                 </div>
