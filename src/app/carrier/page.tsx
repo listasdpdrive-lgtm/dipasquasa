@@ -19,7 +19,7 @@ export default function Accesorios() {
     {
       img: "/carrier/carrier_varios.png",
       titulo: "Carrier varios",
-      pdf: "/catalogos/CARRIER/CARRIER VARIOS.pdf",
+      pdf: "/catalogos/CARRIER/Carrier varios 20-05-26.pdf",
     },
   ]
 

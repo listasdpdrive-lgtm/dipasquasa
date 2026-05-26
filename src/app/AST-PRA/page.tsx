@@ -9,12 +9,12 @@ export default function Accesorios() {
     {
       img: "/AST-PRA/micas.png",
       titulo: "FAROS-MICAS Y ESQUINEROS",
-      pdf: "/catalogos/AST-PRA/FAROS-MICAS Y ESQUINEROS.pdf",
+      pdf: "/catalogos/AST-PRA/Micas-faros-faroleras 18-05-26.pdf",
     },
     {
       img: "/AST-PRA/herrajes.png",
       titulo: "HERRAJES Y ACCESORIOS AST-PRA",
-      pdf: "/catalogos/AST-PRA/HERRAJES Y ACCESORIOS AST-PRA.pdf",
+      pdf: "/catalogos/AST-PRA/Herrajes AST-PRA 18-05-26.pdf",
     },
   ]
 

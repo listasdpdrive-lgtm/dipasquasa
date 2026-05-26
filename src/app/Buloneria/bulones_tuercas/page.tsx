@@ -10,17 +10,17 @@ export default function Accesorios() {
     {
       img: "/buloneria/bulon_rueda.png",
       titulo: "Bulones de rueda",
-      pdf: "/catalogos/BULONERIA/BULONES DE RUEDA.pdf",
+      pdf: "/catalogos/BULONERIA/Bulones de rueda 20-05-26.pdf",
     },
     {
       img: "/buloneria/tuercas.png",
       titulo: "Tuercas de rueda",
-      pdf: "/catalogos/BULONERIA/TUERCAS DE RUEDA.pdf",
+      pdf: "/catalogos/BULONERIA/Tuercas de rueda 20-05-26.pdf",
     },
     { 
       img: "/buloneria/conica.png", 
       titulo: "Arandelas conicas y centradores", 
-      pdf: "/catalogos/BULONERIA/ARANDELAS CONICAS Y CENTRADORES.pdf" 
+      pdf: "/catalogos/BULONERIA/Centradores y arandelas de rueda 20-05-26.pdf" 
     },
   ]
 

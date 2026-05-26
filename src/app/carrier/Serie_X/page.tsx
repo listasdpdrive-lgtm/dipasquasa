@@ -9,22 +9,22 @@ export default function Accesorios() {
     {
       img: "/carrier/correas.avif",
       titulo: "Correas y mangueras",
-      pdf: "/catalogos/CARRIER/x/CORREAS Y MANGUERAS EQUIPO SERIE X ACTUALIZADO.pdf",
+      pdf: "/catalogos/CARRIER/x/Correas y mangueras x2100 20-05-26.pdf",
     },
     {
       img: "/carrier/electricidadx.png",
       titulo: "Electricidad",
-      pdf: "/catalogos/CARRIER/x/ELECTRICIDAD X2100 ACTUALIZADO (1).pdf",
+      pdf: "/catalogos/CARRIER/x/Electricidad X2100 20-05-26.pdf",
     },
     {
       img: "/carrier/motor.png",
       titulo: "Motor",
-      pdf: "/catalogos/CARRIER/x/MOTOR EN GENERAL X2100 ACTUALIZADO .pdf",
+      pdf: "/catalogos/CARRIER/x/Motor general x2100 20-05-26.pdf",
     },
     {
       img: "/carrier/filtroX.jpg",
       titulo: "Filtros y tanques",
-      pdf: "/catalogos/CARRIER/x/FILTROS Y TANQUES EQUIPO SERIE X ACTUALIZADO.pdf",
+      pdf: "/catalogos/CARRIER/x/Filtros y tanque x2100.pdf",
     },
   ]
 

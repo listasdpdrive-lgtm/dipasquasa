@@ -9,22 +9,22 @@ export default function Accesorios() {
     {
       img: "/carrier/filtro.png",
       titulo: "Filtro y portafiltros",
-      pdf: "/catalogos/CARRIER/s/CORREAS SUPRA ACTUALIZADO.pdf",
+      pdf: "/catalogos/CARRIER/s/Filtros Supra 20-05-26.pdf",
     },
     {
       img: "/carrier/correa.png",
       titulo: "Correa",
-      pdf: "/catalogos/CARRIER/s/CORREAS SUPRA ACTUALIZADO.pdf",
+      pdf: "/catalogos/CARRIER/s/Correas Supra 20-25-26.pdf",
     },
     {
       img: "/carrier/motors.png",
       titulo: "Motor en general",
-      pdf: "/catalogos/CARRIER/s/MOTOR GENERAL SUPRA ACTUALIZADO (1).pdf",
+      pdf: "/catalogos/CARRIER/s/Motor general Supra 20-05-26.pdf",
     },
     {
       img: "/carrier/electricidaS.png",
       titulo: "Electricidad",
-      pdf: "/catalogos/CARRIER/s/ELECTRICIDAD SUPRA ACTUALIZADO.pdf",
+      pdf: "/catalogos/CARRIER/s/Electricidad Supra 20-05-26.pdf",
     },
   ]
 
