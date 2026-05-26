@@ -11,22 +11,22 @@ export default function Accesorios() {
     {
       img: "/ELECTRICIDAD-JPG/cree led.png",
       titulo: "Cree led 24 y 12v",
-      pdf: "/catalogos/ELECTRICIDAD/CREE LED 24 y 12v.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Cree led 21-05-26.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/barras.png",
       titulo: "Faros, barras y tiras 24 y 12v",
-      pdf: "/catalogos/ELECTRICIDAD/FAROS, BARRAS Y TIRAS 24 y 12v.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Barras led-reflectores 20-05-26.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/leds.png",
       titulo: "focos 24 y 12v",
-      pdf: "/catalogos/ELECTRICIDAD/FOCOS LED 24 y 12v.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Focos led 21-25-26.pdf",
     },
      {
       img: "/ELECTRICIDAD-JPG/halogenos.png",
       titulo: "halogenos 24 y 12v",
-      pdf: "/catalogos/ELECTRICIDAD/HALOGENOS 24 y 12v.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Lamparas halogenas 20-05-26.pdf",
     },
   ]
 

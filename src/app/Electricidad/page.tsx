@@ -12,17 +12,17 @@ export default function Accesorios() {
     {
       img: "/ELECTRICIDAD-JPG/cables.png",
       titulo: "Cables",
-      pdf: "/catalogos/ELECTRICIDAD/CABLES.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Cables 20-05-26.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/varios.png",
       titulo: "Electricidad Variado",
-      pdf: "/catalogos/ELECTRICIDAD/ELECTRICIDAD Y ACCESORIOS (1).pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Electricidad varios 21-05-26.pdf",
     },
      {
       img: "/ELECTRICIDAD-JPG/enchufe.png",
       titulo: "Enchufe de Luz",
-      pdf: "/catalogos/ELECTRICIDAD/ENCHUFES DE LUZ.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Enchufe de luz 20-05-26.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/faros.png",

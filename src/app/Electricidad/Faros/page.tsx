@@ -9,23 +9,23 @@ export default function Accesorios() {
     {
       img: "/ELECTRICIDAD-JPG/faroslt.png",
       titulo: "Faros traseros y faroleras",
-      pdf: "/catalogos/ELECTRICIDAD/FAROS TRASEROS Y FAROLERAS (2).pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Faros traseros y faroleras 20-05-26.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/farosL.png",
       titulo: "Faros Laterales, Posición, Patente y Portalampara",
-      pdf: "/catalogos/ELECTRICIDAD/FAROS LATERALES.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Faros laterales-posición-ilumina patente 20-05-26.pdf",
     },
      {
       img: "/ELECTRICIDAD-JPG/esquineros.png",
-      titulo: "Faros, micas y esquineros",
-      pdf: "/catalogos/ELECTRICIDAD/FAROS, MICAS Y ESQUINEROS.pdf",
+      titulo: "FAROS, MICAS Y ESQUINEROS AST-PRA",
+      pdf: "/catalogos/ELECTRICIDAD/Faros-micas-esquineros AST-PRA 21-05-26.pdf",
     },
   
     {
       img: "/ELECTRICIDAD-JPG/MICAS.png",
       titulo: "Micas",
-      pdf: "/catalogos/ELECTRICIDAD/LENTES - MICAS (1).pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Micas 20-05-26.pdf",
     },
   ]
 
