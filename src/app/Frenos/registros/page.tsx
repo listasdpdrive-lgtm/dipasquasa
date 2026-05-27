@@ -12,12 +12,12 @@ export default function Accesorios() {
     {
       img: "/frenos/registros.png",
       titulo: "Registro",
-      pdf: "/catalogos/FRENOS/REGISTRO DE FRENO.pdf",
+      pdf: "/catalogos/FRENOS/Registros 21-05-26.pdf",
     },
 {
       img: "/frenos/reparacionr.png",
       titulo: "Reparaciones de registro",
-      pdf: "/catalogos/FRENOS/REPARACIONES DE REGISTRO.pdf",
+      pdf: "/catalogos/FRENOS/Reparaciones de registros 21-05-26.pdf",
     },
    
   ]

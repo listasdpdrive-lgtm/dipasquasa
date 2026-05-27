@@ -10,12 +10,12 @@ export default function Accesorios() {
     {
       img: "/frenos/crucetas.png",
       titulo: "Crucetas",
-      pdf: "/catalogos/FRENOS/patines/CRUCETAS.pdf",
+      pdf: "/catalogos/FRENOS/patines/Crucetas 21-05-26.pdf",
     },
      {
       img: "/frenos/patin.png",
       titulo: "Patines de freno",
-      pdf: "/catalogos/FRENOS/patines/PATINES DE FRENO.pdf",
+      pdf: "/catalogos/FRENOS/patines/Patin de freno 21-05-26.pdf",
     },
    
  

@@ -9,12 +9,12 @@ export default function Accesorios() {
     {
       img: "/frenos/citasC.png",
       titulo: "Cinta camion",
-      pdf: "/catalogos/FRENOS/c/CINTA DE CAMION ACTUALIZADA.pdf",
+      pdf: "/catalogos/FRENOS/c/Cinta de freno camión 21-05-26.pdf",
     },
       {
       img: "/frenos/cintasSs.png",
       titulo: "Cinta semiremolque",
-      pdf: "/catalogos/FRENOS/c/CINTA SEMIREMOLQUE Y ACOPLADO ACTUALIZADO.pdf",
+      pdf: "/catalogos/FRENOS/c/Cinta de frenos semi y acoplados 21-05-26.pdf",
     },
     
   ]

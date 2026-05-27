@@ -21,12 +21,12 @@ export default function Accesorios() {
     {
       img: "/frenos/remaches.png",
       titulo: "Remaches",
-      pdf: "/catalogos/FRENOS/REMACHES.pdf",
+      pdf: "/catalogos/FRENOS/Remaches 21-05-26.pdf",
     },
      {
       img: "/frenos/rodillos.png",
       titulo: "Rodillos",
-      pdf: "/catalogos/FRENOS/RODILLOS.pdf",
+      pdf: "/catalogos/FRENOS/Rodillos 21-05-26.pdf",
     },
       {
       img: "/frenos/cintas.png",
@@ -36,7 +36,7 @@ export default function Accesorios() {
       {
       img: "/frenos/repuesto.png",
       titulo: "Repuestos para patin de freno",
-      pdf: "/catalogos/FRENOS/REPUESTO PATIN DE FRENO.pdf",
+      pdf: "/catalogos/FRENOS/Repuestos patin de freno 21-05-26.pdf",
     },
       {
       img: "/frenos/registro.png",
@@ -46,7 +46,7 @@ export default function Accesorios() {
     {
       img: "/frenos/pernopatin.png",
       titulo: "Pernos de patin de freno",
-      pdf: "/catalogos/FRENOS/PERNO PATIN DE FRENO.pdf",
+      pdf: "/catalogos/FRENOS/Pernos patin de freno 21-05-26.pdf",
     },
     {
       img: "/frenos/cintass.png",

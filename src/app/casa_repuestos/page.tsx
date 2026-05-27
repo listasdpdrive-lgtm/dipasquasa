@@ -24,7 +24,7 @@ export default function CatalogosPage() {
     { img: "/image-cuadros/carrier-logo.png", titulo: "Carrier", link: "/carrier" },
     { img: "/electricidad.png", titulo: "Electricidad", link: "/Electricidad" },
     { img: "/amarre.png", titulo: "Elementos de Amarre", link: "/Elemento_amarre" },
-    { img: "/seguridad.png", titulo: "Elementos de Seguridad", pdf: "/catalogos/SEGURIDAD/ELEMENTOS DE SEGURIDAD Y REFLECTIVOS.pdf" },
+    { img: "/seguridad.png", titulo: "Elementos de Seguridad", pdf: "/catalogos/SEGURIDAD/Elementos de seguridad 21-05-26.pdf" },
     { img: "/filtros/filtrosportada.png", titulo: "Filtros de aire", link: "/filtros" },
     { img: "/frenos.png", titulo: "Frenos", link: "/Frenos" },
     { img: "/herramientas/herramientas.png", titulo: "Herramientas", pdf: "/catalogos/herramientas/HERRAMIENTAS (2).pdf" },

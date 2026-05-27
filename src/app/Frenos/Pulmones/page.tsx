@@ -10,17 +10,17 @@ export default function Accesorios() {
     {
       img: "/frenos/diafragma.png",
       titulo: "Diafragmas",
-      pdf: "/catalogos/FRENOS/pul/DIAFRAGMAS.pdf",
+      pdf: "/catalogos/FRENOS/pul/Diafragmas 21-05-26.pdf",
     },
     {
       img: "/frenos/pulmoness.png",
       titulo: "Pulmones de freno",
-      pdf: "/catalogos/FRENOS/pul/PULMONES DE FRENO ACTUALIZADO.pdf",
+      pdf: "/catalogos/FRENOS/pul/Pulmon de freno 21-05-26 .pdf",
     },
     {
       img: "/frenos/reparacion.png",
       titulo: "Reparaciones de pulmon",
-      pdf: "/catalogos/FRENOS/pul/REPARACIONES DE PULMON.pdf",
+      pdf: "/catalogos/FRENOS/pul/Reparación pulmon de freno 21-05-26.pdf",
     },
  
     

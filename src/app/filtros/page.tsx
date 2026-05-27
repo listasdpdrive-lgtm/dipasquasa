@@ -9,17 +9,17 @@ export default function Accesorios() {
     {
       img: "/filtros/filtrosaire.png",
       titulo: "Filtros de aire",
-      pdf: "/catalogos/filtros/FILTROS DE AIRE.pdf",
+      pdf: "/catalogos/filtros/Filtro de aire 21-05-26.pdf",
     },
      {
       img: "/filtros/filtroaceite.png",
       titulo: "Filtros de aceite",
-      pdf: "/catalogos/filtros/FILTROS DE ACEITE.pdf",
+      pdf: "/catalogos/filtros/Filtro aceite 21-05-26.pdf",
     },
      {
       img: "/filtros/filtrogasoil.png",
       titulo: "Filtros de gasoil",
-      pdf: "/catalogos/filtros/FILTROS DE GASOIL.pdf",
+      pdf: "/catalogos/filtros/Filtros de gasoil 21-05-26.pdf",
     },
     
     

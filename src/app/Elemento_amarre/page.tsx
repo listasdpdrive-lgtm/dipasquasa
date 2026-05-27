@@ -9,17 +9,17 @@ export default function Accesorios() {
     {
       img: "/amarre/fajas.png",
       titulo: "Fajas",
-      pdf: "/catalogos/AMARRE/FAJAS.pdf",
+      pdf: "/catalogos/AMARRE/Fajas 21-05-26.pdf",
     },
      {
       img: "/amarre/malacate.png",
       titulo: "Malacate, esquinero y mas",
-      pdf: "/catalogos/AMARRE/MALACATE, ESQUINERO, OTROS.pdf",
+      pdf: "/catalogos/AMARRE/Malacate-esquineros y mas 21-05-26.pdf",
     },
      {
       img: "/amarre/soga.png",
       titulo: "soga precinto",
-      pdf: "/catalogos/AMARRE/SOGA PRECINTO.pdf",
+      pdf: "/catalogos/AMARRE/Soga precinto 21-05-26.pdf",
     },
     
   ]
