@@ -9,17 +9,17 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/enganche_acoplado.png",
       titulo: "Enganche para acoplado",
-      pdf: "/catalogos/PESADOS/enganches/ENGANCHE PARA ACOPLADO.pdf",
+      pdf: "/catalogos/PESADOS/enganches/Enganches para acoplados 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/enganche.png",
       titulo: "Enganche para semirremolque",
-      pdf: "/catalogos/PESADOS/enganches/ENGANCHE PARA SEMIRREMOLQUE.pdf",
+      pdf: "/catalogos/PESADOS/enganches/Enganche para semiremolque 22-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/patas.png",
       titulo: "Patas de apoyo y reparaciones",
-      pdf: "/catalogos/PESADOS/enganches/PATAS DE APOYO Y REPARACIONES.pdf",
+      pdf: "/catalogos/PESADOS/enganches/Patas de apoyo y reparaciones 22-05-26.pdf",
     },
     
   ]
