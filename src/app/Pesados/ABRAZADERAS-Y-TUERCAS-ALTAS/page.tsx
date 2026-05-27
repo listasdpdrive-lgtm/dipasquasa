@@ -7,14 +7,19 @@ import Sidebar from "@/components/Sidebar"
 export default function Accesorios() {
   const cuadros = [
     {
-      img: "/PESADOS-JPG/abrazaderas.png",
+      img: "/PESADOS-JPG/abrazaderasemi.png",
       titulo: "Abrazaderas semicurva",
-      pdf: "/catalogos/PESADOS/ABRAZADERAS SEMICURVA TERMINADO.pdf",
+      pdf: "/catalogos/PESADOS/Abrazaderas semicurva 22-05-26.pdf",
+    },
+       {
+      img: "/PESADOS-JPG/abrazaderascurva.jpg",
+      titulo: "Abrazaderas curva",
+      pdf: "/catalogos/PESADOS/Abrazaderas curva 22-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/tuercass.png",
       titulo: "Tuercas para abrazaderas",
-      pdf: "/catalogos/PESADOS/TUERCAS PARA ABRAZADERAS.pdf",
+      pdf: "/catalogos/PESADOS/Tuercas para abrazadera 22-05-26.pdf",
     },
    
   ]

@@ -27,11 +27,11 @@ export default function CatalogosPage() {
     { img: "/seguridad.png", titulo: "Elementos de Seguridad", pdf: "/catalogos/SEGURIDAD/Elementos de seguridad 21-05-26.pdf" },
     { img: "/filtros/filtrosportada.png", titulo: "Filtros de aire", link: "/filtros" },
     { img: "/frenos.png", titulo: "Frenos", link: "/Frenos" },
-    { img: "/herramientas/herramientas.png", titulo: "Herramientas", pdf: "/catalogos/herramientas/HERRAMIENTAS (2).pdf" },
+    { img: "/herramientas/herramientas.png", titulo: "Herramientas", pdf: "/catalogos/herramientas/Herramientas 21-05-26.pdf" },
     { img: "/puntaeje/punta_eje.png", titulo: "Tren Delantero y Punta Eje", link: "/punta_eje" },
     { img: "/PESADOS-JPG/pesados.png", titulo: "Pesados", link: "/Pesados" },
     { img: "/varios.png", titulo: "Accesorios varios", link: "/Varios" },
-    { img: "/image-cuadros/eevigis.png", titulo: "Vigia", pdf: "/catalogos/VIGIA (6).pdf" },
+    { img: "/image-cuadros/eevigis.png", titulo: "Vigia", pdf: "/catalogos/Vigía 22-05-26.pdf" },
   ]
 
   useEffect(() => {7

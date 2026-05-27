@@ -9,12 +9,12 @@ export default function Accesorios() {
     {
       img: "/varios/lubricantes.png",
       titulo: "Lubricantes y otros",
-      pdf: "/catalogos/PESADOS/LUBRICANTES Y OTROS.pdf",
+      pdf: "/catalogos/varios/Lubricantes y otros 14-05-26.pdf",
     },
     {
       img: "/varios/otros.png",
       titulo: "Accesorios varios",
-      pdf: "/catalogos/varios/ACCESORIOS VARIOS.pdf",
+      pdf: "/catalogos/varios/Accesorios varios 14-05-26.pdf",
     },
    
    

@@ -11,17 +11,17 @@ export default function Homocinetica() {
     {
       img: "/puntaeje/homocinetas.png",
       titulo: "Homocineticas",
-      pdf: "/catalogos/puntaeje/HOMOCINETICAS.pdf" ,
+      pdf: "/catalogos/puntaeje/Homocineticas 21-05-26.pdf" ,
     },
     {
       img: "/puntaeje/pernopuntaeje.png",
       titulo: "Perno punta de eje",
-      pdf: "/catalogos/puntaeje/PERNO PUNTA DE EJE (2).pdf" ,
+      pdf: "/catalogos/puntaeje/Pernos punta de eje 21-05-26 .pdf" ,
     },
     {
       img: "/puntaeje/juego_punta_eje.png",
       titulo: "Juegos Perno Punta de Eje",
-      pdf: "/catalogos/puntaeje/JUEGOS PERNO PUNTA DE EJE (1).pdf" ,
+      pdf: "/catalogos/puntaeje/Juegos perno punta de eje 21-05-26.pdf" ,
     },
   ]
 
