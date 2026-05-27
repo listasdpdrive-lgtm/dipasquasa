@@ -8,7 +8,7 @@ import { link } from "fs"
 export default function Accesorios() {
   const cuadros = [
     {
-      img: "/PESADOS-JPG/abrazaderas.jpg",
+      img: "/PESADOS-JPG/abrazaderascurva.jpg",
       titulo: "Abrazaderas y tuercas altas",
       link: "/Pesados/ABRAZADERAS-Y-TUERCAS-ALTAS",
     },
