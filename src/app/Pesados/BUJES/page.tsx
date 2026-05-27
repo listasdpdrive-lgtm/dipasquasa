@@ -9,32 +9,32 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/bujeb.png",
       titulo: "Bujes de balancin",
-      pdf: "/catalogos/PESADOS/bujes/BUJES DE BALANCIN.pdf",
+      pdf: "/catalogos/PESADOS/bujes/Bujes de balancin 21-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/bujelanza.png",
       titulo: "Bujes de lanza",
-      pdf: "/catalogos/PESADOS/bujes/BUJES DE LANZA.pdf",
+      pdf: "/catalogos/PESADOS/bujes/Bujes de lanza 21-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/bujesus.png",
       titulo: "Bujes de suspension neumatica",
-      pdf: "/catalogos/PESADOS/bujes/BUJES DE SUSPENSION NEUMATICA (2).pdf",
+      pdf: "/catalogos/PESADOS/bujes/Bujes suspensión neumatica 21-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/bujetr.png",
       titulo: "Bujes de tensor",
-      pdf: "/catalogos/PESADOS/bujes/BUJES DE TENSOR (1).pdf",
+      pdf: "/catalogos/PESADOS/bujes/Bujes de tensor 21-05-26.pdf",
     },
    {
       img: "/PESADOS-JPG/bujes elastico.png",
       titulo: "Bujes Perno de Elatico",
-      pdf: "/catalogos/PESADOS/bujes/BUJES PERNOS DE ELASTICO (2) (1).pdf",
+      pdf: "/catalogos/PESADOS/bujes/Bujes de elastico 21-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/buje_moño.png",
       titulo: "Bujes moño",
-      pdf: "/catalogos/PESADOS/bujes/BUJES MOÑO.pdf",
+      pdf: "/catalogos/PESADOS/bujes/Bujes de moño 21-05-26.pdf",
     },
   
   ]

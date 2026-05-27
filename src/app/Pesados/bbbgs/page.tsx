@@ -10,23 +10,23 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/bajopara.png",
       titulo: "Bajo paragolpes",
-      pdf: "/catalogos/PESADOS/bbbgs/BAJOPARAGOLPES.pdf",
+      pdf: "/catalogos/PESADOS/bbbgs/Bajo paragolpe 22-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/barreros.png",
       titulo: "Barreros",
-      pdf: "/catalogos/PESADOS/bbbgs/BARREROS.pdf",
+      pdf: "/catalogos/PESADOS/bbbgs/Barreros 22-05-26.pdf",
     },
    
     {
       img: "/PESADOS-JPG/guardabarros.png",
       titulo: "Guardabarros",
-      pdf: "/catalogos/PESADOS/bbbgs/GUARDABARROS (1) (1).pdf",
+      pdf: "/catalogos/PESADOS/bbbgs/Guardabarros 22-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/soporte.png",
       titulo: "Soporte de guardabarro",
-      pdf: "/catalogos/PESADOS/bbbgs/SOPORTE DE GUARDABARRO.pdf",
+      pdf: "/catalogos/PESADOS/bbbgs/Soporte guardabarro 22-05-26.pdf",
     },
      
    

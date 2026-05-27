@@ -20,7 +20,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/amortiguador.png",
       titulo: "Amortiguadores y estabilizadores",
-      pdf: "catalogos/PESADOS/AMORTIGUADORES Y ESTABILIZADORES ACTUALIZADO .pdf",
+      pdf: "catalogos/PESADOS/Amortiguadores y estabalizadores 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/balancin_y_manota.png",
@@ -30,7 +30,7 @@ export default function Accesorios() {
      {
       img: "/PESADOS-JPG/bajada.png",
       titulo: "Bajada de paragolpe y resorte",
-      pdf: "/catalogos/PESADOS/bbbgs/BAJADA DE PARAGOLPE Y RESORTE.pdf",
+      pdf: "/catalogos/PESADOS/bbbgs/Bajada paragolpe 22-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/guardabarro_y_barrero.png",
@@ -43,12 +43,12 @@ export default function Accesorios() {
     },{
       img: "/buloneria/pito.png",
       titulo: "Centro Elastico",
-      pdf: "catalogos/PESADOS/CENTRO ELASTICO ACTUALIZADO.pdf",
+      pdf: "catalogos/PESADOS/Centro de elastico 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/arogiratorios.png",
       titulo: "Aros giratorios",
-      pdf: "/catalogos/PESADOS/aros/AROS GIRATORIOS ACTUALIZADO (1).pdf",
+      pdf: "/catalogos/PESADOS/aros/Aros giratorios 22-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/enganche_y_patas.png",

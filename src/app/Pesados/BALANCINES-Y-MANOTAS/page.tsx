@@ -9,27 +9,27 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/balancines.png",
       titulo: "BALANCINES ",
-      pdf: "/catalogos/PESADOS/m/BALANCINES ACTUALIZADO.pdf",
+      pdf: "/catalogos/PESADOS/m/Balancin 22-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/barqui.png",
       titulo: "Brazos de retracción",
-      pdf: "/catalogos/PESADOS/m/BRAZOS DE RETRACCION ACTUALIZADO.pdf",
+      pdf: "/catalogos/PESADOS/m/Barquitos 22-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/macal.png",
       titulo: "Mancal de suspensión",
-      pdf: "/catalogos/PESADOS/m/MANCAL DE SUSPENSIÓN ACTUALIZADO.pdf",
+      pdf: "/catalogos/PESADOS/m/Mancal 22-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/manotas.png",
       titulo: "Manotas",
-      pdf: "/catalogos/PESADOS/m/MANOTAS ACTUALIZADO.pdf",
+      pdf: "/catalogos/PESADOS/m/Manotas 22-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/suspneu.png",
       titulo: "Manotas de suspensión neumática salto",
-      pdf: "/catalogos/PESADOS/m/MANOTAS DE SUSPENSION NEUMATICA SALTO ACTUALIZADO.pdf",
+      pdf: "/catalogos/PESADOS/m/Manotas suspensión neumatico SALTO 22-05-26.pdf",
     },
    
    

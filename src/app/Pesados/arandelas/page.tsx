@@ -9,22 +9,22 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/arandelasrp.png",
       titulo: "Arandelas para reparación de tensor",
-      pdf: "/catalogos/PESADOS/ARANDELAS PARA REPARACIÓN DE TENSOR ACTUALIZADA.pdf",
+      pdf: "/catalogos/PESADOS/Arandela reparación tensor 22-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/arandelaplana.png",
       titulo: "Arandelas planas de suspensión neumática",
-      pdf: "/catalogos/PESADOS/ARANDELAS PLANAS DE SUSPENSIÓN NEUMATICA.pdf",
+      pdf: "/catalogos/PESADOS/Arandela suspensión neumatica planas 22-05-26 (1).pdf",
     },
       {
       img: "/PESADOS-JPG/arandelatrs.png",
       titulo: "Arandelas para reparación de manota",
-      pdf: "/catalogos/PESADOS/ARANDELAS REPARACION MANOTA ACTUALIZADO (1).pdf",
+      pdf: "/catalogos/PESADOS/Arandela reparación de manotas 22-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/arandelasus.png",
       titulo: "Arandelas de suspensión neumática",
-      pdf: "/catalogos/PESADOS/ARANDELAS SUSPENSIÓN NEUMATICA ACTUALIZADO.pdf",
+      pdf: "/catalogos/PESADOS/Arandelas suspensión neumatica 22-05-26.pdf",
     },
    
    
