@@ -142,7 +142,7 @@ export default function Accesorios() {
       link: "/Pesados/puntaeje",
     },
     {
-      img: "/PESADOS-JPG/tuercas.png",
+      img: "/PESADOS-JPG/ejes.png",
       titulo: "EJES",
       pdf: "/catalogos/PESADOS/Ejes-TUBOS.pdf",
     },
