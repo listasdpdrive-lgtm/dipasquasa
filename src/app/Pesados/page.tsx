@@ -141,6 +141,11 @@ export default function Accesorios() {
       titulo: "Tuercas y Arandelas punta eje",
       link: "/Pesados/puntaeje",
     },
+    {
+      img: "/PESADOS-JPG/tuercas.png",
+      titulo: "EJES",
+      pdf: "/catalogos/PESADOS/Ejes-TUBOS.pdf",
+    },
   ]
 
   return (
