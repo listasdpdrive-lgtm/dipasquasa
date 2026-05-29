@@ -9,12 +9,12 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/arandelaseje.png",
       titulo: "Arandela punta eje",
-      pdf: "/catalogos/PESADOS/puntaeje/ARANDELAS PUNTA DE EJE (2).pdf",
+      pdf: "/catalogos/PESADOS/puntaeje/Arandelas punta de eje 21-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/tuercaeje.png",
       titulo: "Tuerca punta eje",
-      pdf: "/catalogos/PESADOS/puntaeje/TUERCAS PUNTA DE EJE.pdf",
+      pdf: "/catalogos/PESADOS/puntaeje/Tuercas punta de eje 21-05-26.pdf",
     },
    
    

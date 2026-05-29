@@ -9,12 +9,12 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/tapasyjuntas.png",
       titulo: "juntas y tapon",
-      pdf: "/catalogos/PESADOS/tazas/JUNTAS Y TAPON.pdf",
+      pdf: "/catalogos/PESADOS/tazas/Juntas y tapón 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/tapas.png",
       titulo: "tazas",
-      pdf: "/catalogos/PESADOS/tazas/TAZAS.pdf",
+      pdf: "/catalogos/PESADOS/tazas/Tazas 21-05-26.pdf",
     },
    
    

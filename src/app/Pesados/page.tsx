@@ -96,21 +96,21 @@ export default function Accesorios() {
     },{
       img: "/PESADOS-JPG/chapinete.png",
       titulo: "Plaquetas y chapínetes",
-      pdf: "/catalogos/PESADOS/PLAQUETAS Y CHAPINETES ACTUALIZADO (1).pdf",
+      pdf: "/catalogos/PESADOS/Chapinetes 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/repuestos batea.png",
       titulo: "Repuestos para batea",
-      pdf: "/catalogos/PESADOS/REPUESTOS PARA BATEA.pdf",
+      pdf: "/catalogos/PESADOS/Repuestos para batea 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/repuestos_carreton.png",
       titulo: "Repuestos para carreton",
-      pdf: "/catalogos/PESADOS/REPUESTOS PARA CARRETON.pdf",
+      pdf: "/catalogos/PESADOS/Repuestos para carreton 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/portaauxilio.png",
       titulo: "Porta auxilio malacate y soporte",
-      pdf: "/catalogos/PESADOS/PORTA AUXILIO MALACATE Y SOPORTE.pdf",
+      pdf: "/catalogos/PESADOS/Porta auxilio-malacate y soporte 21-05-26.pdf",
     }
     ,{
       img: "/PESADOS-JPG/ryp.png",
@@ -119,15 +119,15 @@ export default function Accesorios() {
     },{
       img: "/PESADOS-JPG/rulemanes.png",
       titulo: "Rulemanes",
-      pdf: "/catalogos/PESADOS/RULEMANES.pdf",
+      pdf: "/catalogos/PESADOS/Rulemanes 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/separadores.png",
       titulo: "Separadores artilleros",
-      pdf: "catalogos/PESADOS/SEPARADORES DE LLANTAS.pdf",
+      pdf: "catalogos/PESADOS/Separadores de llantas 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/taco_paragolpe.png",
       titulo: "Tacos paragolpes ",
-      pdf: "/catalogos/PESADOS/TACOS PARAGOLPE.pdf",
+      pdf: "/catalogos/PESADOS/Tacos paragolpe 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/tazas_etc.png",
       titulo: "Tazas,juntas,tapon y llave de rueda",
@@ -135,7 +135,7 @@ export default function Accesorios() {
     },{
       img: "/PESADOS-JPG/tensores.png",
       titulo: "Tensores ",
-      pdf: "/catalogos/PESADOS/TENSORES.pdf",
+      pdf: "/catalogos/PESADOS/Tensores 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/tuercas.png",
       titulo: "Tuercas y Arandelas punta eje",

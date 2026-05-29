@@ -9,12 +9,12 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/portaretenes.png",
       titulo: "Portaretenes",
-      pdf: "/catalogos/PESADOS/retenes/PORTARETENES.pdf",
+      pdf: "/catalogos/PESADOS/retenes/Portareten 21-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/retenes.png",
       titulo: "Retenes de camiones y acoplados",
-      pdf: "/catalogos/PESADOS/retenes/RETENES DE CAMIONES Y ACOPLADOS.pdf",
+      pdf: "/catalogos/PESADOS/retenes/Reten semi y camión 30-05-26.pdf",
     },
    
    
