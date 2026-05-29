@@ -10,22 +10,22 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/conico.png",
       titulo: "Fuelles conicos",
-      pdf: "/catalogos/PESADOS/fuelles/FUELLES CONICOS 31.pdf",
+      pdf: "/catalogos/PESADOS/fuelles/Fuelles tubular 21-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/loburales.png",
       titulo: "Fuelles lobulares",
-      pdf: "/catalogos/PESADOS/fuelles/FUELLES LOBULARES.pdf",
+      pdf: "/catalogos/PESADOS/fuelles/Fuelles lobulares 21-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/fuelles tubulares.png",
       titulo: "Fuelles tubulares",
-      pdf: "/catalogos/PESADOS/fuelles/FUELLES VARIOS TUBULARES.pdf",
+      pdf: "/catalogos/PESADOS/fuelles/Fuelles tubulares varios 21-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/rectos.png",
       titulo: "Fuelles rectos",
-      pdf: "/catalogos/PESADOS/fuelles/FUELLES RECTOS 32.pdf",
+      pdf: "/catalogos/PESADOS/fuelles/Fuelles rectos 32 21-05-26.pdf",
     },
    
 

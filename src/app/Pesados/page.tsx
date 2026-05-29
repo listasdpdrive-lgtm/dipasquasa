@@ -57,7 +57,7 @@ export default function Accesorios() {
     },{
       img: "/PESADOS-JPG/faja.png",
       titulo: "Fajas de suspension neumatica",
-      pdf: "/catalogos/PESADOS/FAJAS DE SUSPENSION NEUMATICA.pdf",
+      pdf: "/catalogos/PESADOS/Fajas suspensión neumatica 21-25-26.pdf",
     },{
       img: "/PESADOS-JPG/fuelles.png",
       titulo: "Fuelles",
@@ -65,7 +65,7 @@ export default function Accesorios() {
     },{
       img: "/PESADOS-JPG/grampas.png",
       titulo: "Grampas artilleras",
-      pdf: "catalogos/PESADOS/GRAMPAS ARTILLERAS.pdf",
+      pdf: "catalogos/PESADOS/Grampas artilleras 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/mazasycampana.png",
@@ -92,7 +92,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/piña_portacontenedor.png",
       titulo: "Piña portacontenedores",
-      pdf: "/catalogos/PESADOS/PIÑAS PORTACONTENEDOR .pdf",
+      pdf: "/catalogos/PESADOS/Piña y portapiña 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/chapinete.png",
       titulo: "Plaquetas y chapínetes",

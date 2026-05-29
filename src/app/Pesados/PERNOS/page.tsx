@@ -9,27 +9,27 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/perno_suspencion.png",
       titulo: "Pernos de suspension neumatica",
-      pdf: "/catalogos/PESADOS/pernos/PERNOS DE SUSPENSION NEUMATICA.pdf",
+      pdf: "/catalogos/PESADOS/pernos/Pernos de suspensión neumatica 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/perno_lanza.png",
       titulo: "Pernos de lanza",
-      pdf: "/catalogos/PESADOS/pernos/PERNOS DE LANZA.pdf",
+      pdf: "/catalogos/PESADOS/pernos/Pernos de lanza 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/perno_balancin.png",
       titulo: "Pernos de balancin",
-      pdf: "/catalogos/PESADOS/pernos/PERNOS DE BALANCIN.pdf",
+      pdf: "/catalogos/PESADOS/pernos/Pernos de balancín 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/pernos_tensor.png",
       titulo: "Pernos de tensor",
-      pdf: "/catalogos/PESADOS/pernos/PERNOS DE TENSOR.pdf",
+      pdf: "/catalogos/PESADOS/pernos/Pernos de tensor 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/pernos_elastico.png",
       titulo: "Pernos de Elastico",
-      pdf: "/catalogos/PESADOS/pernos/PERNOS DE ELASTICO (1).pdf",
+      pdf: "/catalogos/PESADOS/pernos/Pernos de elastico 21-05-26.pdf",
     },
   ]
 

@@ -9,17 +9,17 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/campanas.png",
       titulo: "Campanas",
-      pdf: "/catalogos/PESADOS/mazas/CAMPANAS.pdf",
+      pdf: "/catalogos/PESADOS/mazas/Campanas 21-05-26.pdf",
     },
        {
       img: "/PESADOS-JPG/mazas.png",
       titulo: "Mazas",
-      pdf: "/catalogos/PESADOS/mazas/MAZAS VERIFICAR MEDIDAS (1).pdf",
+      pdf: "/catalogos/PESADOS/mazas/Mazas 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/guardapolvo.png",
       titulo: "Guarda polvos",
-      pdf: "/catalogos/PESADOS/mazas/GUARDAPOLVOS.pdf",
+      pdf: "/catalogos/PESADOS/mazas/Guardapolvo 21-05-26.pdf",
     },
   ]
 

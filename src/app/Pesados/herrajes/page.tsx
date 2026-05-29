@@ -9,23 +9,23 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/barandas.png",
       titulo: "Barandas",
-      pdf: "/catalogos/PESADOS/herrajes/BARANDA.pdf",
+      pdf: "/catalogos/PESADOS/herrajes/Barandas 21-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/cajon.png",
       titulo: "Cajones de herramientas",
-      pdf: "/catalogos/PESADOS/herrajes/CAJONES DE HERRAMIENTAS (1).pdf",
+      pdf: "/catalogos/PESADOS/herrajes/Cajones de herramientas y arco 21-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/escaleras.png",
       titulo: "Escaleras",
-      pdf: "/catalogos/PESADOS/herrajes/ESCALERAS.pdf",
+      pdf: "/catalogos/PESADOS/herrajes/Escaleras 21-05-26.pdf",
     },
     
      {
       img: "/PESADOS-JPG/herrajess.png",
       titulo: "Herrajes",
-      pdf: "/catalogos/PESADOS/herrajes/HERRAJES.pdf",
+      pdf: "/catalogos/PESADOS/herrajes/Herrajes 21-05-26.pdf",
     },
    
     

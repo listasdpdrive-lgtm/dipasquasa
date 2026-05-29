@@ -9,18 +9,18 @@ export default function Accesorios() {
 
     {
       img: "/PESADOS-JPG/hojas-elastico.png",
-      titulo: "PAQUETES ELASTICO.pdf",
-      pdf: "/catalogos/PESADOS/hojas/PAQUETES ELASTICO.pdf",
+      titulo: "PAQUETES ELASTICO",
+      pdf: "/catalogos/PESADOS/hojas/Paquetes de elastico 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/hojasela.png",
-      titulo: "Hoja de elastico",
-      pdf: "/catalogos/PESADOS/hojas/HOJA DE ELASTICO.pdf",
+      titulo: "HOJAS DE ELASTICO",
+      pdf: "/catalogos/PESADOS/hojas/Hojas de elastico 21-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/paquetes.png",
-      titulo: "Paquetes de suspension",
-      pdf: "/catalogos/PESADOS/hojas/PAQUETAS DE SUSPENSIÓN.pdf",
+      titulo: "PAQUETES DE SUSPENSIÓN NEUMATICA",
+      pdf: "/catalogos/PESADOS/hojas/Paquetes suspensión neumatica 21-05-26.pdf",
     },
      
      

@@ -9,12 +9,12 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/llantass.png",
       titulo: "Llantas",
-      pdf: "/catalogos/PESADOS/llantas/LLANTAS.pdf",
+      pdf: "/catalogos/PESADOS/llantas/Llantas 21-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/componentesllantas.png",
       titulo: "componentes de llantas",
-      pdf: "/catalogos/PESADOS/llantas/COMPONENTES DE LLANTA (1).pdf",
+      pdf: "/catalogos/PESADOS/llantas/Componentes de llanta 21-05-26.pdf",
     },
     
     
