@@ -38,7 +38,7 @@ export default function Accesorios() {
     {
       img: "/AIRE-JPG/valvulagobernadora.png",
       titulo: "Válvulas gobernadoras",
-     pdf:"/catalogos/AIRE/valvulas/Valvulas gobernadora 18-05-26.pdf",
+     pdf:"/catalogos/AIRE/valvulas/Valvulas gobernadora 05-06-26.pdf",
     },
     {
       img: "/AIRE-JPG/valvulamanuales.png",

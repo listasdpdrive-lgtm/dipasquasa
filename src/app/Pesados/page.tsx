@@ -13,7 +13,7 @@ export default function Accesorios() {
       link: "/Pesados/ABRAZADERAS-Y-TUERCAS-ALTAS",
     },
     {
-      img: "/PESADOS-JPG/arandelas.png",
+      img: "/PESADOS-JPG/arandelasminiatura.png",
       titulo: "Arandelas",
       link: "/Pesados/arandelas",
     },

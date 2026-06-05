@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/campanas.png",
       titulo: "Campanas",
-      pdf: "/catalogos/PESADOS/mazas/Campanas 21-05-26.pdf",
+      pdf: "/catalogos/PESADOS/mazas/Campanas 05-06-26.pdf",
     },
        {
       img: "/PESADOS-JPG/mazas.png",
