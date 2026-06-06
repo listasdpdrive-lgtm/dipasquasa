@@ -31,7 +31,7 @@ export default function CatalogosPage() {
     { img: "/puntaeje/punta_eje.png", titulo: "Tren Delantero y Punta Eje", link: "/punta_eje" },
     { img: "/PESADOS-JPG/pesados.png", titulo: "Pesados", link: "/Pesados" },
     { img: "/varios.png", titulo: "Accesorios varios", link: "/Varios" },
-    { img: "/image-cuadros/eevigis.png", titulo: "Vigia", pdf: "/catalogos/Vigía 22-05-26.pdf" },
+    { img: "/image-cuadros/eevigis.png", titulo: "Vigia", pdf: "/Vigia 06-06-26pdf.pdf" },
   ]
 
   useEffect(() => {7
