@@ -8,17 +8,17 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/abrazaderasemi.png",
-      titulo: "Abrazaderas semicurva",
+      titulo: "ABRAZADERAS SEMICURVA",
       pdf: "/catalogos/PESADOS/Abrazaderas semicurva 22-05-26.pdf",
     },
        {
       img: "/PESADOS-JPG/abrazaderascurva.jpg",
-      titulo: "Abrazaderas curva",
+      titulo: "ABRAZADERAS CURVA",
       pdf: "/catalogos/PESADOS/Abrazaderas curva 22-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/tuercass.png",
-      titulo: "Tuercas para abrazaderas",
+      titulo: "TUERCAS PARA ABRAZADERAS",
       pdf: "/catalogos/PESADOS/Tuercas para abrazadera 22-05-26.pdf",
     },
    

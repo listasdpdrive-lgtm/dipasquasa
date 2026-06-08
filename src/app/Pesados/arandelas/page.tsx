@@ -8,22 +8,22 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/arandelasrp.png",
-      titulo: "Arandelas para reparación de tensor",
+      titulo: "ARANDELAS PARA REPARACIÓN DE TENSOR",
       pdf: "/catalogos/PESADOS/Arandela reparación tensor 22-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/arandelaplana.png",
-      titulo: "Arandelas planas de suspensión neumática",
+      titulo: "ARANDELAS PLANAS DE SUSPENSIÓN NEUMÁTICA",
       pdf: "/catalogos/PESADOS/Arandela suspensión neumatica planas 22-05-26 (1).pdf",
     },
       {
       img: "/PESADOS-JPG/arandelatrs.png",
-      titulo: "Arandelas para reparación de manota",
+      titulo: "ARANDELAS PARA REPARACIÓN DE MANOTAS",
       pdf: "/catalogos/PESADOS/Arandela reparación de manotas 22-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/arandelasus.png",
-      titulo: "Arandelas de suspensión neumática",
+      titulo: "ARANDELAS DE SUSPENSIÓN NEUMÁTICA",
       pdf: "/catalogos/PESADOS/Arandelas suspensión neumatica 22-05-26.pdf",
     },
    

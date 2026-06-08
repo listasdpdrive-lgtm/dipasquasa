@@ -8,17 +8,17 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/campanas.png",
-      titulo: "Campanas",
+      titulo: "CAMPANAS",
       pdf: "/catalogos/PESADOS/mazas/Campanas 05-06-26.pdf",
     },
        {
       img: "/PESADOS-JPG/mazas.png",
-      titulo: "Mazas",
+      titulo: "MAZAS",
       pdf: "/catalogos/PESADOS/mazas/Mazas 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/guardapolvo.png",
-      titulo: "Guarda polvos",
+      titulo: "GUARDA POLVOS",
       pdf: "/catalogos/PESADOS/mazas/Guardapolvo 21-05-26.pdf",
     },
   ]

@@ -9,22 +9,22 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/conico.png",
-      titulo: "Fuelles conicos",
+      titulo: "FUELLES CONICOS",
       pdf: "/catalogos/PESADOS/fuelles/Fuelles tubular 21-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/loburales.png",
-      titulo: "Fuelles lobulares",
+      titulo: "FUELLES LOBULARES",
       pdf: "/catalogos/PESADOS/fuelles/Fuelles lobulares 06-06-26.pdf",
     },
       {
       img: "/PESADOS-JPG/fuelles tubulares.png",
-      titulo: "Fuelles tubulares",
+      titulo: "FUELLES TUBULARES",
       pdf: "/catalogos/PESADOS/fuelles/Fuelles tubulares varios 21-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/rectos.png",
-      titulo: "Fuelles rectos",
+      titulo: "FUELLES RECTOS",
       pdf: "/catalogos/PESADOS/fuelles/Fuelles rectos 32 21-05-26.pdf",
     },
    

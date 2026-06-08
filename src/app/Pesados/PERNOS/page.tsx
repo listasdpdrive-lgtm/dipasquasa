@@ -8,27 +8,27 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/perno_suspencion.png",
-      titulo: "Pernos de suspension neumatica",
+      titulo: "PERNOS DE SUSPENSIÓN NEUMATICA",
       pdf: "/catalogos/PESADOS/pernos/Pernos de suspensión neumatica 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/perno_lanza.png",
-      titulo: "Pernos de lanza",
+      titulo: "PERNOS DE LANZA",
       pdf: "/catalogos/PESADOS/pernos/Pernos de lanza 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/perno_balancin.png",
-      titulo: "Pernos de balancin",
+      titulo: "PERNOS DE BALANCÍN",
       pdf: "/catalogos/PESADOS/pernos/Pernos de balancín 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/pernos_tensor.png",
-      titulo: "Pernos de tensor",
+      titulo: "PERNOS DE TENSOR",
       pdf: "/catalogos/PESADOS/pernos/Pernos de tensor 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/pernos_elastico.png",
-      titulo: "Pernos de Elastico",
+      titulo: "PERNOS DE ELÁSTICO",
       pdf: "/catalogos/PESADOS/pernos/Pernos de elastico 21-05-26.pdf",
     },
   ]

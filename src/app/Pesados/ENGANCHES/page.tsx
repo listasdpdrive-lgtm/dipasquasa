@@ -8,17 +8,17 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/enganche_acoplado.png",
-      titulo: "Enganche para acoplado",
+      titulo: "ENGANCHE PARA ACOPLADOS",
       pdf: "/catalogos/PESADOS/enganches/Enganches para acoplados 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/enganche.png",
-      titulo: "Enganche para semirremolque",
+      titulo: "ENGANCHE PARA SEMIRREMOLQUE",
       pdf: "/catalogos/PESADOS/enganches/Enganche para semiremolque 22-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/patas.png",
-      titulo: "Patas de apoyo y reparaciones",
+      titulo: "PATAS DE APOYO U REPARACIONES",
       pdf: "/catalogos/PESADOS/enganches/Patas de apoyo y reparaciones 22-05-26.pdf",
     },
     

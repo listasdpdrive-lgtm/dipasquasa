@@ -10,17 +10,17 @@ export default function Homocinetica() {
   const cuadros = [
     {
       img: "/puntaeje/homocinetas.png",
-      titulo: "Homocineticas",
+      titulo: "HOMOCINETICAS",
       pdf: "/catalogos/puntaeje/Homocineticas 21-05-26.pdf" ,
     },
     {
       img: "/puntaeje/pernopuntaeje.png",
-      titulo: "Perno punta de eje",
+      titulo: "PERNOS PUNTA DE EJE",
       pdf: "/catalogos/puntaeje/Pernos punta de eje 21-05-26 .pdf" ,
     },
     {
       img: "/puntaeje/juego_punta_eje.png",
-      titulo: "Juegos Perno Punta de Eje",
+      titulo: "JUEGOS PERNOS PUNTA DE EJE",
       pdf: "/catalogos/puntaeje/Juegos perno punta de eje 21-05-26.pdf" ,
     },
   ]

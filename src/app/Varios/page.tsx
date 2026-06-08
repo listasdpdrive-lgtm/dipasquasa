@@ -8,12 +8,12 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/varios/lubricantes.png",
-      titulo: "Lubricantes y otros",
+      titulo: "LLUBRICANTE Y OTROS",
       pdf: "/catalogos/varios/Lubricantes y otros 14-05-26.pdf",
     },
     {
       img: "/varios/otros.png",
-      titulo: "Accesorios varios",
+      titulo: "ACCESORIOS VARIOS",
       pdf: "/catalogos/varios/Accesorios varios 14-05-26.pdf",
     },
    

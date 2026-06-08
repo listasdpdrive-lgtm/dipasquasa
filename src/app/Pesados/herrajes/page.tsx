@@ -8,23 +8,23 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/barandas.png",
-      titulo: "Barandas",
+      titulo: "BARANDAS",
       pdf: "/catalogos/PESADOS/herrajes/Barandas 21-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/cajon.png",
-      titulo: "Cajones de herramientas",
+      titulo: "CAJONES DE HERRAMIENTAS Y ARCO",
       pdf: "/catalogos/PESADOS/herrajes/Cajones de herramientas y arco 21-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/escaleras.png",
-      titulo: "Escaleras",
+      titulo: "ESCALERAS",
       pdf: "/catalogos/PESADOS/herrajes/Escaleras 21-05-26.pdf",
     },
     
      {
       img: "/PESADOS-JPG/herrajess.png",
-      titulo: "Herrajes",
+      titulo: "HERRAJES",
       pdf: "/catalogos/PESADOS/herrajes/Herrajes 21-05-26.pdf",
     },
    

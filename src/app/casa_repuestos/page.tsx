@@ -18,7 +18,7 @@ export default function CatalogosPage() {
 
   const cuadros = [
     { img: "/accesorios.png", titulo: "ACCESORIOS", pdf: "/catalogos/ACCESORIOS/accesorios bepo 14_05_26.pdf" },
-    { img: "/aire.png", titulo: "Aire", link: "/Aire" },
+    { img: "/aire.png", titulo: "AIRE", link: "/Aire" },
     { img: "/image-cuadros/ast-pra.png", titulo: "AST-PRA", link: "/AST-PRA" },
     { img: "/buloneriaI.png", titulo: "Buloneria", link: "/Buloneria" },
     { img: "/image-cuadros/carrier-logo.png", titulo: "Carrier", link: "/carrier" },

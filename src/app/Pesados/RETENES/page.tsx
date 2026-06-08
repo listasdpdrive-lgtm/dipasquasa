@@ -8,12 +8,12 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/portaretenes.png",
-      titulo: "Portaretenes",
+      titulo: "PORTARETENES",
       pdf: "/catalogos/PESADOS/retenes/Portareten 21-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/retenes.png",
-      titulo: "Retenes de camiones y acoplados",
+      titulo: "RETENES DE CAMIONES Y ACOPLADOS",
       pdf: "/catalogos/PESADOS/retenes/Reten semi y camión 30-05-26.pdf",
     },
    

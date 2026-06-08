@@ -8,12 +8,12 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/tapasyjuntas.png",
-      titulo: "juntas y tapon",
+      titulo: "JUNTAS Y TAPÓN",
       pdf: "/catalogos/PESADOS/tazas/Juntas y tapón 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/tapas.png",
-      titulo: "tazas",
+      titulo: "TAZAS",
       pdf: "/catalogos/PESADOS/tazas/Tazas 21-05-26.pdf",
     },
    

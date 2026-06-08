@@ -8,12 +8,12 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/llantass.png",
-      titulo: "Llantas",
+      titulo: "LLANTAS",
       pdf: "/catalogos/PESADOS/llantas/Llantas 21-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/componentesllantas.png",
-      titulo: "componentes de llantas",
+      titulo: "COMPONENTES DE LLANTAS",
       pdf: "/catalogos/PESADOS/llantas/Componentes de llanta 21-05-26.pdf",
     },
     

@@ -8,12 +8,12 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/arandelaseje.png",
-      titulo: "Arandela punta eje",
+      titulo: "ARANDELA PUNTA DE EJE",
       pdf: "/catalogos/PESADOS/puntaeje/Arandelas punta de eje 05-06-26.pdf",
     },
       {
       img: "/PESADOS-JPG/tuercaeje.png",
-      titulo: "Tuerca punta eje",
+      titulo: "TUERCA PUNTA DE EJE",
       pdf: "/catalogos/PESADOS/puntaeje/Tuercas punta de eje 21-05-26.pdf",
     },
    

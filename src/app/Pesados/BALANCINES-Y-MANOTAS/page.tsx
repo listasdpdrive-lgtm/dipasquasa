@@ -8,27 +8,27 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/balancines.png",
-      titulo: "BALANCINES ",
+      titulo: "BALANCINES",
       pdf: "/catalogos/PESADOS/m/Balancin 22-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/barqui.png",
-      titulo: "Brazos de retracción",
+      titulo: "BRAZOS DE RETRACCIÓN",
       pdf: "/catalogos/PESADOS/m/Barquitos 22-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/macal.png",
-      titulo: "Mancal de suspensión",
+      titulo: "MANCAL DE SUSPENSIÓN",
       pdf: "/catalogos/PESADOS/m/Mancal 22-05-26.pdf",
     },
       {
       img: "/PESADOS-JPG/manotas.png",
-      titulo: "Manotas",
+      titulo: "MANOTAS",
       pdf: "/catalogos/PESADOS/m/Manotas 22-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/suspneu.png",
-      titulo: "Manotas de suspensión neumática salto",
+      titulo: "MANOTAS DE SUSPENSIÓN NEUMÁTICA SALTO",
       pdf: "/catalogos/PESADOS/m/Manotas suspensión neumatico SALTO 22-05-26.pdf",
     },
    
