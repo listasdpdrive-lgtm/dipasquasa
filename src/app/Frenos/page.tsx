@@ -10,12 +10,12 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/frenos/levas.png",
-      titulo: "Levas y Componentes",
+      titulo: "LEVAS Y COMPONENTES",
       link: "/Frenos/levas" ,
     },
     {
       img: "/frenos/pulmones.png",
-      titulo: "Pulmones de freno, reparaciones y accesorios",
+      titulo: "PULMONES DE FRENO, ACCESORIOS Y REPARACIONES",
       link: "/Frenos/Pulmones",
     },
     {
@@ -30,7 +30,7 @@ export default function Accesorios() {
     },
       {
       img: "/frenos/cintas.png",
-      titulo: "Patines de freno y crucetas",
+      titulo: "PATINES DE FRENO Y CRUCETAS",
       link: "/Frenos/patines_freno",
     },
       {
@@ -40,7 +40,7 @@ export default function Accesorios() {
     },
       {
       img: "/frenos/registro.png",
-      titulo: "Registros de freno y reparaciones",
+      titulo: "REGISTROS DE FRENO Y REPARACIONES",
       link: "/Frenos/registros",
     },
     {
@@ -50,7 +50,7 @@ export default function Accesorios() {
     },
     {
       img: "/frenos/cintass.png",
-      titulo: "Cintas de freno",
+      titulo: "CINTA DE FRENO",
       link: "/Frenos/cintas-de-frenos",
     },
   ]

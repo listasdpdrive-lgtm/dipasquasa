@@ -10,9 +10,9 @@ export default function Accesorios() {
     { img: "/buloneria/alemites.png", titulo: "ALEMITES", pdf: "/catalogos/BULONERIA/Alemites 20-05-26.pdf" },
     { img: "/buloneria/chavetas.png", titulo: "CHAVETAS", pdf:"/catalogos/BULONERIA/Chavetas 20-05-26.pdf" },
     
-    { img: "/buloneria/buloneria general.png", titulo: "Buloneria general", link: "/Buloneria/buloneria_general" },
+    { img: "/buloneria/buloneria general.png", titulo: "BULONERÍA GENERAL", link: "/Buloneria/buloneria_general" },
  
-    { img: "/buloneria/buloneria ruedas.png", titulo: "Bulones y Tuercas de Rueda", link: "/Buloneria/bulones_tuercas" },
+    { img: "/buloneria/buloneria ruedas.png", titulo: "BULONES Y TUERCA DE RUEDA", link: "/Buloneria/bulones_tuercas" },
   ]
 
   return (
