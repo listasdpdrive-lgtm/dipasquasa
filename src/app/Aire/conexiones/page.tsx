@@ -8,12 +8,12 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/AIRE-JPG/conexiones_rapidas.png",
-      titulo: "Conexiones rapidas",
+      titulo: "CONEXIONES RAPIDAS",
       pdf: "/catalogos/AIRE/conexiones/Conexiones rapidas 18-05-26.pdf",
     },
     {
       img: "/AIRE-JPG/conexiones_bronce.png",
-      titulo: "Conexiones de bronce y acoples",
+      titulo: "CONEXIONES DE BRONCE Y ACOPLES",
       pdf: "/catalogos/AIRE/conexiones/Conexiones de bronce 18-05-26.pdf",
     },
   ]

@@ -9,136 +9,136 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/PESADOS-JPG/abrazaderascurva.jpg",
-      titulo: "Abrazaderas y tuercas altas",
+      titulo: "ABRAZADERAS Y TUERCAS ALTAS",
       link: "/Pesados/ABRAZADERAS-Y-TUERCAS-ALTAS",
     },
     {
       img: "/PESADOS-JPG/arandelasminiatura.png",
-      titulo: "Arandelas",
+      titulo: "ARANDELAS",
       link: "/Pesados/arandelas",
     },
     {
       img: "/PESADOS-JPG/amortiguador.png",
-      titulo: "Amortiguadores y estabilizadores",
+      titulo: "AMORTIGUADORES Y ESTABILIZADORES",
       pdf: "catalogos/PESADOS/Amortiguadores y estabalizadores 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/balancin_y_manota.png",
-      titulo: "Balancin y manotas",
+      titulo: "BALANCINES Y MANOTAS",
       link: "/Pesados/BALANCINES-Y-MANOTAS",
     },
      {
       img: "/PESADOS-JPG/bajada.png",
-      titulo: "Bajada de paragolpe y resorte",
+      titulo: "BAJADA DE PARAGOLPE Y RESORTE",
       pdf: "/catalogos/PESADOS/bbbgs/Bajada paragolpe 22-05-26.pdf",
     },
      {
       img: "/PESADOS-JPG/guardabarro_y_barrero.png",
-      titulo: "Barreros, Bajo paragolpes, guardabarros y bajadas ",
+      titulo: "BARREROS,BAJO PARAGOLPE,GUARDABARROS Y BAJADA ",
       link: "/Pesados/bbbgs",
     },{
       img: "/PESADOS-JPG/bujes.png",
-      titulo: "Bujes",
+      titulo: "BUJES",
       link: "/Pesados/BUJES",
     },{
       img: "/buloneria/pito.png",
-      titulo: "Centro Elastico",
+      titulo: "CENTRO ELASTICO",
       pdf: "catalogos/PESADOS/Centro de elastico 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/arogiratorios.png",
-      titulo: "Aros giratorios",
+      titulo: "AROS GIRATORIOS",
       pdf: "/catalogos/PESADOS/aros/Aros giratorios 22-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/enganche_y_patas.png",
-      titulo: "Enganches y patas de apoyo",
+      titulo: "ENGANCHES Y PATAS DE APOYO",
       link: "/Pesados/ENGANCHES",
     },{
       img: "/PESADOS-JPG/faja.png",
-      titulo: "Fajas de suspension neumatica",
+      titulo: "FAJAS SUSPENSIÓN NEUMATICA",
       pdf: "/catalogos/PESADOS/Fajas suspensión neumatica 21-25-26.pdf",
     },{
       img: "/PESADOS-JPG/fuelles.png",
-      titulo: "Fuelles",
+      titulo: "FUELLES",
       link: "/Pesados/FUELLES",
     },{
       img: "/PESADOS-JPG/grampas.png",
-      titulo: "Grampas artilleras",
+      titulo: "GRAMPAS ARTILLERAS",
       pdf: "catalogos/PESADOS/Grampas artilleras 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/mazasycampana.png",
-      titulo: "Mazas, Campanas y Guarda polvos",
+      titulo: "MAZAS, CAMPANAS Y GUARDA POLVOS",
       link: "/Pesados/mazas",
     },{
       img: "/PESADOS-JPG/herrajes.png",
-      titulo: "Herrajes, barandas, cajones y escaleras",
+      titulo: "HERRAJES, BARANDAS, CAJONES Y ESCALERAS",
       link: "/Pesados/herrajes",
     },{
       img: "/PESADOS-JPG/hojas.png",
-      titulo: "Hojas elastico y paquetes de suspension",
+      titulo: "HOJAS ELASTICO Y PAQUETES DE SUSPENSIÓN",
       link: "/Pesados/hojas",
     },{
       img: "/PESADOS-JPG/llantas.png",
-      titulo: "Llantas y componentes",
+      titulo: "LLANTAS Y COMPONENTES",
       link: "/Pesados/LLANTAS1",
     },
     {
       img: "/PESADOS-JPG/pernos.png",
-      titulo: "Pernos",
+      titulo: "PERNOS",
       link: "/Pesados/PERNOS",
     },
     {
       img: "/PESADOS-JPG/piña_portacontenedor.png",
-      titulo: "Piña portacontenedores",
+      titulo: "PIÑAS PORTACONTENEDOR",
       pdf: "/catalogos/PESADOS/Piña y portapiña 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/chapinete.png",
-      titulo: "Plaquetas y chapínetes",
+      titulo: "PLAQUETAS Y CHAPINETES",
       pdf: "/catalogos/PESADOS/Chapinetes 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/repuestos batea.png",
-      titulo: "Repuestos para batea",
+      titulo: "REPUESTOS PARA BATEA",
       pdf: "/catalogos/PESADOS/Repuestos para batea 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/repuestos_carreton.png",
-      titulo: "Repuestos para carreton",
+      titulo: "REPUESTOS PARA CARRETON",
       pdf: "/catalogos/PESADOS/Repuestos para carreton 21-05-26.pdf",
     },
     {
       img: "/PESADOS-JPG/portaauxilio.png",
-      titulo: "Porta auxilio malacate y soporte",
+      titulo: "PORTA AUXILIO MALACATE Y SOPORTE",
       pdf: "/catalogos/PESADOS/Porta auxilio-malacate y soporte 21-05-26.pdf",
     }
     ,{
       img: "/PESADOS-JPG/ryp.png",
-      titulo: "Retenes y portarretenes",
+      titulo: "RETENES Y PORTARETENES",
       link: "/Pesados/RETENES",
     },{
       img: "/PESADOS-JPG/rulemanes.png",
-      titulo: "Rulemanes",
+      titulo: "RULEMANES",
       pdf: "/catalogos/PESADOS/Rulemanes 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/separadores.png",
-      titulo: "Separadores artilleros",
+      titulo: "SEPARADORES ARTILLEROS",
       pdf: "catalogos/PESADOS/Separadores de llantas 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/taco_paragolpe.png",
-      titulo: "Tacos paragolpes ",
+      titulo: "TACOS PARAGOLPES",
       pdf: "/catalogos/PESADOS/Tacos paragolpe 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/tazas_etc.png",
-      titulo: "Tazas,juntas,tapon y llave de rueda",
+      titulo: "TAZAS,JUNTAS,TAPON Y LLAVE DE RUEDA",
       link: "/Pesados/TAZAS",
     },{
       img: "/PESADOS-JPG/tensores.png",
-      titulo: "Tensores ",
+      titulo: "TENSORES ",
       pdf: "/catalogos/PESADOS/Tensores 21-05-26.pdf",
     },{
       img: "/PESADOS-JPG/tuercas.png",
-      titulo: "Tuercas y Arandelas punta eje",
+      titulo: "TUERCAS Y ARANDELAS PUNTA DE EJE",
       link: "/Pesados/puntaeje",
     },
     {
