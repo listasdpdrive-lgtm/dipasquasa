@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/amarre/fajas.png",
       titulo: "FAJAS",
-      pdf: "/catalogos/AMARRE/Fajas 21-05-26.pdf",
+      pdf: "/catalogos/AMARRE/Fajas 08-06-26.pdf",
     },
      {
       img: "/amarre/malacate.png",
