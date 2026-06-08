@@ -8,17 +8,17 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/amarre/fajas.png",
-      titulo: "Fajas",
+      titulo: "FAJAS",
       pdf: "/catalogos/AMARRE/Fajas 21-05-26.pdf",
     },
      {
       img: "/amarre/malacate.png",
-      titulo: "Malacate, esquinero y mas",
+      titulo: "MALACATE, ESQUINERO Y MAS",
       pdf: "/catalogos/AMARRE/Malacate-esquineros y mas 21-05-26.pdf",
     },
      {
       img: "/amarre/soga.png",
-      titulo: "soga precinto",
+      titulo: "SOGA PRECINTO",
       pdf: "/catalogos/AMARRE/Soga precinto 21-05-26.pdf",
     },
     

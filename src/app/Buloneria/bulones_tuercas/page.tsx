@@ -9,17 +9,17 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/buloneria/bulon_rueda.png",
-      titulo: "Bulones de rueda",
+      titulo: "BULONES DE RUEDA",
       pdf: "/catalogos/BULONERIA/Bulones de rueda 20-05-26.pdf",
     },
     {
       img: "/buloneria/tuercas.png",
-      titulo: "Tuercas de rueda",
+      titulo: "TUERCAS DE RUEDA",
       pdf: "/catalogos/BULONERIA/Tuercas de rueda 20-05-26.pdf",
     },
     { 
       img: "/buloneria/conica.png", 
-      titulo: "Arandelas conicas y centradores", 
+      titulo: "ARANDELAS CÓNICAS Y CENTRADORES", 
       pdf: "/catalogos/BULONERIA/Centradores y arandelas de rueda 20-05-26.pdf" 
     },
   ]

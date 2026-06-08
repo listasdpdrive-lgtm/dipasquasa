@@ -10,22 +10,22 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/ELECTRICIDAD-JPG/cree led.png",
-      titulo: "Cree led 24 y 12v",
+      titulo: "CREE LED 24 Y 12V",
       pdf: "/catalogos/ELECTRICIDAD/Cree led 21-05-26.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/barras.png",
-      titulo: "Faros, barras y tiras 24 y 12v",
+      titulo: "FAROS, BARRAS Y TIRAS 24 Y 12V",
       pdf: "/catalogos/ELECTRICIDAD/Barras led-reflectores 20-05-26.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/leds.png",
-      titulo: "focos 24 y 12v",
+      titulo: "FOCOS 24 Y 12V",
       pdf: "/catalogos/ELECTRICIDAD/Focos led 21-25-26.pdf",
     },
      {
       img: "/ELECTRICIDAD-JPG/halogenos.png",
-      titulo: "halogenos 24 y 12v",
+      titulo: "HALOGENOS 24 Y 12V",
       pdf: "/catalogos/ELECTRICIDAD/Lamparas halogenas 20-05-26.pdf",
     },
   ]

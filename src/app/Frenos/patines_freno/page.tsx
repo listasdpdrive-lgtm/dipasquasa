@@ -9,12 +9,12 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/frenos/crucetas.png",
-      titulo: "Crucetas",
+      titulo: "CRUCETAS",
       pdf: "/catalogos/FRENOS/patines/Crucetas 21-05-26.pdf",
     },
      {
       img: "/frenos/patin.png",
-      titulo: "Patines de freno",
+      titulo: "PATINES DE FRENO",
       pdf: "/catalogos/FRENOS/patines/Patin de freno 21-05-26.pdf",
     },
    

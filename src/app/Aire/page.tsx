@@ -8,27 +8,27 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/AIRE-JPG/tubo-tecalan-poliamida.jpg",
-      titulo: "Mangueras y Poliamidas",
+      titulo: "MANGUERAS Y POLIAMIDAS",
       link: "/Aire/Mangueras_poliamidas",
     },
     {
       img: "/AIRE-JPG/rulos_a.png",
-      titulo: "Acoples espirales",
+      titulo: "ACOPLES ESPIRALES",
       pdf: "catalogos/AIRE/acoples_espirales/Acoples espirales 18-05-26.pdf",
     },
     {
       img: "/AIRE-JPG/conexiones.png",
-      titulo: "Conexiones",
+      titulo: "CONEXIONES",
       link: "/Aire/conexiones",
     },
     {
       img: "/AIRE-JPG/valvulas.png",
-      titulo: "Válvulas",
+      titulo: "VÁLVULAS",
       link: "/Aire/valvulas",
     },
     {
       img: "/AIRE-JPG/reparaciones.png",
-      titulo: "Reparación de válvulas",
+      titulo: "REPARACIÓN DE VALVULAS",
       link: "/Aire/reparaciones",
     },
   ]

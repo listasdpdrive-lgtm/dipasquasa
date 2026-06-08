@@ -8,22 +8,22 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/carrier/correas.avif",
-      titulo: "Correas y mangueras",
+      titulo: "CORREA Y MANGUERAS",
       pdf: "/catalogos/CARRIER/x/Correas y mangueras x2100 20-05-26.pdf",
     },
     {
       img: "/carrier/electricidadx.png",
-      titulo: "Electricidad",
+      titulo: "ELECTRICIDAD",
       pdf: "/catalogos/CARRIER/x/Electricidad X2100 20-05-26.pdf",
     },
     {
       img: "/carrier/motor.png",
-      titulo: "Motor",
+      titulo: "MOTOR EN GENERAL",
       pdf: "/catalogos/CARRIER/x/Motor general x2100 20-05-26.pdf",
     },
     {
       img: "/carrier/filtroX.jpg",
-      titulo: "Filtros y tanques",
+      titulo: "FILTROS Y TANQUES",
       pdf: "/catalogos/CARRIER/x/Filtros y tanque x2100.pdf",
     },
   ]

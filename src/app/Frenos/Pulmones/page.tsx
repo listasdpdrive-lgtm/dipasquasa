@@ -9,17 +9,17 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/frenos/diafragma.png",
-      titulo: "Diafragmas",
+      titulo: "DIAFRAGMAS",
       pdf: "/catalogos/FRENOS/pul/Diafragmas 21-05-26.pdf",
     },
     {
       img: "/frenos/pulmoness.png",
-      titulo: "Pulmones de freno",
+      titulo: "PULMONES DE FRENO",
       pdf: "/catalogos/FRENOS/pul/Pulmon de freno 21-05-26 .pdf",
     },
     {
       img: "/frenos/reparacion.png",
-      titulo: "Reparaciones de pulmon",
+      titulo: "REPARACIÓN DE PULMON",
       pdf: "/catalogos/FRENOS/pul/Reparación pulmon de freno 21-05-26.pdf",
     },
  

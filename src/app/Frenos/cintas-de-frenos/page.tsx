@@ -8,12 +8,12 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/frenos/citasC.png",
-      titulo: "Cinta camion",
+      titulo: "CINTA CAMIÓN",
       pdf: "/catalogos/FRENOS/c/Cinta de freno camión 21-05-26.pdf",
     },
       {
       img: "/frenos/cintasSs.png",
-      titulo: "Cinta semiremolque",
+      titulo: "CINTA SEMIREMOLQUE",
       pdf: "/catalogos/FRENOS/c/Cinta de frenos semi y acoplados 21-05-26.pdf",
     },
     

@@ -9,9 +9,9 @@ export default function Accesorios() {
   const cuadros = [
 
     
-    { img: "/buloneria/arandela.png", titulo: "Arandelas", pdf: "/catalogos/BULONERIA/Arandelas planas y grower 20-05-26.pdf" },
-    { img: "/buloneria/bulone.png", titulo: "Bulones", pdf: "/catalogos/BULONERIA/Bulones 20-05-26.pdf" },
-    { img: "/buloneria/tuercasg.png", titulo: "Tuercas", pdf: "/catalogos/BULONERIA/Tuercas 20-05-26.pdf" },
+    { img: "/buloneria/arandela.png", titulo: "ARANDELAS", pdf: "/catalogos/BULONERIA/Arandelas planas y grower 20-05-26.pdf" },
+    { img: "/buloneria/bulone.png", titulo: "BULONES", pdf: "/catalogos/BULONERIA/Bulones 20-05-26.pdf" },
+    { img: "/buloneria/tuercasg.png", titulo: "TUERCAS", pdf: "/catalogos/BULONERIA/Tuercas 20-05-26.pdf" },
    
   ]
 

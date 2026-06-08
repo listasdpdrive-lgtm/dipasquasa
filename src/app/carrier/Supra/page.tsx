@@ -8,22 +8,22 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/carrier/filtro.png",
-      titulo: "Filtro y portafiltros",
+      titulo: "FILTRO Y PORTAFILTRO",
       pdf: "/catalogos/CARRIER/s/Filtros Supra 20-05-26.pdf",
     },
     {
       img: "/carrier/correa.png",
-      titulo: "Correa",
+      titulo: "CORREA",
       pdf: "/catalogos/CARRIER/s/Correas Supra 20-25-26.pdf",
     },
     {
       img: "/carrier/motors.png",
-      titulo: "Motor en general",
+      titulo: "MOTOR EN GENERAL",
       pdf: "/catalogos/CARRIER/s/Motor general Supra 20-05-26.pdf",
     },
     {
       img: "/carrier/electricidaS.png",
-      titulo: "Electricidad",
+      titulo: "ELECTRICIDAD",
       pdf: "/catalogos/CARRIER/s/Electricidad Supra 20-05-26.pdf",
     },
   ]

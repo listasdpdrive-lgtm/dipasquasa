@@ -8,17 +8,17 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/filtros/filtrosaire.png",
-      titulo: "Filtros de aire",
+      titulo: "FILTROS DE AIRE",
       pdf: "/catalogos/filtros/Filtro de aire 21-05-26.pdf",
     },
      {
       img: "/filtros/filtroaceite.png",
-      titulo: "Filtros de aceite",
+      titulo: "FILTROS DE ACEITE",
       pdf: "/catalogos/filtros/Filtro aceite 21-05-26.pdf",
     },
      {
       img: "/filtros/filtrogasoil.png",
-      titulo: "Filtros de gasoil",
+      titulo: "FILTROS DE GASOIL",
       pdf: "/catalogos/filtros/Filtros de gasoil 21-05-26.pdf",
     },
     

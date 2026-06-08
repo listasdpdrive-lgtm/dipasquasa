@@ -17,21 +17,21 @@ export default function CatalogosPage() {
   ]
 
   const cuadros = [
-    { img: "/accesorios.png", titulo: "Accesorios", pdf: "/catalogos/ACCESORIOS/accesorios bepo 14_05_26.pdf" },
+    { img: "/accesorios.png", titulo: "ACCESORIOS", pdf: "/catalogos/ACCESORIOS/accesorios bepo 14_05_26.pdf" },
     { img: "/aire.png", titulo: "Aire", link: "/Aire" },
     { img: "/image-cuadros/ast-pra.png", titulo: "AST-PRA", link: "/AST-PRA" },
     { img: "/buloneriaI.png", titulo: "Buloneria", link: "/Buloneria" },
     { img: "/image-cuadros/carrier-logo.png", titulo: "Carrier", link: "/carrier" },
     { img: "/electricidad.png", titulo: "Electricidad", link: "/Electricidad" },
     { img: "/amarre.png", titulo: "Elementos de Amarre", link: "/Elemento_amarre" },
-    { img: "/seguridad.png", titulo: "Elementos de Seguridad", pdf: "/catalogos/SEGURIDAD/Elementos de seguridad 21-05-26.pdf" },
+    { img: "/seguridad.png", titulo: "ELEMENTOS DE SEGURIDAD", pdf: "/catalogos/SEGURIDAD/Elementos de seguridad 21-05-26.pdf" },
     { img: "/filtros/filtrosportada.png", titulo: "Filtros de aire", link: "/filtros" },
     { img: "/frenos.png", titulo: "Frenos", link: "/Frenos" },
-    { img: "/herramientas/herramientas.png", titulo: "Herramientas", pdf: "/catalogos/herramientas/Herramientas 21-05-26.pdf" },
+    { img: "/herramientas/herramientas.png", titulo: "HERRAMIENTAS", pdf: "/catalogos/herramientas/Herramientas 21-05-26.pdf" },
     { img: "/puntaeje/punta_eje.png", titulo: "Tren Delantero y Punta Eje", link: "/punta_eje" },
     { img: "/PESADOS-JPG/pesados.png", titulo: "Pesados", link: "/Pesados" },
     { img: "/varios.png", titulo: "Accesorios varios", link: "/Varios" },
-    { img: "/image-cuadros/eevigis.png", titulo: "Vigia", pdf: "/Vigia 06-06-26pdf.pdf" },
+    { img: "/image-cuadros/eevigis.png", titulo: "VIGIA", pdf: "/Vigia 06-06-26pdf.pdf" },
   ]
 
   useEffect(() => {7

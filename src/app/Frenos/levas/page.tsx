@@ -10,12 +10,12 @@ export default function Accesorios() {
 
     {
       img: "/frenos/componentes-leva.png",
-      titulo: "Componentes de leva",
+      titulo: "COMPONENTES DE LEVA",
       pdf: "/catalogos/FRENOS/levas/Componentes de leva  21-05-26.pdf",
     },
      {
       img: "/frenos/leva.png",
-      titulo: "Levas de freno",
+      titulo: "LEVAS DE FRENO",
       pdf: "/catalogos/FRENOS/levas/Levas freno 21-05-26.pdf",
     },
    

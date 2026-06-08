@@ -11,17 +11,17 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/ELECTRICIDAD-JPG/cables.png",
-      titulo: "Cables",
+      titulo: "CABLES",
       pdf: "/catalogos/ELECTRICIDAD/Cables 20-05-26.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/varios.png",
-      titulo: "Electricidad Variado",
+      titulo: "ELECTRICIDAD VARIADO",
       pdf: "/catalogos/ELECTRICIDAD/Electricidad varios 21-05-26.pdf",
     },
      {
       img: "/ELECTRICIDAD-JPG/enchufe.png",
-      titulo: "Enchufe de Luz",
+      titulo: "ENCHUFE DE LUZ",
       pdf: "/catalogos/ELECTRICIDAD/Enchufe de luz 20-05-26.pdf",
     },
     {

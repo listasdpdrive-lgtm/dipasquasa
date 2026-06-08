@@ -8,12 +8,12 @@ export default function Accesorios() {
   const cuadros = [
     {
       img: "/ELECTRICIDAD-JPG/faroslt.png",
-      titulo: "Faros traseros y faroleras",
+      titulo: "FAROS TRASEROS Y FAROLERAS",
       pdf: "/catalogos/ELECTRICIDAD/Faros traseros y faroleras 20-05-26.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/farosL.png",
-      titulo: "Faros Laterales, Posición, Patente y Portalampara",
+      titulo: "FAROS LATERALES, POSICIÓN, PATENTE Y PORTALAMPARA",
       pdf: "/catalogos/ELECTRICIDAD/Faros laterales-posición-ilumina patente 20-05-26.pdf",
     },
      {
@@ -24,7 +24,7 @@ export default function Accesorios() {
   
     {
       img: "/ELECTRICIDAD-JPG/MICAS.png",
-      titulo: "Micas",
+      titulo: "MICAS",
       pdf: "/catalogos/ELECTRICIDAD/Micas 20-05-26.pdf",
     },
   ]
