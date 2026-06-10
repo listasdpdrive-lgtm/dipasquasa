@@ -72,8 +72,12 @@ Volver
 
 {/* SECCIÓN CENTRO DESKTOP: Botón Catálogo en el medio exacto */}
 <div className="hidden md:flex flex-1 justify-center px-4">
-<a href="/catalogos/CATALOGO UNIDO COMPLETO.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-red-600 text-white text-sm font-semibold hover:bg-red-700 transition shadow-sm whitespace-nowrap">
-<Download size={16} />
+<a 
+      href="https://drive.google.com/file/d/1sOgHkhENGJdFnE9NGHP3ObcaT4F_fhBm/view?usp=sharing" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="px-4 py-2 rounded-xl bg-red-600 text-white font-semibold hover:bg-red-700 transition shadow-sm"
+    >
 Catálogo Completo
 </a>
 </div>
