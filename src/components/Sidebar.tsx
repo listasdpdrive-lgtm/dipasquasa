@@ -92,7 +92,13 @@ Ubicación
 
 {/* SECCIÓN RESPONSIVA MÓVIL (Mantiene tu diseño móvil compacto intacto) */}
 <div className="flex md:hidden items-center gap-2">
-<a href="/catalogos/catalogo-completo.pdf" target="_blank" rel="noopener noreferrer" className="p-2 rounded-xl bg-red-600 text-white hover:bg-red-700 transition shadow-sm" title="Catálogo Completo">
+
+<a 
+      href="https://drive.google.com/file/d/1sOgHkhENGJdFnE9NGHP3ObcaT4F_fhBm/view?usp=sharing" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="p-2 rounded-xl bg-red-600 text-white hover:bg-red-700 transition shadow-sm" title="Catálogo Completo"
+    >
 <Download size={18} />
 </a>
 <button onClick={() => window.open("https://maps.app.goo.gl/jTb2ruaWZ9ahHzsU9", "_blank")} className="px-2.5 py-1.5 rounded-xl border border-red-600 text-red-600 text-xs font-semibold">
