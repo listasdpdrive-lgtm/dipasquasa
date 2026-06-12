@@ -10,11 +10,11 @@ export default function Accesorios() {
       img: "/AIRE-JPG/conexiones_rapidas.png",
       titulo: "CONEXIONES RAPIDAS",
       pdf: "/catalogos/AIRE/conexiones/Conexiones rapidas 18-05-26.pdf",
-    },
+    },  
     {
       img: "/AIRE-JPG/conexiones_bronce.png",
       titulo: "CONEXIONES DE BRONCE Y ACOPLES",
-      pdf: "/catalogos/AIRE/conexiones/Conexiones de bronce 18-05-26.pdf",
+      pdf: "/catalogos/AIRE/conexiones/Conexiones de bronce 11-06-26.pdf",
     },
   ]
 

@@ -14,7 +14,7 @@ export default function Accesorios() {
     {
       img: "/AST-PRA/herrajes.png",
       titulo: "HERRAJES Y ACCESORIOS AST-PRA",
-      pdf: "/catalogos/AST-PRA/Herrajes AST-PRA 18-05-26.pdf",
+      pdf: "/catalogos/AST-PRA/AST-PRA Herrajes 12-06-26.pdf",
     },
   ]
 

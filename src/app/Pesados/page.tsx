@@ -119,7 +119,7 @@ export default function Accesorios() {
     },{
       img: "/PESADOS-JPG/rulemanes.png",
       titulo: "RULEMANES",
-      pdf: "/catalogos/PESADOS/Rulemanes 21-05-26.pdf",
+      pdf: "/catalogos/PESADOS/Rulemanes 11-06-26.pdf",
     },{
       img: "/PESADOS-JPG/separadores.png",
       titulo: "SEPARADORES ARTILLEROS",

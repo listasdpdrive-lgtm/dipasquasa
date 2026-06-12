@@ -25,7 +25,6 @@ const tiktokLinks = [
   { label: "Concesionaria", url: "https://www.tiktok.com/@di.pasqua" },
 ]
 
-
 export function WhatsAppButton() {
   const [openWp, setOpenWp] = useState(false)
   const [openIg, setOpenIg] = useState(false)
@@ -43,12 +42,14 @@ export function WhatsAppButton() {
     window.addEventListener("beforeinstallprompt", handler)
     return () => window.removeEventListener("beforeinstallprompt", handler)
   }, [])
-useEffect(() => {
-  const isStandalone = window.matchMedia("(display-mode: standalone)").matches
-  if (isStandalone) {
-    setDeferredPrompt(null)
-  }
-}, [])
+
+  useEffect(() => {
+    const isStandalone = window.matchMedia("(display-mode: standalone)").matches
+    if (isStandalone) {
+      setDeferredPrompt(null)
+    }
+  }, [])
+
   const instalar = async () => {
     if (deferredPrompt) {
       deferredPrompt.prompt()
@@ -66,17 +67,16 @@ useEffect(() => {
 
   return (
     <div className="fixed bottom-4 right-4 z-[9999] flex flex-col items-end gap-3">
-
       
-  {deferredPrompt && (
-  <motion.button
-    onClick={instalar}
-    whileTap={{ scale: 0.9 }}
-    className="bg-white p-4 rounded-full shadow-lg cursor-pointer"
-  >
-    <Image src="/logoH.png" width={38} height={38} alt="instalar" />
-  </motion.button>
-)}
+      {deferredPrompt && (
+        <motion.button
+          onClick={instalar}
+          whileTap={{ scale: 0.9 }}
+          className="bg-white p-4 rounded-full shadow-lg cursor-pointer"
+        >
+          <Image src="/logoH.png" width={38} height={38} alt="instalar" />
+        </motion.button>
+      )}
 
       {/* INSTAGRAM */}
       <AnimatePresence>
@@ -129,15 +129,38 @@ useEffect(() => {
         <Image src="/images/tik.png" width={28} height={28} alt="tiktok" />
       </button>
 
-      {/* WHATSAPP */}
+      {/* WHATSAPP MODIFICADO */}
       <AnimatePresence>
         {openWp && (
-          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="flex flex-col gap-2">
-            {whatsappNumbers.map((item) => (
-              <button key={item.phone} onClick={() => sendWhatsApp(item.phone)} className="bg-white text-green-600 px-4 py-2 rounded-lg shadow-md text-sm">
-                {item.label}
-              </button>
-            ))}
+          <motion.div 
+            initial={{ opacity: 0, y: 10 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            exit={{ opacity: 0 }} 
+            className="flex flex-row items-center gap-4 basic-full"
+          >
+            {/* Imagen ahora al lado IZQUIERDO y sin fondo blanco */}
+            <div className="flex items-center justify-center">
+              <Image 
+                src="/personal con 5 titulos y 2 maestrias en fisica nueclear.png" 
+                width={110} 
+                height={110} 
+                alt="Imagen informativa" 
+                className="object-contain"
+              />
+            </div>
+
+            {/* Lista de botones al lado DERECHO */}
+            <div className="flex flex-col gap-2">
+              {whatsappNumbers.map((item) => (
+                <button 
+                  key={item.phone} 
+                  onClick={() => sendWhatsApp(item.phone)} 
+                  className="bg-white text-green-600 px-4 py-2 rounded-lg shadow-md text-sm whitespace-nowrap"
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
