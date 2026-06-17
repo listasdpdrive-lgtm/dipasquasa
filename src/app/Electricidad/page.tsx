@@ -26,12 +26,12 @@ export default function Accesorios() {
     },
     {
       img: "/ELECTRICIDAD-JPG/faros.png",
-      titulo: "Faros",
+      titulo: "FAROS",
       link: "/Electricidad/Faros",
     },
     {
       img: "/ELECTRICIDAD-JPG/luces.png",
-      titulo: "Focos",
+      titulo: "FOCOS",
       link: "/Electricidad/Luces",
     },
   ]

@@ -16,7 +16,7 @@ export default function Accesorios() {
     {
       img: "/ELECTRICIDAD-JPG/barras.png",
       titulo: "FAROS, BARRAS Y TIRAS 24 Y 12V",
-      pdf: "/catalogos/ELECTRICIDAD/Barras led-reflectores 20-05-26.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Barras led, tiras y tabletas led 20-06-26 .pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/leds.png",

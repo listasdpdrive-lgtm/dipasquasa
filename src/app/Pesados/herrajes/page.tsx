@@ -7,8 +7,8 @@ import Sidebar from "@/components/Sidebar"
 export default function Accesorios() {
   const cuadros = [
     {
-      img: "/PESADOS-JPG/barandas.png",
-      titulo: "BARANDAS",
+      img: "/PESADOS-JPG/Barandas,arcos.png",
+      titulo: "BARANDAS Y ARCO",
       pdf: "/catalogos/PESADOS/herrajes/Barandas 17-06-26.pdf",
     },
      {
