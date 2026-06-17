@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/frenos/citasC.png",
       titulo: "CINTA CAMIÓN",
-      pdf: "/catalogos/FRENOS/c/Cinta de freno camión 21-05-26.pdf",
+      pdf: "/catalogos/FRENOS/c/Cintas camión 17-06-26.pdf",
     },
       {
       img: "/frenos/cintasSs.png",

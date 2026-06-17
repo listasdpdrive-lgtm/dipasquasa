@@ -144,7 +144,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/ejes.png",
       titulo: "EJES",
-      pdf: "/catalogos/PESADOS/Ejes-TUBOS.pdf",
+      pdf: "/catalogos/PESADOS/Ejes 17-06-26.pdf",
     },
   ]
 
