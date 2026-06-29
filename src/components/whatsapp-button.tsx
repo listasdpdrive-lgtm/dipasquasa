@@ -138,16 +138,7 @@ export function WhatsAppButton() {
             exit={{ opacity: 0 }} 
             className="flex flex-row items-center gap-4 basic-full"
           >
-            {/* Imagen ahora al lado IZQUIERDO y sin fondo blanco */}
-            <div className="flex items-center justify-center">
-              <Image 
-                src="/personal con 5 titulos y 2 maestrias en fisica nueclear.png" 
-                width={110} 
-                height={110} 
-                alt="Imagen informativa" 
-                className="object-contain"
-              />
-            </div>
+            
 
             {/* Lista de botones al lado DERECHO */}
             <div className="flex flex-col gap-2">
