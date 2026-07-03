@@ -58,7 +58,7 @@ export default function Accesorios() {
     {
       img: "/AIRE-JPG/valvulasuspencion.png",
       titulo: "Válvulas de Suspension",
-      pdf: "/catalogos/AIRE/valvulas/Valvula protectora de presión 23-05-26.pdf",
+      pdf: "/catalogos/AIRE/valvulas/Valvulas de suspensión neumatica 30-06-26.pdf",
     },
       {
       img: "/AIRE-JPG/valvularelay.png",

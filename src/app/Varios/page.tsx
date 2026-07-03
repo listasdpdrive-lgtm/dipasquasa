@@ -14,7 +14,7 @@ export default function Accesorios() {
     {
       img: "/varios/otros.png",
       titulo: "ACCESORIOS VARIOS",
-      pdf: "/catalogos/varios/Accesorios varios 14-05-26.pdf",
+      pdf: "/catalogos/varios/Accesorios varios 30-05-26.pdf",
     },
    
    

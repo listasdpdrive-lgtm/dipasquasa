@@ -29,7 +29,7 @@ export default function CatalogosPage() {
     { img: "/frenos.png", titulo: "FRENOS", link: "/Frenos" },
     { img: "/herramientas/herramientas.png", titulo: "HERRAMIENTAS", pdf: "/catalogos/herramientas/Herramientas 21-05-26.pdf" },
     { img: "/puntaeje/punta_eje.png", titulo: "TREN DELANTERO Y PUNTA DE EJE", link: "/punta_eje" },
-    { img: "/PESADOS-JPG/pesados.png", titulo: "PESADOS", link: "/Pesados" },
+    { img: "/PESADOS-JPG/PESADOS.png", titulo: "PESADOS", link: "/Pesados" },
     { img: "/varios.png", titulo: "ACCESORIOS VARIOS", link: "/Varios" },
     { img: "/image-cuadros/eevigis.png", titulo: "VIGIA", pdf: "/catalogos/Vigia 06-06-26pdf.pdf" },
   ]

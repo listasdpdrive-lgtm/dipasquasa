@@ -20,13 +20,13 @@ export default function Accesorios() {
     },
     {
       img: "/ELECTRICIDAD-JPG/leds.png",
-      titulo: "FOCOS 24 Y 12V",
+      titulo: "FOCOS LED 24 Y 12V",
       pdf: "/catalogos/ELECTRICIDAD/Focos led 21-25-26.pdf",
     },
      {
       img: "/ELECTRICIDAD-JPG/halogenos.png",
       titulo: "HALOGENOS 24 Y 12V",
-      pdf: "/catalogos/ELECTRICIDAD/Lamparas halogenas 20-05-26.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Lamparas halogenas 30-06-26.pdf",
     },
   ]
 
