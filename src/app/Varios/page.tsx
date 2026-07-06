@@ -12,9 +12,9 @@ export default function Accesorios() {
       pdf: "/catalogos/varios/Lubricantes 11-06-26.pdf",
     },
     {
-      img: "/varios/otros.png",
+      img: "/varios/accesoriosvarios2.png",
       titulo: "ACCESORIOS VARIOS",
-      pdf: "/catalogos/varios/Accesorios varios 30-05-26.pdf",
+      pdf: "/catalogos/varios/Accesorios varios 04-07-26.pdf",
     },
    
    

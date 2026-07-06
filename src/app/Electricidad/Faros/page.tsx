@@ -7,7 +7,7 @@ export default function Accesorios() {
 
   const cuadros = [
     {
-      img: "/ELECTRICIDAD-JPG/faroslt.png",
+      img: "/ELECTRICIDAD-JPG/faroleras2.png",
       titulo: "FAROS TRASEROS Y FAROLERAS",
       pdf: "/catalogos/ELECTRICIDAD/Faroleras y faros traseros 30-06-26.pdf",
     },

@@ -26,7 +26,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/soporte.png",
       titulo: "SOPORTE DE GUARDABARROS",
-      pdf: "/catalogos/PESADOS/bbbgs/Soporte guardabarro 22-05-26.pdf",
+      pdf: "/catalogos/PESADOS/bbbgs/Soporte de guardabarro 04-07-26.pdf",
     },
      
    
