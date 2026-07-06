@@ -32,7 +32,7 @@ export default function Accesorios() {
     {
       img: "/AIRE-JPG/valvulaniveladora.png",
       titulo: "Válvulas niveladora",
-      pdf:" /catalogos/AIRE/valvulas/Valvulas niveladora 18-05-26.pdf",
+      pdf:" /catalogos/AIRE/valvulas/Valvulas niveladoras 06-07-26.pdf",
     },
   
     {

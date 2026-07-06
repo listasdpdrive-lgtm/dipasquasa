@@ -25,7 +25,7 @@ export default function Accesorios() {
       pdf: "/catalogos/ELECTRICIDAD/Enchufe de luz 20-05-26.pdf",
     },
     {
-      img: "/ELECTRICIDAD-JPG/faros.png",
+      img: "/ELECTRICIDAD-JPG/FAROS.png",
       titulo: "FAROS",
       link: "/Electricidad/Faros",
     },

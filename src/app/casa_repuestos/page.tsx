@@ -22,7 +22,7 @@ export default function CatalogosPage() {
     { img: "/image-cuadros/ast-pra.png", titulo: "AST-PRA", link: "/AST-PRA" },
     { img: "/buloneriaI.png", titulo: "BULONERÍA", link: "/Buloneria" },
     { img: "/image-cuadros/carrier-logo.png", titulo: "CARRIER", link: "/carrier" },
-    { img: "/electricidad.png", titulo: "ELECTRICIDAD", link: "/Electricidad" },
+    { img: "/ELECTRICIDAD.png", titulo: "ELECTRICIDAD", link: "/Electricidad" },
     { img: "/amarre.png", titulo: "ELEMENTOS DE AMARRE", link: "/Elemento_amarre" },
     { img: "/seguridad.png", titulo: "ELEMENTOS DE SEGURIDAD", pdf: "/catalogos/SEGURIDAD/Elementos de seguridad 11-06-26.pdf" },
     { img: "/filtros/filtrosportada.png", titulo: "FILTROS DE AIRE", link: "/filtros" },
