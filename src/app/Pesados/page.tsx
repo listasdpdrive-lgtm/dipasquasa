@@ -51,6 +51,11 @@ export default function Accesorios() {
       pdf: "/catalogos/PESADOS/aros/Aros giratorios 22-05-26.pdf",
     },
     {
+      img: "/PESADOS-JPG/ejes.png",
+      titulo: "EJES",
+      pdf: "/catalogos/PESADOS/Ejes y tubos 03-07-26.pdf",
+    },
+    {
       img: "/PESADOS-JPG/enganche_y_patas.png",
       titulo: "ENGANCHES Y PATAS DE APOYO",
       link: "/Pesados/ENGANCHES",
@@ -100,7 +105,7 @@ export default function Accesorios() {
     },{
       img: "/PESADOS-JPG/repuestos batea.png",
       titulo: "REPUESTOS PARA BATEA",
-      pdf: "/catalogos/PESADOS/Repuestos para batea 21-05-26.pdf",
+      pdf: "/catalogos/PESADOS/Respuestos para batea 06-07-26.pdf",
     },
     {
       img: "/PESADOS-JPG/repuestos_carreton.png",
@@ -141,11 +146,7 @@ export default function Accesorios() {
       titulo: "TUERCAS Y ARANDELAS PUNTA DE EJE",
       link: "/Pesados/puntaeje",
     },
-    {
-      img: "/PESADOS-JPG/ejes.png",
-      titulo: "EJES",
-      pdf: "/catalogos/PESADOS/Ejes y tubos 03-07-26.pdf",
-    },
+    
   ]
 
   return (

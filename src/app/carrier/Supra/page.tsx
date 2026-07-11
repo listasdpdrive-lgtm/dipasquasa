@@ -19,12 +19,12 @@ export default function Accesorios() {
     {
       img: "/carrier/motors.png",
       titulo: "MOTOR EN GENERAL",
-      pdf: "/catalogos/CARRIER/s/Motor general Supra 20-05-26.pdf",
+      pdf: "/catalogos/CARRIER/s/Motor general Supra 11-07-26.pdf",
     },
     {
       img: "/carrier/electricidaS.png",
       titulo: "ELECTRICIDAD",
-      pdf: "/catalogos/CARRIER/s/Electricidad Supra 20-05-26.pdf",
+      pdf: "/catalogos/CARRIER/s/Electricidad Supra 11-07-26.pdf",
     },
   ]
 

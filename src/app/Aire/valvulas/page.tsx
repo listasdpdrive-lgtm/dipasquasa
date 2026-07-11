@@ -43,7 +43,7 @@ export default function Accesorios() {
     {
       img: "/AIRE-JPG/valvulamanuales.png",
       titulo: "Válvulas manuales",
-      pdf:"/catalogos/AIRE/valvulas/Valvulas manuales 23-05-26pdf.pdf",
+      pdf:"/catalogos/AIRE/valvulas/Valvulas manuales 10-07-26.pdf",
     },
     {
       img: "/AIRE-JPG/valvuladepied.png",

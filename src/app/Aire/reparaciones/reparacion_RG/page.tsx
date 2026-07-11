@@ -37,7 +37,7 @@ export default function Accesorios() {
       pdf: "/catalogos/AIRE/RG/Reparación valvulas protectora 18-05-26.pdf" },
 
     { img: "/REPARACIONESRG/relay.png", titulo: "REPARACIONES VÁLVULAS RELAY", 
-      pdf: "/catalogos/AIRE/RG/Reparación valvulas relay 18-05-26.pdf" },
+      pdf: "/catalogos/AIRE/RG/Reparación valvulas relay 10-07-26.pdf" },
 
     { img: "/REPARACIONESRG/rcontrol.png", titulo: "REPARACIONES VÁLVULAS RELAY Y DE CONTROL", 
       pdf: "/catalogos/AIRE/RG/Reparación valvulas relay y control 15-05-26.pdf" },
