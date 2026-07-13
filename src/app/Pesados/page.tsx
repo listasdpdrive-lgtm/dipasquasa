@@ -105,7 +105,7 @@ export default function Accesorios() {
     },{
       img: "/PESADOS-JPG/repuestos batea.png",
       titulo: "REPUESTOS PARA BATEA",
-      pdf: "/catalogos/PESADOS/Respuestos para batea 06-07-26.pdf",
+      pdf: "/catalogos/PESADOS/Repuestos para batea 13-07-26.pdf",
     },
     {
       img: "/PESADOS-JPG/repuestos_carreton.png",
