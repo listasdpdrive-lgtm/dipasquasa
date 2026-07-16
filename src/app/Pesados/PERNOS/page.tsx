@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/perno_suspencion.png",
       titulo: "PERNOS DE SUSPENSIÓN NEUMATICA",
-      pdf: "/catalogos/PESADOS/pernos/Pernos de suspensión neumatica 21-05-26.pdf",
+      pdf: "/catalogos/PESADOS/pernos/Pernos de suspensión neumatica 16-07-26.pdf",
     },
     {
       img: "/PESADOS-JPG/perno_lanza.png",

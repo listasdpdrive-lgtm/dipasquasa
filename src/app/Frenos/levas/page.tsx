@@ -11,7 +11,7 @@ export default function Accesorios() {
     {
       img: "/frenos/componentes-leva.png",
       titulo: "COMPONENTES DE LEVA",
-      pdf: "/catalogos/FRENOS/levas/Componentes de leva  21-05-26.pdf",
+      pdf: "/catalogos/FRENOS/levas/Componentes de leva  16-07-26.pdf",
     },
      {
       img: "/frenos/leva.png",
