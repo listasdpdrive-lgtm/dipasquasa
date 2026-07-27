@@ -9,12 +9,12 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/abrazaderasemi.png",
       titulo: "ABRAZADERAS SEMICURVA",
-      pdf: "/catalogos/PESADOS/Abrazaderas semicurva 12-06-26.pdf",
+      pdf: "/catalogos/PESADOS/Abrazaderas semicurva 21-07-26.pdf",
     },
        {
       img: "/PESADOS-JPG/abrazaderascurva.jpg",
       titulo: "ABRAZADERAS CURVA",
-      pdf: "/catalogos/PESADOS/Abrazaderas curva 22-05-26.pdf",
+      pdf: "/catalogos/PESADOS/Abrazaderas curva 21-07-26.pdf",
     },
     {
       img: "/PESADOS-JPG/tuercass.png",
