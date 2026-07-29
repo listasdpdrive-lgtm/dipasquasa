@@ -22,7 +22,7 @@ export default function Accesorios() {
      {
       img: "/ELECTRICIDAD-JPG/enchufe.png",
       titulo: "ENCHUFE DE LUZ",
-      pdf: "/catalogos/ELECTRICIDAD/Enchufe de luz 20-05-26.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Enchufe de luz 29-07-26.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/FAROS2.png",
