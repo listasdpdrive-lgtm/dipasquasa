@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/Barandas,arcos.png",
       titulo: "BARANDAS Y ARCO",
-      pdf: "/catalogos/PESADOS/herrajes/Barandas 17-06-26.pdf",
+      pdf: "/catalogos/PESADOS/herrajes/Barandas 31-07-26.pdf",
     },
      {
       img: "/PESADOS-JPG/cajon.png",
