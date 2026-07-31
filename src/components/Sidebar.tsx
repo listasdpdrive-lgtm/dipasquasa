@@ -23,7 +23,7 @@ const NAVIGATION_ITEMS = [
 { href: "/punta_eje", label: "Tren Delantero y Punta Eje" },
 { href: "/Pesados", label: "Pesados" },
 { href: "/Varios", label: "Accesorios varios" },
-{ pdf: "/catalogos/Vigia 06-06-26pdf.pdf", label: "Vigia" }
+{ pdf: "/catalogos/Vigia 31-07-26.pdf", label: "Vigia" }
 ]
 
 export default function Sidebar() {
