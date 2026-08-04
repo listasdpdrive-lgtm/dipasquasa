@@ -16,7 +16,7 @@ const NAVIGATION_ITEMS = [
 { href: "/carrier", label: "Carrier" },
 { href: "/Electricidad", label: "Electricidad" },
 { href: "/Elemento_amarre", label: "Elementos de Amarre" },
-{ pdf: "/catalogos/SEGURIDAD/Elementos de seguridad 11-07-26.pdf", label: "Elemento de Seguridad" },
+{ pdf: "/catalogos/SEGURIDAD/Elementos de seguridad 11-07-26.pdf", label: "Elementos de Seguridad" },
 { href: "/filtros", label: "Filtros" },
 { href: "/Frenos", label: "Frenos" },
 { pdf: "/catalogos/herramientas/Herramientas 06-07-26.pdf", label: "Herramientas" },
