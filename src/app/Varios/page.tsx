@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/varios/lubricantes.png",
       titulo: "LUBRICANTE Y OTROS",
-      pdf: "/catalogos/varios/Lubricantes 10-07-26.pdf",
+      pdf: "/catalogos/varios/Lubricantes 14-08-26.pdf",
     },
     {
       img: "/varios/accesoriosvarios2.png",
