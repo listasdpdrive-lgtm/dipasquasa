@@ -29,18 +29,20 @@ export default function TestimonialsSection() {
     },
   ]
 
-  const reactions = Array.from({ length: 20 })
+  const reactions = Array.from({ length: 20 }, (_, i) => ({
+    icon: i % 2 === 0 ? Heart : ThumbsUp,
+    size: 20 + ((i * 7) % 20),
+    left: (i * 13) % 100,
+    duration: 8 + (i % 5),
+    delay: (i * 0.7) % 10,
+  }))
 
   return (
     <section id="testimonios" className="relative py-20 bg-gray-50 flex justify-center overflow-hidden">
 
       {/* Reacciones flotando */}
-      {reactions.map((_, i) => {
-        const Icon = Math.random() > 0.5 ? Heart : ThumbsUp
-        const size = Math.random() * 20 + 20
-        const left = Math.random() * 100
-        const duration = Math.random() * 8 + 8
-        const delay = Math.random() * 10
+      {reactions.map((item, i) => {
+        const Icon = item.icon
 
         return (
           <motion.div
@@ -48,18 +50,18 @@ export default function TestimonialsSection() {
             initial={{ y: 200, opacity: 0 }}
             animate={{ y: -800, opacity: [0, 1, 1, 0] }}
             transition={{
-              duration: duration,
+              duration: item.duration,
               repeat: Infinity,
-              delay: delay,
+              delay: item.delay,
               ease: "linear",
             }}
             style={{
               position: "absolute",
-              left: `${left}%`,
+              left: `${item.left}%`,
             }}
             className="text-red-500 opacity-40"
           >
-            <Icon size={size} />
+            <Icon size={item.size} />
           </motion.div>
         )
       })}

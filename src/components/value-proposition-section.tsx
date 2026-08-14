@@ -45,15 +45,15 @@ export function ValuePropositionSection() {
     },
   ]
 
-  // Genera MUCHAS estrellas
+  // Genera MUCHAS estrellas de manera determinista para evitar desajustes de hidratación
   const stars = useMemo(() => {
     return Array.from({ length: 180 }).map((_, i) => ({
       id: i,
-      top: Math.random() * 100,
-      left: Math.random() * 100,
-      size: Math.random() * 3 + 1,
-      delay: Math.random() * 5,
-      duration: Math.random() * 3 + 2,
+      top: (i * 37) % 100,
+      left: (i * 29) % 100,
+      size: ((i * 13) % 3) + 1,
+      delay: (i * 0.17) % 5,
+      duration: 2 + ((i * 11) % 3),
     }))
   }, [])
 
