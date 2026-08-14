@@ -25,7 +25,7 @@ export default function Accesorios() {
     },
      {
       img: "/ELECTRICIDAD-JPG/halogenos.png",
-      titulo: "HALOGENOS 24 Y 12V",
+      titulo: "HALOGENO 24 Y 12V",
       pdf: "/catalogos/ELECTRICIDAD/Lamparas halogenas 14-08-26.pdf",
     },
   ]
