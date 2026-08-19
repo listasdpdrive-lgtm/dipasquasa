@@ -14,7 +14,7 @@ export default function Accesorios() {
     {
       img: "/AIRE-JPG/conexiones_bronce.png",
       titulo: "CONEXIONES DE BRONCE Y ACOPLES",
-      pdf: "/catalogos/AIRE/conexiones/Conexiones de bronce 11-06-26.pdf",
+      pdf: "/catalogos/AIRE/conexiones/Conexiones de bronce 18-08-26.pdf",
     },
   ]
 

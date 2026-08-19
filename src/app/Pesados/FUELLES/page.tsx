@@ -10,7 +10,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/conico.png",
       titulo: "FUELLES CONICOS",
-      pdf: "/catalogos/PESADOS/fuelles/Fuelles tubular 21-05-26.pdf",
+      pdf: "/catalogos/PESADOS/fuelles/Fuelles tubular 19-08-26.pdf",
     },
       {
       img: "/PESADOS-JPG/loburales.png",
