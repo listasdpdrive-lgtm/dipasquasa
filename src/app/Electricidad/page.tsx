@@ -31,7 +31,7 @@ export default function Accesorios() {
     },
     {
       img: "/ELECTRICIDAD-JPG/luces.png",
-      titulo: "FOCOS",
+      titulo: "LEDS",
       link: "/Electricidad/Luces",
     },
   ]

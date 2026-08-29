@@ -7,26 +7,27 @@ import { link } from "fs"
 
 export default function Accesorios() {
   const cuadros = [
+     {
+      img: "/PESADOS-JPG/loburales.png",
+      titulo: "FUELLES LOBULARES",
+      pdf: "/catalogos/PESADOS/fuelles/Fuelles lobulares 30-06-26.pdf",
+    },
+     {
+      img: "/PESADOS-JPG/rectos.png",
+      titulo: "FUELLES RECTOS",
+      pdf: "/catalogos/PESADOS/fuelles/Fuelles rectos 32 21-05-26.pdf",
+    },
     {
       img: "/PESADOS-JPG/conico.png",
       titulo: "FUELLES CONICOS",
       pdf: "/catalogos/PESADOS/fuelles/Fuelles tubular 28-08-26.pdf",
     },
       {
-      img: "/PESADOS-JPG/loburales.png",
-      titulo: "FUELLES LOBULARES",
-      pdf: "/catalogos/PESADOS/fuelles/Fuelles lobulares 30-06-26.pdf",
-    },
-      {
-      img: "/PESADOS-JPG/fuelles tubulares.png",
-      titulo: "FUELLES TUBULARES",
+      img: "/PESADOS-JPG/fuelles tubulares varios.png",
+      titulo: "FUELLES TUBULARES VARIOS",
       pdf: "/catalogos/PESADOS/fuelles/Fuelles tubulares varios 21-05-26.pdf",
     },
-      {
-      img: "/PESADOS-JPG/rectos.png",
-      titulo: "FUELLES RECTOS",
-      pdf: "/catalogos/PESADOS/fuelles/Fuelles rectos 32 21-05-26.pdf",
-    },
+     
    
 
   ]
