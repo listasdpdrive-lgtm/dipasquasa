@@ -17,7 +17,7 @@ export default function CatalogosPage() {
   ]
 
   const cuadros = [
-    { img: "/accesorios.png", titulo: "ACCESORIOS", pdf: "/catalogos/ACCESORIOS/Accesorios  24-07-26.pdf" },
+    { img: "/accesorios.png", titulo: "ACCESORIOS", pdf: "/catalogos/ACCESORIOS/Accesorios  28-08-26.pdf" },
     { img: "/aire.png", titulo: "AIRE", link: "/Aire" },
     { img: "/image-cuadros/ast-pra.png", titulo: "AST-PRA", link: "/AST-PRA" },
     { img: "/buloneriaI.png", titulo: "BULONERÍA", link: "/Buloneria" },

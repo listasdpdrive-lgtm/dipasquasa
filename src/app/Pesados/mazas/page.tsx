@@ -14,7 +14,7 @@ export default function Accesorios() {
        {
       img: "/PESADOS-JPG/mazas.png",
       titulo: "MAZAS",
-      pdf: "/catalogos/PESADOS/mazas/Mazas 21-05-26.pdf",
+      pdf: "/catalogos/PESADOS/mazas/Mazas 28-08-26.pdf",
     },
     {
       img: "/PESADOS-JPG/guardapolvo.png",
