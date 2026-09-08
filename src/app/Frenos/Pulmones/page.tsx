@@ -20,7 +20,7 @@ export default function Accesorios() {
     {
       img: "/frenos/reparacion.png",
       titulo: "REPARACIÓN DE PULMON",
-      pdf: "/catalogos/FRENOS/pul/Reparación pulmon de freno 21-05-26.pdf",
+      pdf: "/catalogos/FRENOS/pul/Reparación pulmon de freno 08-09-26.pdf",
     },
  
     

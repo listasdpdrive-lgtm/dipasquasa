@@ -24,7 +24,7 @@ export default function Accesorios() {
       {
       img: "/PESADOS-JPG/arandelasus.png",
       titulo: "ARANDELAS DE SUSPENSIÓN NEUMÁTICA",
-      pdf: "/catalogos/PESADOS/Arandelas suspensión neumatica 22-05-26.pdf",
+      pdf: "/catalogos/PESADOS/Arandelas suspensión neumatica 08-09-26.pdf",
     },
    
    
