@@ -28,7 +28,7 @@ export function ServicesSection() {
       ],
       image: "/images/mecanico.png",
       whatsapp: "5491112345678",
-      email: "dipasquarepuestos@gmail.com",
+      email: "dipasqua.salto@hotmail.com",
       location:
          "https://maps.app.goo.gl/i19T2ZJYjrGBqsNs7",
     },
@@ -45,7 +45,7 @@ export function ServicesSection() {
       ],
       image: "/images/semi-1.png",
       whatsapp: "54261365617",
-      email: "ventas@tudominio.com",
+      email: "dipasqua.ventas@gmail.com",
       location: "https://maps.google.com/?q=Dipasqua+Venta+Semis",
     },
     {
@@ -61,7 +61,7 @@ export function ServicesSection() {
       ],
       image: "/truck-parts-warehouse.png",
       whatsapp: "542614663077",
-      email: "repuestos@tudominio.com",
+      email: "dipasquarepuestos@gmail.com",
       location:
         "https://maps.app.goo.gl/PWMJzdhJhMcTqEWu7",
     },

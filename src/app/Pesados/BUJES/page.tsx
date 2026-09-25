@@ -19,7 +19,7 @@ export default function Accesorios() {
      {
       img: "/PESADOS-JPG/bujesus.png",
       titulo: "BUJES DE SUSPENSIÓN NEUMÁTICA",
-      pdf: "/catalogos/PESADOS/bujes/Bujes suspensión neumatica 21-05-26.pdf",
+      pdf: "/catalogos/PESADOS/bujes/Bujes suspensión neumatica 25-09-26.pdf",
     },
      {
       img: "/PESADOS-JPG/bujetr.png",
