@@ -14,7 +14,7 @@ export default function Accesorios() {
      {
       img: "/amarre/malacate.png",
       titulo: "MALACATE, ESQUINERO Y MAS",
-      pdf: "/catalogos/AMARRE/Malacate-esquineros y mas 21-05-26.pdf",
+      pdf: "/catalogos/AMARRE/Malacate-esquineros y mas 30-09-26.pdf",
     },
      {
       img: "/amarre/soga.png",
