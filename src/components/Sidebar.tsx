@@ -19,7 +19,7 @@ const NAVIGATION_ITEMS = [
 { pdf: "/catalogos/SEGURIDAD/Elementos de seguridad 11-07-26.pdf", label: "Elementos de Seguridad" },
 { href: "/filtros", label: "Filtros" },
 { href: "/Frenos", label: "Frenos" },  
-{ pdf: "/catalogos/herramientas/Herramientas 06-07-26.pdf", label: "Herramientas" },
+{ pdf: "/catalogos/herramientas/Herramienta 30-09-26.pdf", label: "Herramientas" },
 { href: "/punta_eje", label: "Tren Delantero y Punta Eje" },
 { pdf: "/catalogos/TANQUES/tanques 25-08-26.pdf", label: "Tanques" },
 { href: "/Pesados", label: "Pesados" },
