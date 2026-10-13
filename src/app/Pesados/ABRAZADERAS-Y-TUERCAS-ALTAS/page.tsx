@@ -9,12 +9,17 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/abrazaderasemi.png",
       titulo: "ABRAZADERAS SEMICURVA",
-      pdf: "/catalogos/PESADOS/Abrazaderas semicurva 21-07-26.pdf",
+      pdf: "/catalogos/PESADOS/Abrazaderas semicurva 13-10-26.pdf",
     },
        {
       img: "/PESADOS-JPG/abrazaderascurva.jpg",
       titulo: "ABRAZADERAS CURVA",
-      pdf: "/catalogos/PESADOS/Abrazaderas curva 21-07-26.pdf",
+      pdf: "/catalogos/PESADOS/Abrazaderas curva 13-10-26.pdf",
+    },
+      {
+      img: "/PESADOS-JPG/abraaderasplanas.png",
+      titulo: "ABRAZADERAS PLANAS",
+      pdf: "/catalogos/PESADOS/Abrazaderas planas 13-10-26.pdf",
     },
     {
       img: "/PESADOS-JPG/tuercass.png",
