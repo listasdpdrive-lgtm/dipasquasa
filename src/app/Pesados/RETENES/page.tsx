@@ -14,7 +14,7 @@ export default function Accesorios() {
       {
       img: "/PESADOS-JPG/retenes.png",
       titulo: "RETENES DE CAMIONES Y ACOPLADOS",
-      pdf: "/catalogos/PESADOS/retenes/Reten semi y camión 30-05-26.pdf",
+      pdf: "/catalogos/PESADOS/retenes/Reten semi y camión 22-10-26.pdf",
     },
    
    

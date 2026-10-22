@@ -19,7 +19,7 @@ export default function Accesorios() {
     {
       img: "/carrier/motor.png",
       titulo: "MOTOR EN GENERAL",
-      pdf: "/catalogos/CARRIER/x/Motor general x2100 07-09-26.pdf",
+      pdf: "/catalogos/CARRIER/x/Motor general x2100 22-10-26.pdf",
     },
     {
       img: "/carrier/filtroX.jpg",

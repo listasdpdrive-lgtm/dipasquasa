@@ -10,7 +10,7 @@ export default function Accesorios() {
     {
       img: "/frenos/diafragma.png",
       titulo: "DIAFRAGMAS",
-      pdf: "/catalogos/FRENOS/pul/Diafragmas 21-05-26.pdf",
+      pdf: "/catalogos/FRENOS/pul/Diafragmas 22-10-26.pdf",
     },
     {
       img: "/frenos/pulmoness.png",
