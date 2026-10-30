@@ -5,6 +5,12 @@
   "installCommand": "npm install",
   "devCommand": "npm run dev",
   "regions": ["gru1"],
+  "crons": [
+    {
+      "path": "/api/cron/notificaciones-cuenta",
+      "schedule": "0 12 * * *"
+    }
+  ],
   "functions": {
     "src/app/page.tsx": {
       "maxDuration": 30

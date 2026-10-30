@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -54,7 +55,7 @@ export function Header() {
     { href: "#inicio", label: "Inicio" },
     { href: "#nosotros", label: "¿Quiénes somos?" },
     { href: "#servicios", label: "Servicios" },
-    { href: "#marcas", label: "Clientes" },
+    { href: "/cliente", label: "Cliente" },
   ]
 
   const scrollToSection = (href: string) => {
@@ -101,14 +102,25 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6">
             {menuItems.map((item) => (
-              <motion.button
-                key={item.href}
-                onClick={() => scrollToSection(item.href)}
-                whileHover={{ scale: 1.05 }}
-                className="text-gray-800 hover:text-primary transition-colors font-medium text-lg cursor-pointer"
-              >
-                {item.label}
-              </motion.button>
+              item.href === "/cliente" ? (
+                <motion.div key={item.href} whileHover={{ scale: 1.05 }}>
+                  <Link
+                    href={item.href}
+                    className="text-gray-800 hover:text-primary transition-colors font-medium text-lg"
+                  >
+                    {item.label}
+                  </Link>
+                </motion.div>
+              ) : (
+                <motion.button
+                  key={item.href}
+                  onClick={() => scrollToSection(item.href)}
+                  whileHover={{ scale: 1.05 }}
+                  className="text-gray-800 hover:text-primary transition-colors font-medium text-lg cursor-pointer"
+                >
+                  {item.label}
+                </motion.button>
+              )
             ))}
 
             {/* 🔥 BOTÓN INSTALAR */}
@@ -143,13 +155,24 @@ export function Header() {
             >
               <div className="py-4 space-y-2">
                 {menuItems.map((item) => (
-                  <button
-                    key={item.href}
-                    onClick={() => scrollToSection(item.href)}
-                    className="block w-full text-left px-4 py-3 text-gray-800 hover:text-primary hover:bg-gray-50 transition-colors font-medium text-lg cursor-pointer"
-                  >
-                    {item.label}
-                  </button>
+                  item.href === "/cliente" ? (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="block w-full text-left px-4 py-3 text-gray-800 hover:text-primary hover:bg-gray-50 transition-colors font-medium text-lg"
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <button
+                      key={item.href}
+                      onClick={() => scrollToSection(item.href)}
+                      className="block w-full text-left px-4 py-3 text-gray-800 hover:text-primary hover:bg-gray-50 transition-colors font-medium text-lg cursor-pointer"
+                    >
+                      {item.label}
+                    </button>
+                  )
                 ))}
 
                
