@@ -9,7 +9,7 @@ import { useRouter, usePathname } from "next/navigation"
 
 const NAVIGATION_ITEMS = [
 { href: "/", label: "Inicio" },
-{ pdf: "/catalogos/ACCESORIOS/Accesorios  24-07-26.pdf", label: "Accesorios" },
+{ pdf: "/catalogos/ACCESORIOS/Accesorios  13-10-26", label: "Accesorios" },
 { href: "/Aire", label: "Aire" },
 { href: "/AST-PRA", label: "AST-PRA" },
 { href: "/Buloneria", label: "Bulonería" },
