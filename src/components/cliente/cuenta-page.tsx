@@ -7,7 +7,6 @@ import {
   getCachedClientAccountData,
   loadClientAccountData,
 } from "@/lib/cliente/cuenta-cache"
-import Link from "next/link"
 import { useCallback, useEffect, useMemo, useState } from "react"
 import { useRouter } from "next/navigation"
 import {
@@ -458,13 +457,6 @@ function ReceiptCard({
             <Download size={16} aria-hidden="true" />
             {isDownloading ? "Preparando..." : "Descargar PDF"}
           </button>
-          <Link
-            href={`/cliente/cuenta/facturas/${encodeURIComponent(id)}`}
-            className="col-span-2 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold text-red-700 transition hover:bg-red-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 sm:col-span-1 sm:min-h-0 sm:shrink-0"
-          >
-            Ver detalle
-            <ChevronRight size={16} aria-hidden="true" />
-          </Link>
         </div>
       </div>
       {actionError && (
@@ -552,10 +544,12 @@ export default function CuentaClientePage({
     ? getPendingBalance(data.remitos, data.paidRemitos)
     : null
   const accountLimit = data
-    ? Object.entries(data.account).find(
+    ? (Object.entries(data.account as Record<string, string>).find(
         ([field, value]) =>
-          normalizeField(field) === "limitecredito" && value.trim() !== ""
-      )?.[1]
+          normalizeField(field) === "limitecredito" &&
+          typeof value === "string" &&
+          value.trim() !== ""
+      )?.[1] as string | undefined)
     : undefined
   const numericAccountLimit = parseAccountAmount(accountLimit)
   const limitUsage =
@@ -1070,8 +1064,8 @@ export default function CuentaClientePage({
                             onChange={(event) =>
                               setSearchTerm(event.target.value)
                             }
-                            placeholder="Buscar remito..."
-                            aria-label="Buscar remitos"
+                            placeholder="Buscar Comprobantes..."
+                            aria-label="Buscar Comprobantes"
                             className="w-full rounded-xl border border-slate-200 bg-slate-50 py-2.5 pl-10 pr-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-red-300 focus:bg-white focus:ring-4 focus:ring-red-50"
                           />
                         </label>

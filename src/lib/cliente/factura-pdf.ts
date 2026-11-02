@@ -474,7 +474,7 @@ function createFacturaHtml(factura: FacturaImprimible, qrImage: string) {
             <div style="width:50%"><span class="label">Condición frente al IVA:</span> ${escapeHtml(getText(data.arcaClient, "condicionIva", "condicionIvaReceptor") || "IVA Responsable Inscripto")}</div>
             <div style="width:50%"><span class="label">Domicilio:</span> ${escapeHtml(data.clientAddress || "-")}</div>
           </div>
-          <div><span class="label">Condición de venta:</span> ${escapeHtml(data.saleCondition || "Otras")}</div>
+          <div><span class="label">Conpndición de venta:</span> ${escapeHtml(data.saleCondition || "Otras")}</div>
         </div>
         <table class="items">
           <thead>
