@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/arandelaseje.png",
       titulo: "ARANDELA PUNTA DE EJE",
-      pdf: "/catalogos/PESADOS/puntaeje/Arandelas punta de eje 05-06-26.pdf",
+      pdf: "/catalogos/PESADOS/puntaeje/Arandelas punta de eje 03-11-26.pdf",
     },
       {
       img: "/PESADOS-JPG/tuercaeje.png",

@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/enganche_acoplado.png",
       titulo: "ENGANCHE PARA ACOPLADOS",
-      pdf: "/catalogos/PESADOS/enganches/Enganches para acoplados 21-05-26.pdf",
+      pdf: "/catalogos/PESADOS/enganches/Enganches para acoplados 03-11-26.pdf",
     },
     {
       img: "/PESADOS-JPG/enganche.png",
