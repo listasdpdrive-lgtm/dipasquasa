@@ -21,7 +21,7 @@ export default function Homocinetica() {
     {
       img: "/puntaeje/juego_punta_eje.png",
       titulo: "JUEGOS PERNOS PUNTA DE EJE",
-      pdf: "/catalogos/puntaeje/Juegos perno punta de eje 21-05-26.pdf" ,
+      pdf: "/catalogos/puntaeje/Juegos perno punta de eje 20-11-26.pdf" ,
     },
     {
       img: "/puntaeje/bieletas1.png",

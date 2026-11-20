@@ -11,7 +11,7 @@ export default function Accesorios() {
     {
       img: "/ELECTRICIDAD-JPG/cree led.png",
       titulo: "CREE LED 24 Y 12V",
-      pdf: "/catalogos/ELECTRICIDAD/Cree led 16-11-26.pdf",
+      pdf: "/catalogos/ELECTRICIDAD/Cree led 20-11-26.pdf",
     },
     {
       img: "/ELECTRICIDAD-JPG/barras.png",

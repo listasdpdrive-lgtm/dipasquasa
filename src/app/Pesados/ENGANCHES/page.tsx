@@ -9,7 +9,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/enganche_acoplado.png",
       titulo: "ENGANCHE PARA ACOPLADOS",
-      pdf: "/catalogos/PESADOS/enganches/Enganches para acoplados 16-11-26.pdf",
+      pdf: "/catalogos/PESADOS/enganches/Enganches para acoplados 20-11-26.pdf",
     },
     {
       img: "/PESADOS-JPG/enganche.png",
@@ -19,7 +19,7 @@ export default function Accesorios() {
     {
       img: "/PESADOS-JPG/patas.png",
       titulo: "PATAS DE APOYO U REPARACIONES",
-      pdf: "/catalogos/PESADOS/enganches/Patas de apoyo y reparaciones 22-05-26.pdf",
+      pdf: "/catalogos/PESADOS/enganches/Patas de apoyo y reparaciones 20-11-26.pdf",
     },
     
   ]
